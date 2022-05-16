@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://fvm.filecoin.io/docs"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
