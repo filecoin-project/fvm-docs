@@ -1,4 +1,4 @@
-baseurl = "https://fvm.filecoin.io/docs"
+baseurl = ""
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
