@@ -16,3 +16,7 @@ docs
 ├── how-tos    <-- Simple, single-tasked guides on how to do basic tasks with the FVM.
 └── reference  <-- API and CLI docs, if either exist.
 ```
+
+## License
+
+Dual-licensed: [MIT](./LICENSE-MIT), [Apache Software License v2](./LICENSE-APACHE), by way of the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
