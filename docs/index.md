@@ -4,13 +4,9 @@ description: "The Filecoin Virtual Machine (FVM) allows users to write their own
 lead: "The Filecoin Virtual Machine (FVM) is an interface that developers can use to deploy smart-contracts on the Filecoin network. FVM contracts will introduce the ability to perfom on-chain computation, or the computation of a state. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for."
 ---
 
+<!-- TODO
 ## Why it's useful
-
-Lorem ipsum.
-
-## Who is it for
-
-Lorem ipsum.
+-->
 
 ## Use-cases
 
@@ -52,3 +48,27 @@ There are so many providers in the Filecoin network, how do you pick the ones th
 ### Decentralized, verifiable computation
 
 We have have both computation and storage under a single roof. Imagine being able to apply a computation to be applied on data incentivizing it's execution all the way to the end, and being able to certify that the result AND the output are verifiably correct.
+
+## Technical side of FVM
+
+The FVM is fundamentally based on WASM. WASM is a portable execution format that initially was build for the web in theory was meant to replace JS, but has trancended to other runtimes. It's seen a massive uptake in blockchain ecosystems. One key aspect of the FVM is that it should interact with IPLD state tree data efficiently.
+
+Native actors can be written in languages that compile to WASM. This doesn't mean that you'll want to use ANY language that compiles to WASM - devs wanna be aware of the runtime costs and overheads of certain languages. One language that produces very succinct WASM code is Rust - which is why we're building the reference SDK in rust.
+
+Another key aspect of the FVM is that it has support for foreign runtimes and VMs, such as the EVM, JS/SES, LLVm, IR, BPF, and other models.
+
+### EVM compatibility
+
+There's been incredibly strong requests from the Filecoin dev community for the FVM to support EVM and Solidity compatibility out of the box - so this is a priority. With the FVM developers will be able to deploy EVM contracts directly to the Filecoin blockchain directly. This means all the things that have been audited and battle tested in Ethereum land are available on the FVM (things like ERC-20 tokens, NFTs, flash loans, etc).
+
+WE can also leverage all the build tools from the EVM ecosystem: things like truffle, hardhat, remix, along with all the IDE and VSCode plugins.
+
+The plan to make the compatibility possible is to adopt an EVM Bitcode and WASM approach instead of working off Solidity directly. This choice guarantees almost perfect execution, fidelity, and parity, along with mitigating risks otherwise present in the Solidity to WASM cpomliation path. We're looking at adopting the Sputnik VM project which has emerged as the de factor WASM compatible EVM implementation in the industry.
+
+### The data layer
+
+We can consider the FVM as a computation engine for IPLD data. The file coin state tree and the actor states are IPLD objects. And the FVM essentially executes computation on those inputs to produce outputs.
+
+### Scaling consensus
+
+User-defined actors will exponentially increase the demand for space on the blockchain. There's research going into fixing this using things like sharing and hierarchical consensus with parallel execution. This has implications for the FVM, mainly that infra-shard calls can be synced, and cross-shard calls MUST be synced.
