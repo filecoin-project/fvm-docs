@@ -4,6 +4,8 @@ description: "The Filecoin Virtual Machine (FVM) allows users to write their own
 lead: "The Filecoin Virtual Machine (FVM) is an interface that developers can use to deploy smart-contracts on the Filecoin network. FVM contracts will introduce the ability to perfom on-chain computation, or the computation of a state. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for."
 ---
 
+# The Filecoin Virtual Machine
+
 <!-- TODO
 ## Why it's useful
 -->
