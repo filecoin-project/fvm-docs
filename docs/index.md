@@ -36,21 +36,27 @@ DAOs are Data Access Objects, patterns that provide an abstract interface to a d
 
 We can use the FVM to tokenize data sets to represent their value to humanity and kickstart the data set economy. We can then use it to incentivize further value creation through data processing.
 
-Imagine if those tokens were harvested and exchanged between peers to request computation, validation, transformations, feature detection, extraction, machine learning and more. If you chain these processes together, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
+Imagine if we wrote smart contracts to harvest and exchange those tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. If you chain these processes together, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
 
 ### Replication workers
 
-Replicating data in the Filecoin network automatically across providers, without client involvement.
+Write smart contracts for the FVM to automatically replicate data across providers in the Filecoin network without client involvement, all while obeying a user-defined policy with specifications like region, latency, price, or other characteristics.
 
-Being able to write smart contracts that take one piece of data and make sure it's replicated N times across the network, all while obeying a user-defined policy that specifies things like the region selection, latency, price, or other characteristics.
-
-This would solve a pain-point present today in the network. If clients, today, want to replicate a piece of data with N providers, they have to perform the data transfer of that data to each provider. Replication workers would offload this data transfer to them in a trustless way.
+If clients, today, want to replicate a piece of data with N providers, they have to perform the data transfer of that data to each provider. With smart contracts on the FVM, incentivized replication actors would offload this data transfer to clients in a trustless way.
 
 ### L2 commitments
 
-Provide consensus-backed commitments and provability facilities for L2 solutions like bridges, oracles, payment networks, rollups, etc.
+In the Filecoin network:
 
-## Smarter storage markets
+- Layer 0 is our storage and retrieval layer
+- Layer 1 is our on-chain, computation over state layer
+- Layer 2 is our off-chain, computation over data layer
+
+Currently, solutions like Textile's Filecoin bridges to NEAR, Polygon, and Ethereum are operating without a Layer 1 commitment on the Filecoin network. 
+
+With smart contracts on FVM, you can harvest Layer 2 systems to commit onto Layer 1 of the Filecoin blockchain. You can provide consensus-backed commitments to make solutions like bridges, oracles, payment networks, rollups, and more end-to-end provable and traceable.
+
+## Smart storage markets
 
 Bringing richer deal-making functionality to introduce more automation at the actor layer, and alleviate infrastructure overhead.
 
