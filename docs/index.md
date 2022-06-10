@@ -8,13 +8,13 @@ lead: "The Filecoin Virtual Machine (FVM) is an interface that developers can us
 
 The Filecoin Virtual Machine (FVM) is an interface that enables developers to deploy smart contracts on the Filecoin blockchain. FVM support for smart contracts introduces the ability to perform on-chain state computations, which guide storage deals from pre-commit through committed states. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for.
 
-The FVM is not tightly-coupled to filecoin, so it can be adapted to other contexts, such as IPFS and IPLD.
-
 ## Why Filecoin is useful
 
 FVM is meant for developers and especially to provide them with easy onboarding. To that end, it is compatible with foreign virtual machines, such as the Ethereum Virtual Machine (EVM), enabling developers to access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity.
 
 Developers familiar with Interplanetary Linked Data (IPLD) will already be familiar with the Filecoin state tree and actor states, which are IPLD objects. The FVM is a computation engine for IPLD data, executing computations on IPLD inputs to produce outputs.
+
+The FVM is flexible. Because it is not tightly-coupled to Filecoin, it can be adapted to other contexts, such as IPFS and IPLD.
 
 ## Visions and goals
 
@@ -22,7 +22,7 @@ To mitigate the well-known risks often due to the Solidity-to-WASM compilation p
 
 Building libraries and primitives to interact with IPLD data will also be a core priority.
 
-Because user-defined actors will exponentially increase demand for space on the blockchain, we are looking into shading (a kind of partitioning for speedier processing) and hierarchical consensus with parallel execution. 
+Because user-defined actors will exponentially increase demand for space on the blockchain, we are looking into shading (a kind of partitioning for speedier processing) and hierarchical consensus with parallel execution.
 
 ## Use-cases
 
