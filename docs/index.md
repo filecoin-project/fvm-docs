@@ -6,7 +6,7 @@ lead: "The Filecoin Virtual Machine (FVM) is an interface that developers can us
 
 # The Filecoin Virtual Machine
 
-The Filecoin Virtual Machine (FVM) is an interface that enables developers to deploy smart contracts on the Filecoin blockchain. FVM support for smart contracts introduces the ability to perform on-chain state computations, which guide storage deals from pre-commit through committed states. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for.
+The Filecoin Virtual Machine (FVM) is an interface that enables developers to deploy smart contracts on the Filecoin blockchain. FVM support for smart contracts introduces the ability to perform on-chain state computations that can guide storage deals from pre-commit through committed states. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for.
 
 ## Why Filecoin is useful
 
