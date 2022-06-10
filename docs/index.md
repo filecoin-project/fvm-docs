@@ -36,7 +36,7 @@ DAOs are Data Access Objects, patterns that provide an abstract interface to a d
 
 We can use the FVM to tokenize data sets to represent their value to humanity and kickstart the data set economy. We can then use it to incentivize further value creation through data processing.
 
-Imagine if those tokens were harvested and exchanged between peers to request computation, validation, transformations, feature detection, extraction, machine learning and more. If you chain these processes, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
+Imagine if those tokens were harvested and exchanged between peers to request computation, validation, transformations, feature detection, extraction, machine learning and more. If you chain these processes together, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
 
 ### Replication workers
 
