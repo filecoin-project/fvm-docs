@@ -34,9 +34,9 @@ The Dataverse is an open source software project for sharing, preserving, citing
 
 DAOs are Data Access Objects, patterns that provide an abstract interface to a database or other persistence mechanism. They provide specific data operations without exposing details of the database. See [Wikipedia](https://en.wikipedia.org/wiki/Data_access_object).
 
-FVM can be used to tokenize data sets to represent their value to humanity and kickstart the data set economy. It can then be used to incentivize further value creation through data processing.
+We can use the FVM to tokenize data sets to represent their value to humanity and kickstart the data set economy. We can then use it to incentivize further value creation through data processing.
 
-Imagine if those tokens were harvested and exchanged between peers to request computation, validation, transformations, feature detection, extraction, machine learning and more. If you chain these processes, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by the use of these datasets.
+Imagine if those tokens were harvested and exchanged between peers to request computation, validation, transformations, feature detection, extraction, machine learning and more. If you chain these processes, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
 
 ### Replication workers
 
