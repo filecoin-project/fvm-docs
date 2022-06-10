@@ -18,7 +18,7 @@ The FVM is flexible. Because it is not tightly-coupled to Filecoin, it can be ad
 
 ## Visions and goals
 
-To mitigate the well-known risks often due to the Solidity-to-WASM compilation path, we are adopting a WASM and bytecode approach instead of working directly in Solidity.
+To mitigate the well-known risks due to the Solidity-to-WASM compilation path, we are adopting a WASM and bytecode approach instead of working directly in Solidity.
 
 Building libraries and primitives to interact with IPLD data will also be a core priority.
 
