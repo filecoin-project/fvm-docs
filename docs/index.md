@@ -16,7 +16,7 @@ Developers familiar with Interplanetary Linked Data (IPLD) will already be famil
 
 The FVM is flexible. Because it is not tightly-coupled to Filecoin, it can be adapted to other contexts, such as IPFS and IPLD.
 
-## Visions and goals
+## Vision and goals
 
 To mitigate the well-known risks due to the Solidity-to-WASM compilation path, we are adopting a WASM and bytecode approach instead of working directly in Solidity.
 
@@ -52,24 +52,27 @@ In the Filecoin network:
 - Layer 1 is our on-chain, computation over state layer
 - Layer 2 is our off-chain, computation over data layer
 
-Currently, solutions like Textile's Filecoin bridges to NEAR, Polygon, and Ethereum are operating without a Layer 1 commitment on the Filecoin network. 
+Currently, solutions like Textile's Filecoin bridges to NEAR, Polygon, and Ethereum are operating without a Layer 1 commitment on the Filecoin network.
 
 With smart contracts on FVM, you can harvest Layer 2 systems to commit onto Layer 1 of the Filecoin blockchain. You can provide consensus-backed commitments to make solutions like bridges, oracles, payment networks, rollups, and more end-to-end provable and traceable.
 
 ## Smart storage markets
 
-Bringing richer deal-making functionality to introduce more automation at the actor layer, and alleviate infrastructure overhead.
+Smart contracts on FVM can bring richer deal-making functionality by introducing more automation at the actor layer and alleviating infrastructure overhead.
 
-- Auto-renewing deals without repeating data tranfers
-- Self-repairing deals: say a provider has sectors that fail and they want to recover that data; instead of having clients send the data over to them again, they can hardness the replication workers to have the data resent to them and have the data restored.
+Some possibilities are:
+
+- Auto-renewing deals without repeating data transfers, when deals expire or get slashed.
+- Self-repairing deals: If a provider has failed sectors and wants to recover the data, instead of having clients resend the data, they can have the replication workers resend it automatically.
+- Retrying deals: where a client dispatches their deal data to a depot and, for a small fee, has the deal data transmitted and satisfactorily delivered to the provider.
 
 ### Time-locked retrieval
 
-Make storage deals with data that cannot be retrieved by anyone until a specific window of time elapses.
+FVM enables storage deals with data that cannot be retrieved by anyone until a specific window of time elapses.
 
 ### Trustless reputation systems
 
-There are so many providers in the Filecoin network, how do you pick the ones that you want to deal with based on the quality of service, guarantees, performance, latency, or region. There are already a bunch of solutions available in the ecosystem; but imagine being able to build a overlay network that are patrolling the network and observing how SPs are doing and recording them on the blockchain so that reputational scores can be calculated in a trustless manner. They can also be traced, and disputable if there is any disagreement.
+There are so many providers in the Filecoin network, how do you pick the ones that you want to deal with based on the quality of service, guarantees, performance, latency, or region. There are already a bunch of solutions available in the ecosystem, but imagine being able to build an overlay network that patrols the network of nodes, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
 
 ### Decentralized, verifiable computation
 
