@@ -26,7 +26,7 @@ Because user-defined actors will exponentially increase demand for space on the 
 
 ## Use-cases
 
-Here are some early use cases that are possible with the FVM. With centralized data centers, a lot of these use cases were incredibly hard, if not impossible. With decentralization, we're now making them possible.
+Here are some use cases that are possible with the FVM. With centralized data centers, a lot of these use cases were incredibly hard, if not impossible. With decentralization and Layer 1 programmability, we are unleashing boundless opportunities.
 
 ### Dataverse and Data DAOs
 
@@ -72,11 +72,13 @@ FVM enables storage deals with data that cannot be retrieved by anyone until a s
 
 ### Trustless reputation systems
 
-There are so many providers in the Filecoin network, how do you pick the ones that you want to deal with based on the quality of service, guarantees, performance, latency, or region. There are already a bunch of solutions available in the ecosystem, but imagine being able to build an overlay network that patrols the network of nodes, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
+There are so many providers in the Filecoin network, how do you pick the ones that you want to deal with based on the quality of service, guarantees, performance, latency, or region.
+
+Imagine being able to build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
 
 ### Decentralized, verifiable computation
 
-We have have both computation and storage under a single roof. Imagine being able to apply a computation to be applied on data incentivizing it's execution all the way to the end, and being able to certify that the result AND the output are verifiably correct.
+FVM enables both computation and storage under a single roof. Imagine being able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct. Imagine being able to link all of that to the Dataverse and tokenization of datasets.
 
 ## Technical side of FVM
 
