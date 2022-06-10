@@ -30,9 +30,13 @@ Here are some early use cases that are possible with the FVM. With centralized d
 
 ### Dataverse and Data DAOs
 
-Represent the value of data sets through tokens, and incentives value creation through data processing. Kickstarting the data set economy by tokeninzing data sets to capture the represented value of those data sets to society.
+The Dataverse is an open source software project for sharing, preserving, citing, and exploring research data. See [Wikipedia](https://en.wikipedia.org/wiki/Dataverse) and [The Dataverse Project](https://dataverse.org/).
 
-Imagine deploying self governing entities on chain to steward, maintain, and curate those datasets that are valuable to humanity. Data DAOs could be funded by the use of these datasets automatically.
+DAOs are Data Access Objects, patterns that provide an abstract interface to a database or other persistence mechanism. They provide specific data operations without exposing details of the database. See [Wikipedia](https://en.wikipedia.org/wiki/Data_access_object).
+
+FVM can be used to tokenize data sets to represent their value to humanity and kickstart the data set economy. It can then be used to incentivize further value creation through data processing.
+
+Imagine if those tokens were harvested and exchanged between peers to request computation, validation, transformations, feature detection, extraction, machine learning and more. If you chain these processes, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by the use of these datasets.
 
 ### Replication workers
 
