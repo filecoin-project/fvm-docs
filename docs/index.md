@@ -22,7 +22,7 @@ To mitigate the well-known risks due to the Solidity-to-WASM compilation path, w
 
 Because the FVM essentially executes computation on IPLD inputs to produce outputs, building libraries and primitives to interact with IPLD data will also be a core priority.
 
-Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into sharding (a kind of partitioning for speedier processing) and hierarchical consensus with parallel execution.
+Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions, such as sharding (a kind of partitioning) and hierarchical consensus with parallel execution, both of which support speedier processing.
 
 ## Use-cases
 
