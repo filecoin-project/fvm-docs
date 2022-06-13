@@ -1,6 +1,7 @@
 ---
-title: "Concepts"
+title: "Introduction"
 description: "Lorem ipsum"
+lead: "Lorem ipsum"
 menu:
     concepts:
         parent: "concepts-basics"

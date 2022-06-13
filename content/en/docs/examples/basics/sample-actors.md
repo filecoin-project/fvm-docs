@@ -1,4 +1,8 @@
-# Existing examples
+---
+title: "Existing examples"
+description: "Lorem ipsum."
+lead: "Lorem ipsum."
+---
 
 Here is a list of existing example contracts/actors/samples for the FVM
 
