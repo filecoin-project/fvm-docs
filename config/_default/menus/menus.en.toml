@@ -1,21 +1,21 @@
 [[main]]
   name = "Concepts"
-  url = "/concepts"
+  url = "docs/concepts/"
   weight = 10
 
 [[main]]
   name = "How To"
-  url = "/how-tos"
+  url = "/docs/how-tos/"
   weight = 20
 
 [[main]]
   name = "Examples"
-  url = "/examples"
+  url = "/docs/examples/"
   weight = 30
 
 [[main]]
   name = "Reference"
-  url = "/reference"
+  url = "/docs/reference"
   weight = 40
 
 
@@ -24,19 +24,19 @@
   name = "Basics"
   weight = 10
   identifier = "concepts-basics"
-  url = "/concepts/basics"
+  url = "/docs/concepts/basics"
 
 [[concepts]]
   name = "Native actors"
   weight = 20
   identifier = "concepts-nativeactors"
-  url = "/concepts/native-actors"
+  url = "/docs/concepts/native-actors"
 
 [[concepts]]
   name = "EVM"
   weight = 30
   identifier = "concepts-evm"
-  url = "/concepts/evm"
+  url = "/docs/concepts/evm"
 
 
 
