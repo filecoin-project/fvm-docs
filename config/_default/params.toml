@@ -1,0 +1,83 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Filecoin Virtual Machine Docs"
+titleSeparator = "-"
+titleAddition = "Home"
+description = "Documentation for the Filecoin Virtual Machine (FVM)."
+
+## Open Graph
+images = ["lotus.png"]
+ogLocale = "en_US"
+domainTLD = "fvm.filecoin.io"
+titleHome = "FVM Docs"
+
+## Twitter Cards
+twitterSite = "@filecoin"
+twitterCreator = "@protocollabs"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "FVM"
+schemaAuthor = "Protocol Labs"
+schemaAuthorTwitter = "https://twitter.com/protocollabs"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/protocollabs/"
+schemaAuthorGitHub = "https://github.com/filecoin-project"
+schemaLocale = "en-US"
+schemaLogo = "fvm.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "fvm.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/filecoin"
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/filecoin-project/fvm-docs"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"
+
+# Images
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+
+# Footer
+footer = "Built by Protocol Labs."
+footer_link = "https://protocol.ai"
+
+# Feed
+copyRight = ""
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = ""
+
+# Edit Page
+docsRepo = "https://github.com/filecoin-project/fvm-docs"
+docsRepoBranch = "main"
+editPage = true
+repoHost = "GitHub"
+
+[options]
+    lazySizes = true
+    clipBoard = true
+    instantPage = false
+    flexSearch = true
+    darkMode = true
+    bootStrapJs = true
+    breadCrumb = false 
+    highLight = true
+    kaTex = false
+    progressBar = true
+    collapsibleSidebar = true
+    multilingualMode = true
+    docsVersioning = false # Not yet functional
