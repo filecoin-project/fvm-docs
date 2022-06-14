@@ -6,21 +6,21 @@ lead: "The Filecoin Virtual Machine (FVM) is an interface that developers can us
 
 # The Filecoin Virtual Machine
 
-The Filecoin Virtual Machine (FVM) is an interface that enables developers to deploy smart contracts on the Filecoin blockchain. FVM support for smart contracts provides the ability to perform on-chain state computations that can guide storage deals from pre-commit through committed states. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for.
+The Filecoin Virtual Machine (FVM) is an interface that enables developers to deploy smart contracts on the Filecoin blockchain. FVM support for smart contracts provides the ability to perform on-chain state computations that guide storage deals from pre-commit through committed states. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for.
 
-## Why Filecoin is useful
+## Why the FVM is useful
 
 There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With FVM developers can access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity.
 
-Because the FVM is also a computation engine for Interplanetary Linked Data (IPLD), developers familiar with IPLD will find it easy to adapt to the Filecoin state tree and actor states, which are IPLD objects.
+The FVM is flexible. Because it's not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as IPFS and IPLD.
 
-Because the FVM is not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as IPFS and IPLD.
+The FVM will be easy for developers who know Interplanetary Linked Data (IPLD) to adapt to, because the FVM state tree and actor states are IPLD objects.
 
 ## Vision and goals
 
-To mitigate the well-known risks due to the Solidity-to-WASM compilation path, we are adopting a WASM and bytecode approach instead of working directly in Solidity.
+To mitigate the well-known risks with Solidity, we are adopting a WASM and bytecode approach instead of working directly in Solidity.
 
-Because the FVM essentially executes computation on IPLD inputs to produce outputs, building libraries and primitives to interact with IPLD data will also be a core priority.
+Building libraries and primitives to interact with IPLD data are a core priority, because the FVM essentially executes computation on IPLD inputs to produce outputs.
 
 Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions, such as sharding (a kind of partitioning) and hierarchical consensus with parallel execution, both of which support speedier processing.
 
@@ -36,7 +36,7 @@ FVM enables both computation and storage under a single roof. Imagine being able
 
 The Dataverse is an open source software project for sharing, preserving, citing, exploring, and analyzing research data. See [The Dataverse Project](https://dataverse.org/).
 
-DAOs are Data Access Objects, patterns that provide an abstract interface to a database or other persistence mechanism. They provide specific data operations without exposing details of the database. See [Wikipedia](https://en.wikipedia.org/wiki/Data_access_object).
+DAOs are Data Access Objects, patterns that provide an abstract interface to a database or other persistence mechanism. They provide specific data operations without exposing details of the database. See [Data access object](https://en.wikipedia.org/wiki/Data_access_object).
 
 We can use the FVM to tokenize data sets to represent their value to humanity and kickstart the data set economy. We can then use it to incentivize further value creation through data processing.
 
