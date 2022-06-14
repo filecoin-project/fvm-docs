@@ -6,7 +6,7 @@
 
 ## Preview
 
-Here's a preview of the new [fvm.filecoin.io site](https://square-firefly-9475.on.fleek.co/)
+Here's a preview of the new [fvm.filecoin.io site](https://square-firefly-9475.on.fleek.co/).
 
 ## Map
 
