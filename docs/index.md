@@ -10,7 +10,7 @@ The Filecoin Virtual Machine (FVM) is an interface that enables developers to de
 
 ## Why the FVM is useful
 
-There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With FVM developers can access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity. FVM also supports other foreign runtimes and virtual machines, such as JS/SES, LLVm, IR, BPF.
+There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With FVM developers can access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity. FVM also supports other foreign runtimes and virtual machines, such as JS/SES, LLVm, IR, and BPF.
 
 The FVM is flexible. Because it's not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
 
@@ -18,7 +18,7 @@ The FVM is easy for developers who know IPLD to adapt to. The state tree and act
 
 ## Vision and goals
 
-To mitigate the well-known risks of compiling Solidity to the WASM (WebAssembly) programming language, we are not working directly in Solidity. Instead, we are adapting a WASM (WebAssembly programming language) and bytecode approach. We're building the reference SDK in Rust, because it produces very succinct WASM code and keeps runtime costs down.
+To mitigate the well-known risks of compiling Solidity to the WASM (WebAssembly) programming language, we're not working directly in Solidity. Instead, we are adapting a WASM (WebAssembly programming language) and bytecode approach. We're building the reference SDK in Rust, because it produces very succinct WASM code and keeps runtime costs down.
 
 Because the FVM essentially executes computation on IPLD inputs to produce outputs, building libraries and primitives to interact with IPLD data is a core priority.
 
@@ -30,7 +30,7 @@ Here are some use cases that are possible with the FVM. With centralized data ce
 
 ### Decentralized, verifiable computation
 
-FVM enables both computation and storage under a single roof. Imagine being able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct. Imagine being able to link all of that to the Dataverse and tokenization of datasets.
+The FVM enables both computation and storage under a single roof. Imagine being able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct. Imagine being able to link all of that to the Dataverse and tokenization of datasets.
 
 ### Dataverse and Data DAOs
 
@@ -79,19 +79,3 @@ FVM enables storage deals with data that cannot be retrieved by anyone until a s
 There are so many providers in the Filecoin network, how do you pick the ones that you want to deal with based on the quality of service, guarantees, performance, latency, or region.
 
 Imagine being able to build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
-
-## Technical side of FVM
-
-The FVM is fundamentally based on WASM, a portable execution format that initially was built for the web, but has transcended to other runtimes. Native actors can be written in languages that compile to WASM, but we're building the reference SDK in Rust, because it produces very succinct WASM code and keeps runtime costs down.
-
-In addition to EVM, FVM supports other foreign runtimes and virtual machines, such as JS/SES, LLVm, IR, BPF, and other models.
-
-### EVM compatibility
-
-EVM includes compatibility with things like ERC-20 tokens, NFTs, flash loans, etc. We can also leverage all the build tools from the EVM ecosystem, such as Truffle, Hardhat, and Remix, along with all the IDE and VSCode plugins.
-
-The plan to make the compatibility possible is to adopt an EVM bytecode and WASM approach instead of working off Solidity directly. This choice guarantees almost perfect execution, fidelity, and parity, along with mitigating risks otherwise present in the Solidity-to-WASM compilation path. We're looking at adopting the Sputnik VM project which has emerged as the de facto WASM-compatible EVM implementation in the industry.
-
-### Scaling consensus
-
-The potential use of things like sharding and hierarchical consensus with parallel execution has implications for the FVM, mainly that infra-shard calls can be synced, and cross-shard calls MUST be synced.
