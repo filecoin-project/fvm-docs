@@ -10,7 +10,7 @@ The Filecoin Virtual Machine (FVM) is an interface that enables developers to de
 
 ## Why the FVM is useful
 
-There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With FVM developers can access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity.
+There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With FVM developers can access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity. FVM also supports other foreign runtimes and virtual machines, such as JS/SES, LLVm, IR, BPF.
 
 The FVM is flexible. Because it's not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
 
