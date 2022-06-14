@@ -40,13 +40,13 @@ DAOs are Data Access Objects, patterns that provide an abstract interface to a d
 
 We can use the FVM to tokenize data sets to represent their value to humanity and kickstart the data set economy. We can then use it to incentivize further value creation through data processing.
 
-Imagine if we wrote smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. If you chain these processes together, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on-chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
+With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. If you chain these processes together, you can compound the value of the datasets iteratively. Imagine deploying self-learning entities on-chain to steward, maintain, and curate those datasets. Data DAOs could be automatically funded by using these datasets.
 
 ### Replication workers
 
 We can write smart contracts for the FVM to automatically replicate data across providers in the Filecoin network without client involvement, all while obeying a user-defined policy with specifications like region, latency, price, or other characteristics.
 
-If clients, today, want to replicate a piece of data with N providers, they have to perform the data transfer of that data to each provider. With smart contracts on the FVM, incentivized replication actors would offload this data transfer to clients in a trustless way.
+If clients today want to replicate a piece of data with N providers, they have to perform the data transfer of that data to each provider. With smart contracts on the FVM, incentivized replication actors would offload this data transfer to clients in a trustless way.
 
 ### L2 commitments
 
