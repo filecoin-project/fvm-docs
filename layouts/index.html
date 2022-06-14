@@ -1,67 +1,805 @@
 <!DOCTYPE html>
 <!-- saved from url=(0024)https://fvm.filecoin.io/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>Filecoin Virtual Machine</title><meta http-equiv="content-language" content="en-us"><meta name="title" content="Filecoin Virtual Machine"><meta name="description" content="Smart contracts + provable storage = Filecoin Virtual Machine. Learn about the technology, the possibilities, and the roadmap. Find developer resources, and apply for grants."><meta property="og:type" content="website"><meta property="og:url" content="https://fvm.filecoin.io"><meta property="og:title" content="Filecoin Virtual Machine"><meta property="og:description" content="Smart contracts + provable storage = Filecoin Virtual Machine. Learn about the technology, the possibilities, and the roadmap. Find developer resources, and apply for grants."><meta property="og:image" content="https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://fvm.filecoin.io"><meta property="twitter:title" content="Filecoin Virtual Machine"><meta property="twitter:description" content="Smart contracts + provable storage = Filecoin Virtual Machine. Learn about the technology, the possibilities, and the roadmap. Find developer resources, and apply for grants."><meta property="twitter:image" content="https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png"><link rel="icon" type="image/png" sizes="32x32" href="https://fvm.filecoin.io/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://fvm.filecoin.io/favicon-16x16.png"><link rel="shortcut icon" href="https://fvm.filecoin.io/favicon.ico"><meta name="viewport" content="width=device-width"><meta name="next-head-count" content="19"><link rel="preload" href="./frontpage_files/cb4343d5397d8694.css" as="style"><link rel="stylesheet" href="./frontpage_files/cb4343d5397d8694.css" data-n-g=""><link rel="preload" href="./frontpage_files/58bb1977b05aad70.css" as="style"><link rel="stylesheet" href="./frontpage_files/58bb1977b05aad70.css" data-n-p=""><noscript data-n-css=""></noscript><script defer="" nomodule="" src="./frontpage_files/polyfills-5cd94c89d3acac5f.js.download"></script><script src="./frontpage_files/webpack-514908bffb652963.js.download" defer=""></script><script src="./frontpage_files/framework-6e4ba497ae0c8a3f.js.download" defer=""></script><script src="./frontpage_files/main-eab312c0bf2a7270.js.download" defer=""></script><script src="./frontpage_files/_app-64b80a2dde8229d8.js.download" defer=""></script><script src="./frontpage_files/129-267d4ae18ddaaec5.js.download" defer=""></script><script src="./frontpage_files/730-992484fefbdda464.js.download" defer=""></script><script src="./frontpage_files/427-d938f761f7824ef7.js.download" defer=""></script><script src="./frontpage_files/index-522dbd5a64cdfee9.js.download" defer=""></script><script src="./frontpage_files/_buildManifest.js.download" defer=""></script><script src="./frontpage_files/_ssgManifest.js.download" defer=""></script><script src="./frontpage_files/_middlewareManifest.js.download" defer=""></script></head><body><div id="__next" data-reactroot=""><div class="App_container__fFRg0"><div class="Navigation_container__qQcM5"><nav class="Navigation_navigation__xmHcE"><div class="Navigation_left__5qxf7"><a href="https://fvm.filecoin.io/" class="Navigation_item__ePUZg">Filecoin Virtual Machine</a></div><div class="Navigation_right__NExp7"><a href="https://github.com/filecoin-project/ref-fvm" class="Navigation_item__ePUZg">Source</a><a href="https://github.com/filecoin-project/fvm-specs" class="Navigation_item__ePUZg" style="margin-left:32px">Specs</a><a href="https://filecoin.io/" class="Navigation_item__ePUZg" style="margin-left:32px">Filecoin</a></div></nav></div><div class="App_center__k4niz" style="margin-top:16px;margin-bottom:48px"><div class="App_centerText__1ChGu">Smart contracts + provable storage = FVM</div><video id="video" autoplay="" muted="" loop="" playsinline="" src="https://user-images.githubusercontent.com/310223/150047240-2e4215c1-692f-4857-9c19-6e0433f044d6.mp4"></video></div><div class="Grid_grid__tdbxd"><div class="App_withCode__7O8vi"><div class="App_left__j7ytm"><div class="App_markdown__B3Yg5"><a id="possibilities-1" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#possibilities-1" level="2">Possibilities</a>
-<p>The FVM unlocks boundless possibilities, ranging from <strong>programmable storage primitives</strong> (such as storage bounties, auctions, and more), to <strong>cross-chain interoperability bridges</strong> (e.g. trustlessly connecting Filecoin with Ethereum, Solana, NEAR, and more), to <strong>data-centric Decentralized Autonomous Organizations (DAOs)</strong>, to <strong>Layer 2 solutions</strong> (such as reputation systems, data availability sampling, computation fabrics, and incentive-aligned Content Delivery Networks), and more.</p>
-<p>Here are some of the things we're excited to see deployed on the Filecoin network. It's up to you to make them happen!</p></div><a class="FullButton_button__zU_Uc" href="https://filecoin.io/slack" style="margin-top:32px;color:#fff">Chat with developers ➝</a></div><div class="CodeBlock_code___gMmb"><pre class="prism-code language-c" style="color:#F8F8F2;background-color:var(--color-inset)"><div class="token-line" style="color:#F8F8F2"><span class="token comment" style="color:rgb(98, 114, 164)">/// A Filecoin actor brokering decentralized compute jobs.</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token comment" style="color:rgb(98, 114, 164)">/// For illustration purposes only.</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">#</span><span class="token punctuation" style="color:rgb(248, 248, 242)">[</span><span class="token function" style="color:rgb(80, 250, 123)">fvm_actor</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">state</span><span class="token operator">=</span><span class="token plain">ComputeState</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> dispatch</span><span class="token operator">=</span><span class="token string" style="color:rgb(255, 121, 198)">"method_num"</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">]</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">impl ComputeActor </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">/// Creates a job with an input DAG, WASM compute logic,</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">/// data affinity, geographical bounds, and timeout.</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  pub fn </span><span class="token function" style="color:rgb(80, 250, 123)">create_job</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">req</span><span class="token operator">:</span><span class="token plain"> CreateJobReq</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> st</span><span class="token operator">:</span><span class="token plain"> ComputeState</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token operator">-&gt;</span><span class="token plain"> CreateJobRes </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">/// Allows a compute node to claim a job by proving it</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">/// satisfies the requirements and staking collateral.</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  pub fn </span><span class="token function" style="color:rgb(80, 250, 123)">claim_job</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">req</span><span class="token operator">:</span><span class="token plain"> ClaimJobReq</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> st</span><span class="token operator">:</span><span class="token plain"> ComputeState</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token operator">-&gt;</span><span class="token plain"> ClaimJobRes </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">/// Proves that a compute node finished running a job,</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">/// posts the result, and claims the reward.</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  pub fn </span><span class="token function" style="color:rgb(80, 250, 123)">prove_done</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">req</span><span class="token operator">:</span><span class="token plain"> ProveDoneReq</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> st</span><span class="token operator">:</span><span class="token plain"> ComputeState</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token operator">-&gt;</span><span class="token plain"> ProveDoneRes </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span></div></pre></div></div></div><div class="App_row__r4NJ8" style="margin-top:48px"><div class="TopicPickerGrid_container__sn80I" id="topic-grid-section"><div class="TopicPickerGrid_topics__1LbJc"><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt" style="background:var(--color-dark-black-highlight)"><div class="TopicPickerGrid_artwork__GwIoE" style="height:auto;opacity:1;transform:translateY(0px);visibility:visible"><img src="./frontpage_files/150100275-423a64cb-df1f-4347-b981-4eca8f34b4c5.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Decentralized Compute</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100369-3eb15e7c-aa57-4106-809e-6d8331fc2635.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Data DAOs</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100446-5f87ea99-901c-4f9f-8532-83218eb6d443.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Enabling L2 networks</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100517-bdbe1ad3-5efd-48d0-ad9f-3e7eb5e93f2a.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Cross-network interoperability bridges</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100579-361db82d-fa03-47b6-8e92-a27d9463b669.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">New storage market primitives</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100696-867205b3-bb68-4920-b4ea-dc36cca07b4e.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Perpetual storage</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100748-e05a664c-2be4-4f28-87c0-1f9327da9e62.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Replication workers</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100748-e05a664c-2be4-4f28-87c0-1f9327da9e62.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Repair workers</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100918-cbbbbe34-6092-4eb3-9a95-38550e1185c3.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Staking Protocols</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150100987-efcf9c80-10a1-4ab0-968b-cc09024bdf4e.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Insurance protocols</div></section></span><span class="TopicPickerGrid_slot__hQW_M"><section class="TopicPickerGrid_item__C9upt"><div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)"><img src="./frontpage_files/150101071-d624afb8-a6c7-4ec9-bb01-d271c0d70b5b.png" class="Data_artworkTopic__14UO1"></div><div class="TopicPickerGrid_text__yGK1y">Storage derivatives</div></section></span></div><div class="TopicPickerGrid_desktopContent__XDZeV"><div class="TopicPickerGrid_content__G5xUi"><div class="TopicPickerGrid_rich__T7qkg"><h2>Decentralized compute</h2>
-<h3>The opportunity</h3>
-<p>Filecoin and IPFS distribute content-addressed datasets across storage providers around the world to increase data redundancy and resiliency.</p>
-<p>Such globally distributed data brings significant cost, availability, and reliability advantages, but can also mean that parts of a single
-dataset may end up stored geographically far away from one another. Executing computation jobs or data pipelines on globally distributed data
-is challenging.</p>
-<h3>The potential</h3>
-<p>Regrouping highly distributed data into a central location to compute over it is expensive, underperformant, and, wasteful.
-Instead, pushing compute to the edges and coordinating its execution is a brand new possibility with FVM actors.</p>
-<p>FVM actors can broker computational resources, incentivize compute execution, distribute workloads across available storage providers,
-and prove the validity of the computation's result in order to claim rewards. Storage providers could enroll in compute networks through an FVM actor.
-Compute clients would post jobs to the actor. A mechanism would assign jobs to providers, and once executed, the provider would post a proof to claim rewards.</p></div></div></div></div></div><div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px"><div class="App_withCode__7O8vi"><div class="App_left__j7ytm"><div class="App_markdown__B3Yg5"><a id="a-robust-wasm-based-vm-2" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#a-robust-wasm-based-vm-2" level="2">A robust WASM-based VM</a>
-<p>The FVM is a WASM-based polyglot execution environment for IPLD data. It is designed to support native Filecoin actors written in languages that compile to WASM, as well as smart contracts written for foreign runtimes including the Ethereum Virtual Machine (EVM), Secure EcmaScript (SES), and eBPF.</p>
-<p>The initial version of the FVM is relatively simple and deliberately conservative in features. This enables developers onboard quickly, and serves as a rock-solid foundation for many innovations to come.</p>
-<p>Examples of future ideas include: async programming via continuations/futures, capability-orientation, time-locked transactions (using external beacons), parallel execution, native primitives for cross-chain interoperability, computation correctness proofs, and more.</p>
-<p>The reference FVM and SDK are written in Rust. If you'd like to contribute, explore ideas, or build alternative implementations in other languages, please reach out.</p></div><a class="FullButton_button__zU_Uc" href="https://github.com/filecoin-project/ref-fvm" style="margin-top:32px;color:#fff">View in GitHub ➝</a></div><div class="App_withImage___DqrC"><img style="display:block;width:100%" src="./frontpage_files/150043037-d17ca5d3-f21c-4afc-850c-968807014524.png"></div></div></div><div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px"><div class="App_withCode__7O8vi"><div class="App_left__j7ytm"><div class="App_markdown__B3Yg5"><a id="evm-compatibility-3" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#evm-compatibility-3" level="2">EVM compatibility</a>
-<p>The FVM supports EVM smart contracts out of the box. It emulates EVM bytecode at the low-level, supporting contracts written in Solidity, Vyper, and Yul.</p>
-<p>You can continue using all the developer tooling you're familiar with: Remix, Truffle, Hardhat, OpenZeppelin SDK, and more. Most smart contracts ported to Filecoin shouldn't require changes nor auditing.</p>
-<p>The EVM foreign runtime is based on pre-existing OSS libraries including <a href="https://github.com/rust-blockchain/evm">SputnikVM</a> and <a href="https://github.com/bluealloy/revm">revm</a>. It is the first of several foreign runtimes we plan to support.</p>
-<p>Support for EVM smart contract deployment is expected to go live in Milestone 2 (see below).</p>
-<p>Curious about technical details? Find out more in the <a href="https://github.com/filecoin-project/fvm-project/blob/main/04-evm-mapping.md">EVM &lt;&gt; FVM mapping specification</a>.</p></div></div><div class="CodeBlock_code___gMmb"><pre class="prism-code language-c" style="color:#F8F8F2;background-color:var(--color-inset)"><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token comment" style="color:rgb(98, 114, 164)">//</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token comment" style="color:rgb(98, 114, 164)">// The standard ERC-721 contract from OpenZeppelin SDK.</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token comment" style="color:rgb(98, 114, 164)">//</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">contract ERC721 is Context</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> ERC165</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> IERC721</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> IERC721Metadata </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  using Address </span><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">for</span><span class="token plain"> address</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  using Strings </span><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">for</span><span class="token plain"> uint256</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  function </span><span class="token function" style="color:rgb(80, 250, 123)">balanceOf</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">address owner</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"> public view virtual</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    override </span><span class="token function" style="color:rgb(80, 250, 123)">returns</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">uint256</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token function" style="color:rgb(80, 250, 123)">require</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">owner </span><span class="token operator">!=</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">address</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token number">0</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">      </span><span class="token string" style="color:rgb(255, 121, 198)">"ERC721: balance query for the zero address"</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">return</span><span class="token plain"> _balances</span><span class="token punctuation" style="color:rgb(248, 248, 242)">[</span><span class="token plain">owner</span><span class="token punctuation" style="color:rgb(248, 248, 242)">]</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  function </span><span class="token function" style="color:rgb(80, 250, 123)">transferFrom</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    address from</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    address to</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    uint256 tokenId</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"> public virtual override </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token function" style="color:rgb(80, 250, 123)">require</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token function" style="color:rgb(80, 250, 123)">_isApprovedOrOwner</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token function" style="color:rgb(80, 250, 123)">_msgSender</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> tokenId</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">      </span><span class="token string" style="color:rgb(255, 121, 198)">"ERC721: transfer caller is not owner nor approved"</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token function" style="color:rgb(80, 250, 123)">_transfer</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token plain">from</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> to</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> tokenId</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block">
-</span></div></pre></div></div></div><div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px"><div class="App_left__j7ytm" style="margin-bottom:48px"><div class="App_markdown__B3Yg5"><a id="roadmap-4" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#roadmap-4" level="2">Roadmap</a>
-<p><strong>The Filecoin Virtual Machine is being introduced incrementally.</strong> This minimizes the risk of disruption to the network, and gives developers plenty of opportunities to engage early on.</p></div></div><span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY"><div>Feb 2022</div></span><span class="App_timelineItemDot___6Cxz" style="background:var(--theme-success);color:#fff"></span><span class="App_timelineItemText__neUgD"><section class="App_line__sMNHr"></section><div class="App_h3__exlvD">Milestone 0: Lotus mainnet canaries with FVM support</div><div class="App_desc__3G6Gd" style="margin-top:12px"><p>The reference FVM implementation has been integrated into a fork of Lotus (the Filecoin reference client).
-A fleet of canary nodes have been launched on mainnet, running WASM-compiled built-in actors on the FVM.
-The canaries are monitored for consensus faults and to gather telemetry. This milestone is a testing milestone that's critical to collect raw execution data to feed into the overhaul of the gas model, in preparation for user-programmability. It implies no network upgrade.</p></div></span></span><span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY"><div>Mar 2022</div></span><span class="App_timelineItemDot___6Cxz" style="background:var(--theme-success);color:#fff"></span><span class="App_timelineItemText__neUgD"><section class="App_line__sMNHr"></section><div class="App_h3__exlvD">Milestone 0.5: Ability to run FVM node and sync mainnet</div><div class="App_desc__3G6Gd" style="margin-top:12px"><p>Any node operator can sync the Filecoin Mainnet using the FVM and Rust built-in actors, integrated in lotus, venus, forest, and fuhon implementations. It implies no network upgrade.</p></div></span></span><span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY"><div>May 2022</div></span><span class="App_timelineItemDot___6Cxz" style="background:var(--theme-success);color:#fff"><svg height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></span><span class="App_timelineItemText__neUgD"><section class="App_line__sMNHr"></section><div class="App_h3__exlvD">Milestone 1: Introduction of non-programmable WASM-based FVM</div><div class="App_desc__3G6Gd" style="margin-top:12px"><p>Mainnet will atomically switch from the current legacy VMs to the WASM-based reference FVM. A new gas model will be activated that accounts for actual WASM execution costs. Only Rust built-in actors will be supported at this time. This milestone requires a network upgrade.</p></div></span></span><span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY"><div>Sep 2022</div><div>(Est.)</div></span><span class="App_timelineItemDot___6Cxz"></span><span class="App_timelineItemText__neUgD"><section class="App_line__sMNHr"></section><div class="App_h3__exlvD">Milestone 2.1: Ability to deploy native FVM user actors to mainnet</div><div class="App_desc__3G6Gd" style="margin-top:12px"><p>The FVM will become user-programmable for the first time. Developers will be able to deploy custom smart contracts to the Filecoin mainnet through native actors. SDKs, tutorials, and other developer materials will be generally available. This milestone requires a network upgrade.</p></div></span></span><span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY"><div>Sep 2022</div><div>(Est.)</div></span><span class="App_timelineItemDot___6Cxz"></span><span class="App_timelineItemText__neUgD"><section class="App_line__sMNHr"></section><div class="App_h3__exlvD">Milestone 2.2: Ability to deploy EVM contracts to mainnet</div><div class="App_desc__3G6Gd" style="margin-top:12px"><p>The FVM delivers the first foreign runtime, the EVM runtime. Developers will be able to deploy custom code to the Filecoin mainnet through EVM smart contracts. SDKs, tutorials, and other developer materials will be generally available. This milestone may require a network upgrade (TBD).</p></div></span></span><span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY"><div>&nbsp;&nbsp;&nbsp;&nbsp;2022</div></span><span class="App_timelineItemDot___6Cxz"></span><span class="App_timelineItemText__neUgD"><section class="App_line__sMNHr"></section><div class="App_h3__exlvD">Milestone 3+: Incremental protocol refactors to enhance programmability</div><div class="App_desc__3G6Gd" style="margin-top:12px"><p>A series of incremental protocol upgrades to move system functionality from privileged space to user space. The result will be a lighter and less opinionated base Filecoin protocol, where storage markets, deal-making, incentives, etc. are extensible, modular, and highly customizable through user-deployed actors. Enhanced programmability features such as user-provided cron, async call patterns, and more will start to be developed at this stage.</p></div></span></span></div><div class="Grid_grid__tdbxd" style="margin-top:128px"><div class="App_left__j7ytm"><div class="App_markdown__B3Yg5"><a id="get-ready-to-build-5" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#get-ready-to-build-5" level="2">Get ready to build</a>
-<p>Actors are the equivalent of smart contracts in Filecoin. Deploy
-existing EVM smart contracts as Filecoin actors, or write native
-actors from scratch using the reference Rust SDK (or create your own
-SDK!).</p></div></div></div><div class="App_row__r4NJ8"><div class="App_rowCol__Qwo6E"><h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Source code</h3><a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/ref-fvm" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099010-e29f780d-d7c8-4a23-afe0-81fcf4dc2d0a.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">FVM Reference Implementation<!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Follow the development activity on GitHub and stay up to date.</span></span></a><h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Developer resources</h3><a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/fvm/issues" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099264-7b99e4c4-466a-4354-bae1-12fa5cb4f994.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Development activity<!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Follow the development activity on GitHub and stay up to date.</span></span></a><a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099355-0f271757-9c8e-48f9-998e-7a780f7a691d.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Tutorials<!-- -->&nbsp;<span class="Tag_tag__Sg7ta">Coming Soon</span></span><span class="App_listItemParagraph__62Q_w">Learn how to deploy to the FVM with some simple tutorials.</span></span></a><h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Specifications</h3><a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/fvm-project/blob/main/01-architecture.md" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099422-4a69343a-67f3-4ad9-b925-0ce75e8c6de6.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">FVM Architecture<!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Learn how the FVM works, and the technologies involved.</span></span></a><a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/fvm-specs/blob/main/04-evm-mapping.md" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099475-802e54f5-42f0-41ba-922d-33e9cafacbf2.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">EVM Compatibility<!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Learn how the EVM emulation works within the FVM.</span></span></a></div><div class="App_rowCol__Qwo6E"><h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Reference SDK</h3><a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099590-df594ef6-c554-4342-81a2-2ff5cf111776.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Rust SDK<!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#ff0000;color:#fff">WIP</span></span><span class="App_listItemParagraph__62Q_w">Write Filecoin actors in Rust</span></span></a><h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Community SDKs</h3><a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099648-ab0b3075-336f-448a-b499-679eee9038f3.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">AssemblyScript SDK<!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Interested in writing Filecoin actors in AssemblyScript? Become an Early Builder and create the SDK yourself!</span></span></a><a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099711-a066f214-9539-49ed-890f-53efe0802bc9.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Swift SDK<!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Interested in writing Filecoin actors in Swift? Become an Early Builder and create the SDK yourself!</span></span></a><a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099855-b86bbe91-4833-4304-9ae9-43635bd262fc.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Kotlin SDK<!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Interested in writing Filecoin actors in Kotlin? Become an Early Builder and create the SDK yourself!</span></span></a><a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099917-a339336e-1060-4359-968f-561100f2f00c.png"><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Go SDK<!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Write Filecoin actors in Go (TinyGo)? Become an Early Builder and create the SDK yourself!</span></span></a></div></div><div class="Grid_grid__tdbxd" style="margin-top:128px"><div class="App_left__j7ytm"><div class="App_markdown__B3Yg5"><a id="dive-right-in-6" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#dive-right-in-6" level="2">Dive right in</a></div></div></div><div class="MarketingDiveSection_container__zHtzH" style="padding-bottom:128px"><a class="MarketingDiveSection_topic__myHDO" href="https://fvm.filecoin.io/foundry"><figure class="MarketingDiveSection_topicImage__nOeLg"><img src="./frontpage_files/150098321-f57a44b9-e4a6-4ca6-bbf5-6b6e518b69c5.png" class="MarketingDiveSection_artworkChoice__JH5S7"></figure><span class="MarketingDiveSection_topicTitle__h9vz7">Apply for the FVM foundry<!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">A special program to onboard Early Builders, the pioneering members of the FVM Foundry</span></a><a class="MarketingDiveSection_topic__myHDO" href="https://github.com/filecoin-project/fvm-specs"><figure class="MarketingDiveSection_topicImage__nOeLg"><img src="./frontpage_files/150098442-eedc60d2-11a2-452b-aea0-9572fe56d8c7.png" class="MarketingDiveSection_artworkChoice__JH5S7"></figure><span class="MarketingDiveSection_topicTitle__h9vz7">Read the specs<!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">Learn all about the design of the FVM, how it executes EVM bytecode, and a lot more</span></a><a class="MarketingDiveSection_topic__myHDO" href="https://github.com/filecoin-project/ref-fvm/"><figure class="MarketingDiveSection_topicImage__nOeLg"><img src="./frontpage_files/150098563-1a10900d-7f6c-4970-9653-b0b0a0ccbc53.png" class="MarketingDiveSection_artworkChoice__JH5S7"></figure><span class="MarketingDiveSection_topicTitle__h9vz7">Check out the source<!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">Explore the codebase of the reference implementation, and contribute fixes, improvements, tools, and docs</span></a><a class="MarketingDiveSection_topic__myHDO" href="https://filecoin.io/slack/"><figure class="MarketingDiveSection_topicImage__nOeLg"><img src="./frontpage_files/150098621-c5b41b36-ff7d-4a56-86e7-b7f130e845a0.png" class="MarketingDiveSection_artworkChoice__JH5S7"></figure><span class="MarketingDiveSection_topicTitle__h9vz7">Join the discussion<!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">Stay up to date, discuss the technology, get feedback, report issues, and more</span></a></div><div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px"><div class="App_withCode__7O8vi"><div class="App_left__j7ytm"><div class="App_markdown__B3Yg5"><a id="fvm-bug-bounty-program-7" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#fvm-bug-bounty-program-7" level="2">FVM Bug Bounty Program</a>
-<p>The Filecoin VM team invites hackers to help us find potential vulnerabilities in the FVM codebase. The FVM will be added to the live Filecoin network in several milestones.</p>
-<p><em>Bug Bounties are now live for Milestone 1 until the end of May.</em></p>
-<blockquote>
-<p>Rewards for FVM bug bounties are the same as in the <a href="https://security.filecoin.io/bug-bounty/#rewards">regular bug bounty program</a> for the Filecoin project. To submit a bug report please <a href="https://security.filecoin.io/#vulnerability-reporting">contact us here</a>.</p>
-</blockquote>
-<p>&nbsp;</p>
-<p>What’s in scope:</p>
-<ul>
-<li>
-<p><a href="https://github.com/filecoin-project/ref-fvm">Ref FVM</a> - reference implementation of the Filecoin VM (<a href="https://github.com/filecoin-project/fvm-project">specs</a>). Written in Rust and intended to be integrated via FFI into non-Rust Filecoin clients like Lotus.</p>
-</li>
-<li>
-<p><a href="https://github.com/filecoin-project/lotus/pull/8293">Lotus - Ref FVM integration</a> - integration of the Ref FVM into Lotus via FFI. Written in Go. (The PR listed is merely an entry point into the codebase, but the scope is not limited to it. Please review what's on master and other pending PRs.)</p>
-</li>
-<li>
-<p><a href="https://github.com/filecoin-project/filecoin-ffi/pull/217">Lotus - Filecoin FFI</a> - the FFI glue code. Written in Go and Rust. (As above, the PR linked is merely an entry point, but the scope is not limited to it.)</p>
-</li>
-<li>
-<p><a href="https://github.com/filecoin-project/canonical-actors">Builtin Actors</a> - written in Rust, WASM-compiled built-in actors (i.e., smart contracts) used by all Filecoin clients. An <a href="https://spec.filecoin.io/systems/filecoin_vm/actor/">actors spec</a> and <a href="https://github.com/filecoin-project/specs-actors/tree/master/test-vectors">test vectors</a> are available for reference. An executable spec in Go is available at <a href="https://github.com/filecoin-project/specs-actors">spec-actors</a> — these actors power the live network pre-FVM. (Note that auditing actors normally requires Filecoin domain expertise).</p>
-</li>
-<li>
-<p>Exclusions to Scope including Known Issues are <a href="https://github.com/filecoin-project/ref-fvm/issues/428">listed here on Github</a> and will be regularly updated.</p>
-<p>&nbsp;</p>
-</li>
-</ul>
-<p>Milestone 1 is scheduled for deployment to Filecoin mainnet in May 2022.</p>
-<p>Milestone 2 will introduce EVM-compatibility and user-programmable actors. Milestone 2 will likely be available for bug bounties in July, before deployment to mainnet in September 2022 (estimated).</p></div></div><div class="App_withImage___DqrC"><img style="width:50%" class="App_hideMobile__0tueu" src="./frontpage_files/150098621-c5b41b36-ff7d-4a56-86e7-b7f130e845a0.png"><img style="width:70%;margin-top:-30%;float:right" class="App_hideMobile__0tueu" src="./frontpage_files/150098321-f57a44b9-e4a6-4ca6-bbf5-6b6e518b69c5.png"><img style="width:90%;margin-top:-20%;float:left" class="App_hideMobile__0tueu" src="./frontpage_files/150098442-eedc60d2-11a2-452b-aea0-9572fe56d8c7.png"></div></div></div><div class="Footer_container__zAbu1"><footer class="Footer_footer__BcpJO"><div class="Footer_col__paX_m"><svg fill="none" height="88px" viewBox="0 0 74 111"><clippath id="a"><path d="m.461121.525742h72.7021v110.155h-72.7021z"></path></clippath><g clip-path="url(#a)"><path d="m72.3068 83.6744-13.8199-8.0117c-.078-.0162-.1582-.0162-.2361 0l-11.3099-6.5715 10.8964-6.3314h.2657l13.7905-8.0119c.2728-.136.4996-.3511.6521-.6182.1524-.267.2235-.5741.2042-.8822v-15.8735c-.0041-.3037-.0851-.6013-.2351-.864-.1499-.2628-.3638-.4819-.6212-.6363l-6.9985-3.9909 6.9689-4.0509.3839-.2701c.3003-.3376.4683-.7752.4724-1.2302v-15.8737c-.0041-.3037-.085-.60114-.235-.86389-.15-.26276-.3639-.48201-.6213-.63644l-13.8199-7.92163c-.2593-.13927-.5483-.212087-.8416-.212087-.2934 0-.5822.072817-.8416.212087l-55.04335 31.62706c-.25568.1463-.467575.3603-.613161.6192-.145585.2589-.219507.5529-.213758.8511v15.9335c.000323.3005.080083.5954.2307.854.150618.2586.366699.4714.625779.6163l6.96896 4.021-6.99852 4.1109c-.25568.1463-.467575.3603-.613161.6192-.145585.2589-.219507.553-.213758.8511v15.9336c.000323.3005.080083.5954.2307.854.150618.2586.366699.4714.625779.6163l13.81989 7.9218.3839.2401h.2656l27.2856 15.8139c.078-.016.1582-.016.2361 0l13.4656 7.771c.2123.106.4433.167.6793.18h.2656c.2472-.024.4875-.095.7087-.21l13.7905-7.922c.2591-.144.4752-.357.6258-.616.1506-.258.2302-.553.2305-.854v-15.9334c-.0256-.2591-.1112-.5082-.2498-.7272-.1386-.2191-.3262-.4017-.5475-.533zm-15.6212-5.0411h.2363l11.0145 6.3914-10.3945 6.0014-12.9634-7.5017h-.2658l-11.2213-6.5114 10.3354-6.0013zm-52.53324-14.4032 10.04004 5.7312v12.0027l-10.04004-5.8213zm52.53324-31.7772h-.2363l-27.2854 15.7836h-.2656l-11.1919 6.4813v-12.0027l12.8749-7.4416 7.1168-4.1109 6.6146-3.8109.5019-.2699 13.1999-7.6517 10.8669-6.2715.3248-.2101v12.0027zm-39.8059-4.8611 40.4261-23.37516 10.3943 6.00136-1.3287.7802-9.6858 5.5211h-.1476l-12.6683 7.3217-1.0335.6001-6.1718 3.5709-7.3824 4.2909h-.1772l-12.9634 7.5317-10.3945-6.0013zm-12.99318 9.4522 10.45348 6.0014v12.0026l-10.45348-6.0013zm7.88438 20.4346 3.4255 1.9503c.1762.0851.3665.136.5611.15h.2657c.2359-.0134.467-.0746.6793-.18l13.4655-7.8017h.2657l27.2854-15.8136h.2658l3.396-1.9804 6.1716 3.5108-10.926 6.3313h-.2361l-7.855 4.5311-5.9059 3.3908-13.4656 7.8317h-.2656l-12.9636 7.5017-3.1597-1.8004-7.23483-4.1409zm32.7781 42.0094-26.8426-15.5735v-13.8931l12.6388-7.3217h.2361l27.2856-15.8136h.2656l11.2804-6.5414v12.0027l-12.7273 7.0515h-.2363l-27.433 15.9636c-.2557.1463-.4676.3603-.6131.6192-.1456.2589-.2196.553-.2138.8511-.0018.3014.0735.5983.2184.8613.145.263.3546.4831.6085.639h.2952l13.8199 7.9819h.2363l1.2698.7201 11.369 6.6016v12.0023l-11.1328-6.0911zm25.2774.63-10.4241 6.001v-12.0023l10.4241-6.0014z" fill="currentColor"></path></g></svg><p class="Footer_p__bAF7I">The <b>Filecoin Virtual Machine</b> defines the rules for computing valid state on the Filecoin Network.</p></div><div class="Footer_col__paX_m"><div class="Footer_title__yUOnF">Reach out</div><a href="https://filecoin.io/slack" target="_blank" class="Footer_link__kQ8hw">Slack</a><a href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" class="Footer_link__kQ8hw">WeChat</a><a href="https://twitter.com/Filecoin" target="_blank" class="Footer_link__kQ8hw">Twitter</a><a href="https://github.com/filecoin-project/community#forums" target="_blank" class="Footer_link__kQ8hw">Forum</a><a href="https://riot.im/app/#/group/+filecoin:matrix.org" target="_blank" class="Footer_link__kQ8hw">Matrix</a></div><div class="Footer_col__paX_m"><div class="Footer_title__yUOnF">Resources</div><a href="https://research.filecoin.io/" class="Footer_link__kQ8hw">Research</a><a href="https://filecoin.io/blog/" class="Footer_link__kQ8hw">Blog</a> <a href="https://github.com/filecoin-project" class="Footer_link__kQ8hw">GitHub</a> <a href="https://proto.school/course/filecoin" class="Footer_link__kQ8hw">ProtoSchool</a><a href="https://security.filecoin.io/" class="Footer_link__kQ8hw">Security</a></div><div class="Footer_col__paX_m"><div class="Footer_title__yUOnF">Filecoin Virtual Machine</div><a href="https://fvm.filecoin.io/foundry" class="Footer_link__kQ8hw">Early Builders program</a><a href="https://github.com/filecoin-project/ref-fvm" class="Footer_link__kQ8hw">Source code</a> <a href="https://github.com/filecoin-project/fvm-project/blob/main/01-architecture.md" class="Footer_link__kQ8hw">Architecture</a> <a href="https://github.com/filecoin-project/fvm-specs" class="Footer_link__kQ8hw">Specifications</a></div></footer></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{},"__N_SSP":true},"page":"/","query":{},"buildId":"E88GD1e8-w63VyDcs9sET","isFallback":false,"gssp":true,"scriptLoader":[]}</script><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer></body></html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Filecoin Virtual Machine</title>
+        <meta http-equiv="content-language" content="en-us" />
+        <meta name="title" content="Filecoin Virtual Machine" />
+        <meta name="description" content="Smart contracts + provable storage = Filecoin Virtual Machine. Learn about the technology, the possibilities, and the roadmap. Find developer resources, and apply for grants." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fvm.filecoin.io" />
+        <meta property="og:title" content="Filecoin Virtual Machine" />
+        <meta property="og:description" content="Smart contracts + provable storage = Filecoin Virtual Machine. Learn about the technology, the possibilities, and the roadmap. Find developer resources, and apply for grants." />
+        <meta property="og:image" content="https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://fvm.filecoin.io" />
+        <meta property="twitter:title" content="Filecoin Virtual Machine" />
+        <meta property="twitter:description" content="Smart contracts + provable storage = Filecoin Virtual Machine. Learn about the technology, the possibilities, and the roadmap. Find developer resources, and apply for grants." />
+        <meta property="twitter:image" content="https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png" />
+        <meta name="theme-color" content="{{ $.Site.Params.themeColor }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | absURL }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | absURL }}">
+        <link rel="manifest" crossorigin="use-credentials" href="{{ "site.webmanifest" | absURL }}">
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="next-head-count" content="19" />
+        <link rel="preload" href="./frontpage_files/cb4343d5397d8694.css" as="style" />
+        <link rel="stylesheet" href="./frontpage_files/cb4343d5397d8694.css" data-n-g="" />
+        <link rel="preload" href="./frontpage_files/58bb1977b05aad70.css" as="style" />
+        <link rel="stylesheet" href="./frontpage_files/58bb1977b05aad70.css" data-n-p="" />
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="./frontpage_files/polyfills-5cd94c89d3acac5f.js.download"></script>
+        <script type="application/javascript" src="./frontpage_files/webpack-514908bffb652963.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/framework-6e4ba497ae0c8a3f.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/main-eab312c0bf2a7270.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/_app-64b80a2dde8229d8.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/129-267d4ae18ddaaec5.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/730-992484fefbdda464.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/427-d938f761f7824ef7.js" defer=""></script>
+        <script type="application/javascript" src="./frontpage_files/index-522dbd5a64cdfee9.js" defer=""></script>
+        <script src="./frontpage_files/_buildManifest.js" defer=""></script>
+        <script src="./frontpage_files/_ssgManifest.js" defer=""></script>
+        <script src="./frontpage_files/_middlewareManifest.js" defer=""></script>
+    </head>
+    <body>
+        <div id="__next" data-reactroot="">
+            <div class="App_container__fFRg0">
+                <div class="Navigation_container__qQcM5">
+                    <nav class="Navigation_navigation__xmHcE">
+                        <div class="Navigation_left__5qxf7">
+                            <a href="https://fvm.filecoin.io/" class="Navigation_item__ePUZg">Filecoin Virtual Machine</a>
+                        </div>
+                        <div class="Navigation_right__NExp7">
+                            <a href="https://github.com/filecoin-project/ref-fvm" class="Navigation_item__ePUZg">Source</a>
+                            <a href="https://github.com/filecoin-project/fvm-specs" class="Navigation_item__ePUZg" style="margin-left:32px">Specs</a>
+                            <a href="https://filecoin.io/" class="Navigation_item__ePUZg" style="margin-left:32px">Filecoin</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="App_center__k4niz" style="margin-top:16px;margin-bottom:48px">
+                    <div class="App_centerText__1ChGu">
+                        Smart contracts + provable storage = FVM
+                    </div>
+                    <video id="video" autoplay="" muted="" loop="" playsinline="" src="https://user-images.githubusercontent.com/310223/150047240-2e4215c1-692f-4857-9c19-6e0433f044d6.mp4"></video>
+                </div>
+                <div class="Grid_grid__tdbxd">
+                    <div class="App_withCode__7O8vi">
+                        <div class="App_left__j7ytm">
+                            <div class="App_markdown__B3Yg5">
+                                <a id="possibilities-1" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#possibilities-1" level="2">Possibilities</a> 
+                                <p>The FVM unlocks boundless possibilities, ranging from <strong>programmable storage primitives</strong> (such as storage bounties, auctions, and more), to <strong>cross-chain interoperability bridges</strong> (e.g. trustlessly connecting Filecoin with Ethereum, Solana, NEAR, and more), to <strong>data-centric Decentralized Autonomous Organizations (DAOs)</strong>, to <strong>Layer 2 solutions</strong> (such as reputation systems, data availability sampling, computation fabrics, and incentive-aligned Content Delivery Networks), and more.</p> 
+                                <p>Here are some of the things we're excited to see deployed on the Filecoin network. It's up to you to make them happen!</p>
+                            </div>
+                            <a class="FullButton_button__zU_Uc" href="https://filecoin.io/slack" style="margin-top:32px;color:#fff">Chat with developers ➝</a>
+                        </div>
+                        <div class="CodeBlock_code___gMmb">
+                            <pre class="prism-code language-c" style="color:#F8F8F2;background-color:var(--color-inset)">
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// A Filecoin actor brokering decentralized compute jobs.</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"></span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// For illustration purposes only.</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain">#</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">[</span>
+         <span class="token function" style="color:rgb(80, 250, 123)">fvm_actor</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">state</span>
+         <span class="token operator">=</span>
+         <span class="token plain">ComputeState</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> dispatch</span>
+         <span class="token operator">=</span>
+         <span class="token string" style="color:rgb(255, 121, 198)">&quot;method_num&quot;</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">]</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain">impl ComputeActor </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// Creates a job with an input DAG, WASM compute logic,</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// data affinity, geographical bounds, and timeout.</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> pub fn </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">create_job</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">req</span>
+         <span class="token operator">:</span>
+         <span class="token plain"> CreateJobReq</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> st</span>
+         <span class="token operator">:</span>
+         <span class="token plain"> ComputeState</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token operator">-&gt;</span>
+         <span class="token plain"> CreateJobRes </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// Allows a compute node to claim a job by proving it</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// satisfies the requirements and staking collateral.</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> pub fn </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">claim_job</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">req</span>
+         <span class="token operator">:</span>
+         <span class="token plain"> ClaimJobReq</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> st</span>
+         <span class="token operator">:</span>
+         <span class="token plain"> ComputeState</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token operator">-&gt;</span>
+         <span class="token plain"> ClaimJobRes </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// Proves that a compute node finished running a job,</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">/// posts the result, and claims the reward.</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> pub fn </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">prove_done</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">req</span>
+         <span class="token operator">:</span>
+         <span class="token plain"> ProveDoneReq</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> st</span>
+         <span class="token operator">:</span>
+         <span class="token plain"> ComputeState</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token operator">-&gt;</span>
+         <span class="token plain"> ProveDoneRes </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">.</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"></span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+                            </div></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="App_row__r4NJ8" style="margin-top:48px">
+                    <div class="TopicPickerGrid_container__sn80I" id="topic-grid-section">
+                        <div class="TopicPickerGrid_topics__1LbJc">
+                            <span class="TopicPickerGrid_slot__hQW_M">
+                                <section class="TopicPickerGrid_item__C9upt" style="background:var(--color-dark-black-highlight)">
+                                    <div class="TopicPickerGrid_artwork__GwIoE" style="height:auto;opacity:1;transform:translateY(0px);visibility:visible">
+                                        <img src="./frontpage_files/150100275-423a64cb-df1f-4347-b981-4eca8f34b4c5.png" class="Data_artworkTopic__14UO1" />
+                                    </div>
+                                    <div class="TopicPickerGrid_text__yGK1y">
+                                        Decentralized Compute
+                                    </div>
+                                </section></span>
+                                <span class="TopicPickerGrid_slot__hQW_M">
+                                    <section class="TopicPickerGrid_item__C9upt">
+                                        <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                            <img src="./frontpage_files/150100369-3eb15e7c-aa57-4106-809e-6d8331fc2635.png" class="Data_artworkTopic__14UO1" />
+                                        </div>
+                                        <div class="TopicPickerGrid_text__yGK1y">
+                                            Data DAOs
+                                        </div>
+                                    </section></span>
+                                    <span class="TopicPickerGrid_slot__hQW_M">
+                                        <section class="TopicPickerGrid_item__C9upt">
+                                            <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                <img src="./frontpage_files/150100446-5f87ea99-901c-4f9f-8532-83218eb6d443.png" class="Data_artworkTopic__14UO1" />
+                                            </div>
+                                            <div class="TopicPickerGrid_text__yGK1y">
+                                                Enabling L2 networks
+                                            </div>
+                                        </section></span>
+                                        <span class="TopicPickerGrid_slot__hQW_M">
+                                            <section class="TopicPickerGrid_item__C9upt">
+                                                <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                    <img src="./frontpage_files/150100517-bdbe1ad3-5efd-48d0-ad9f-3e7eb5e93f2a.png" class="Data_artworkTopic__14UO1" />
+                                                </div>
+                                                <div class="TopicPickerGrid_text__yGK1y">
+                                                    Cross-network interoperability bridges
+                                                </div>
+                                            </section></span>
+                                            <span class="TopicPickerGrid_slot__hQW_M">
+                                                <section class="TopicPickerGrid_item__C9upt">
+                                                    <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                        <img src="./frontpage_files/150100579-361db82d-fa03-47b6-8e92-a27d9463b669.png" class="Data_artworkTopic__14UO1" />
+                                                    </div>
+                                                    <div class="TopicPickerGrid_text__yGK1y">
+                                                        New storage market primitives
+                                                    </div>
+                                                </section></span>
+                                                <span class="TopicPickerGrid_slot__hQW_M">
+                                                    <section class="TopicPickerGrid_item__C9upt">
+                                                        <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                            <img src="./frontpage_files/150100696-867205b3-bb68-4920-b4ea-dc36cca07b4e.png" class="Data_artworkTopic__14UO1" />
+                                                        </div>
+                                                        <div class="TopicPickerGrid_text__yGK1y">
+                                                            Perpetual storage
+                                                        </div>
+                                                    </section></span>
+                                                    <span class="TopicPickerGrid_slot__hQW_M">
+                                                        <section class="TopicPickerGrid_item__C9upt">
+                                                            <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                                <img src="./frontpage_files/150100748-e05a664c-2be4-4f28-87c0-1f9327da9e62.png" class="Data_artworkTopic__14UO1" />
+                                                            </div>
+                                                            <div class="TopicPickerGrid_text__yGK1y">
+                                                                Replication workers
+                                                            </div>
+                                                        </section></span>
+                                                        <span class="TopicPickerGrid_slot__hQW_M">
+                                                            <section class="TopicPickerGrid_item__C9upt">
+                                                                <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                                    <img src="./frontpage_files/150100748-e05a664c-2be4-4f28-87c0-1f9327da9e62.png" class="Data_artworkTopic__14UO1" />
+                                                                </div>
+                                                                <div class="TopicPickerGrid_text__yGK1y">
+                                                                    Repair workers
+                                                                </div>
+                                                            </section></span>
+                                                            <span class="TopicPickerGrid_slot__hQW_M">
+                                                                <section class="TopicPickerGrid_item__C9upt">
+                                                                    <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                                        <img src="./frontpage_files/150100918-cbbbbe34-6092-4eb3-9a95-38550e1185c3.png" class="Data_artworkTopic__14UO1" />
+                                                                    </div>
+                                                                    <div class="TopicPickerGrid_text__yGK1y">
+                                                                        Staking Protocols
+                                                                    </div>
+                                                                </section></span>
+                                                                <span class="TopicPickerGrid_slot__hQW_M">
+                                                                    <section class="TopicPickerGrid_item__C9upt">
+                                                                        <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                                            <img src="./frontpage_files/150100987-efcf9c80-10a1-4ab0-968b-cc09024bdf4e.png" class="Data_artworkTopic__14UO1" />
+                                                                        </div>
+                                                                        <div class="TopicPickerGrid_text__yGK1y">
+                                                                            Insurance protocols
+                                                                        </div>
+                                                                    </section></span>
+                                                                    <span class="TopicPickerGrid_slot__hQW_M">
+                                                                        <section class="TopicPickerGrid_item__C9upt">
+                                                                            <div class="TopicPickerGrid_artwork__GwIoE" style="height:0px;opacity:0;transform:translateY(-48px)">
+                                                                                <img src="./frontpage_files/150101071-d624afb8-a6c7-4ec9-bb01-d271c0d70b5b.png" class="Data_artworkTopic__14UO1" />
+                                                                            </div>
+                                                                            <div class="TopicPickerGrid_text__yGK1y">
+                                                                                Storage derivatives
+                                                                            </div>
+                                                                        </section></span>
+                        </div>
+                        <div class="TopicPickerGrid_desktopContent__XDZeV">
+                            <div class="TopicPickerGrid_content__G5xUi">
+                                <div class="TopicPickerGrid_rich__T7qkg">
+                                    <h2>Decentralized compute</h2> 
+                                    <h3>The opportunity</h3> 
+                                    <p>Filecoin and IPFS distribute content-addressed datasets across storage providers around the world to increase data redundancy and resiliency.</p> 
+                                    <p>Such globally distributed data brings significant cost, availability, and reliability advantages, but can also mean that parts of a single dataset may end up stored geographically far away from one another. Executing computation jobs or data pipelines on globally distributed data is challenging.</p> 
+                                    <h3>The potential</h3> 
+                                    <p>Regrouping highly distributed data into a central location to compute over it is expensive, underperformant, and, wasteful. Instead, pushing compute to the edges and coordinating its execution is a brand new possibility with FVM actors.</p> 
+                                    <p>FVM actors can broker computational resources, incentivize compute execution, distribute workloads across available storage providers, and prove the validity of the computation's result in order to claim rewards. Storage providers could enroll in compute networks through an FVM actor. Compute clients would post jobs to the actor. A mechanism would assign jobs to providers, and once executed, the provider would post a proof to claim rewards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px">
+                    <div class="App_withCode__7O8vi">
+                        <div class="App_left__j7ytm">
+                            <div class="App_markdown__B3Yg5">
+                                <a id="a-robust-wasm-based-vm-2" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#a-robust-wasm-based-vm-2" level="2">A robust WASM-based VM</a> 
+                                <p>The FVM is a WASM-based polyglot execution environment for IPLD data. It is designed to support native Filecoin actors written in languages that compile to WASM, as well as smart contracts written for foreign runtimes including the Ethereum Virtual Machine (EVM), Secure EcmaScript (SES), and eBPF.</p> 
+                                <p>The initial version of the FVM is relatively simple and deliberately conservative in features. This enables developers onboard quickly, and serves as a rock-solid foundation for many innovations to come.</p> 
+                                <p>Examples of future ideas include: async programming via continuations/futures, capability-orientation, time-locked transactions (using external beacons), parallel execution, native primitives for cross-chain interoperability, computation correctness proofs, and more.</p> 
+                                <p>The reference FVM and SDK are written in Rust. If you'd like to contribute, explore ideas, or build alternative implementations in other languages, please reach out.</p>
+                            </div>
+                            <a class="FullButton_button__zU_Uc" href="https://github.com/filecoin-project/ref-fvm" style="margin-top:32px;color:#fff">View in GitHub ➝</a>
+                        </div>
+                        <div class="App_withImage___DqrC">
+                            <img style="display:block;width:100%" src="./frontpage_files/150043037-d17ca5d3-f21c-4afc-850c-968807014524.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px">
+                    <div class="App_withCode__7O8vi">
+                        <div class="App_left__j7ytm">
+                            <div class="App_markdown__B3Yg5">
+                                <a id="evm-compatibility-3" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#evm-compatibility-3" level="2">EVM compatibility</a> 
+                                <p>The FVM supports EVM smart contracts out of the box. It emulates EVM bytecode at the low-level, supporting contracts written in Solidity, Vyper, and Yul.</p> 
+                                <p>You can continue using all the developer tooling you're familiar with: Remix, Truffle, Hardhat, OpenZeppelin SDK, and more. Most smart contracts ported to Filecoin shouldn't require changes nor auditing.</p> 
+                                <p>The EVM foreign runtime is based on pre-existing OSS libraries including <a href="https://github.com/rust-blockchain/evm">SputnikVM</a> and <a href="https://github.com/bluealloy/revm">revm</a>. It is the first of several foreign runtimes we plan to support.</p> 
+                                <p>Support for EVM smart contract deployment is expected to go live in Milestone 2 (see below).</p> 
+                                <p>Curious about technical details? Find out more in the <a href="https://github.com/filecoin-project/fvm-project/blob/main/04-evm-mapping.md">EVM &lt;&gt; FVM mapping specification</a>.</p>
+                            </div>
+                        </div>
+                        <div class="CodeBlock_code___gMmb">
+                            <pre class="prism-code language-c" style="color:#F8F8F2;background-color:var(--color-inset)">
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"></span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">//</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"></span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">// The standard ERC-721 contract from OpenZeppelin SDK.</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"></span>
+         <span class="token comment" style="color:rgb(98, 114, 164)">//</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain">contract ERC721 is Context</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> ERC165</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> IERC721</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> IERC721Metadata </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> using Address </span>
+         <span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">for</span>
+         <span class="token plain"> address</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">;</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> using Strings </span>
+         <span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">for</span>
+         <span class="token plain"> uint256</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">;</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> function </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">balanceOf</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">address owner</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token plain"> public view virtual</span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> override </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">returns</span>
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">uint256</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">require</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">owner </span>
+         <span class="token operator">!=</span>
+         <span class="token plain"> </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">address</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token number">0</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token string" style="color:rgb(255, 121, 198)">&quot;ERC721: balance query for the zero address&quot;</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">;</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">return</span>
+         <span class="token plain"> _balances</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">[</span>
+         <span class="token plain">owner</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">]</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">;</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> function </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">transferFrom</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> address from</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> address to</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> uint256 tokenId</span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token plain"> public virtual override </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">{</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">require</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token function" style="color:rgb(80, 250, 123)">_isApprovedOrOwner</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token function" style="color:rgb(80, 250, 123)">_msgSender</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> tokenId</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token string" style="color:rgb(255, 121, 198)">&quot;ERC721: transfer caller is not owner nor approved&quot;</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">;</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token function" style="color:rgb(80, 250, 123)">_transfer</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">(</span>
+         <span class="token plain">from</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> to</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">,</span>
+         <span class="token plain"> tokenId</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">)</span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">;</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"> </span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain"></span>
+         <span class="token punctuation" style="color:rgb(248, 248, 242)">}</span>
+         <span class="token plain"></span>
+        </div>
+        <div class="token-line" style="color:#F8F8F2">
+         <span class="token plain" style="display:inline-block"> </span>
+                            </div></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px">
+                    <div class="App_left__j7ytm" style="margin-bottom:48px">
+                        <div class="App_markdown__B3Yg5">
+                            <a id="roadmap-4" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#roadmap-4" level="2">Roadmap</a> 
+                            <p><strong>The Filecoin Virtual Machine is being introduced incrementally.</strong> This minimizes the risk of disruption to the network, and gives developers plenty of opportunities to engage early on.</p>
+                        </div>
+                    </div>
+                    <span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY">
+                            <div>
+                                Feb 2022
+                            </div></span><span class="App_timelineItemDot___6Cxz" style="background:var(--theme-success);color:#fff"></span><span class="App_timelineItemText__neUgD">
+                                <section class="App_line__sMNHr"></section>
+                                <div class="App_h3__exlvD">
+                                    Milestone 0: Lotus mainnet canaries with FVM support
+                                </div>
+                                <div class="App_desc__3G6Gd" style="margin-top:12px">
+                                    <p>The reference FVM implementation has been integrated into a fork of Lotus (the Filecoin reference client). A fleet of canary nodes have been launched on mainnet, running WASM-compiled built-in actors on the FVM. The canaries are monitored for consensus faults and to gather telemetry. This milestone is a testing milestone that's critical to collect raw execution data to feed into the overhaul of the gas model, in preparation for user-programmability. It implies no network upgrade.</p>
+                                </div></span></span>
+                                <span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY">
+                                        <div>
+                                            Mar 2022
+                                        </div></span><span class="App_timelineItemDot___6Cxz" style="background:var(--theme-success);color:#fff"></span><span class="App_timelineItemText__neUgD">
+                                            <section class="App_line__sMNHr"></section>
+                                            <div class="App_h3__exlvD">
+                                                Milestone 0.5: Ability to run FVM node and sync mainnet
+                                            </div>
+                                            <div class="App_desc__3G6Gd" style="margin-top:12px">
+                                                <p>Any node operator can sync the Filecoin Mainnet using the FVM and Rust built-in actors, integrated in lotus, venus, forest, and fuhon implementations. It implies no network upgrade.</p>
+                                            </div></span></span>
+                                            <span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY">
+                                                    <div>
+                                                        May 2022
+                                                    </div></span><span class="App_timelineItemDot___6Cxz" style="background:var(--theme-success);color:#fff">
+                                                        <svg height="16px" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                                        </svg></span><span class="App_timelineItemText__neUgD">
+                                                            <section class="App_line__sMNHr"></section>
+                                                            <div class="App_h3__exlvD">
+                                                                Milestone 1: Introduction of non-programmable WASM-based FVM
+                                                            </div>
+                                                            <div class="App_desc__3G6Gd" style="margin-top:12px">
+                                                                <p>Mainnet will atomically switch from the current legacy VMs to the WASM-based reference FVM. A new gas model will be activated that accounts for actual WASM execution costs. Only Rust built-in actors will be supported at this time. This milestone requires a network upgrade.</p>
+                                                            </div></span></span>
+                                                            <span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY">
+                                                                    <div>
+                                                                        Sep 2022
+                                                                    </div>
+                                                                    <div>
+                                                                        (Est.)
+                                                                    </div></span><span class="App_timelineItemDot___6Cxz"></span><span class="App_timelineItemText__neUgD">
+                                                                        <section class="App_line__sMNHr"></section>
+                                                                        <div class="App_h3__exlvD">
+                                                                            Milestone 2.1: Ability to deploy native FVM user actors to mainnet
+                                                                        </div>
+                                                                        <div class="App_desc__3G6Gd" style="margin-top:12px">
+                                                                            <p>The FVM will become user-programmable for the first time. Developers will be able to deploy custom smart contracts to the Filecoin mainnet through native actors. SDKs, tutorials, and other developer materials will be generally available. This milestone requires a network upgrade.</p>
+                                                                        </div></span></span>
+                                                                        <span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY">
+                                                                                <div>
+                                                                                    Sep 2022
+                                                                                </div>
+                                                                                <div>
+                                                                                    (Est.)
+                                                                                </div></span><span class="App_timelineItemDot___6Cxz"></span><span class="App_timelineItemText__neUgD">
+                                                                                    <section class="App_line__sMNHr"></section>
+                                                                                    <div class="App_h3__exlvD">
+                                                                                        Milestone 2.2: Ability to deploy EVM contracts to mainnet
+                                                                                    </div>
+                                                                                    <div class="App_desc__3G6Gd" style="margin-top:12px">
+                                                                                        <p>The FVM delivers the first foreign runtime, the EVM runtime. Developers will be able to deploy custom code to the Filecoin mainnet through EVM smart contracts. SDKs, tutorials, and other developer materials will be generally available. This milestone may require a network upgrade (TBD).</p>
+                                                                                    </div></span></span>
+                                                                                    <span class="App_timelineItem___1W7J"><span class="App_timelineItemDate__E0zPY">
+                                                                                            <div>
+                                                                                                &nbsp;&nbsp;&nbsp;&nbsp;2022
+                                                                                            </div></span><span class="App_timelineItemDot___6Cxz"></span><span class="App_timelineItemText__neUgD">
+                                                                                                <section class="App_line__sMNHr"></section>
+                                                                                                <div class="App_h3__exlvD">
+                                                                                                    Milestone 3+: Incremental protocol refactors to enhance programmability
+                                                                                                </div>
+                                                                                                <div class="App_desc__3G6Gd" style="margin-top:12px">
+                                                                                                    <p>A series of incremental protocol upgrades to move system functionality from privileged space to user space. The result will be a lighter and less opinionated base Filecoin protocol, where storage markets, deal-making, incentives, etc. are extensible, modular, and highly customizable through user-deployed actors. Enhanced programmability features such as user-provided cron, async call patterns, and more will start to be developed at this stage.</p>
+                                                                                                </div></span></span>
+                </div>
+                <div class="Grid_grid__tdbxd" style="margin-top:128px">
+                    <div class="App_left__j7ytm">
+                        <div class="App_markdown__B3Yg5">
+                            <a id="get-ready-to-build-5" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#get-ready-to-build-5" level="2">Get ready to build</a> 
+                            <p>Actors are the equivalent of smart contracts in Filecoin. Deploy existing EVM smart contracts as Filecoin actors, or write native actors from scratch using the reference Rust SDK (or create your own SDK!).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="App_row__r4NJ8">
+                    <div class="App_rowCol__Qwo6E">
+                        <h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Source code</h3>
+                        <a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/ref-fvm" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099010-e29f780d-d7c8-4a23-afe0-81fcf4dc2d0a.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">FVM Reference Implementation
+                                    <!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Follow the development activity on GitHub and stay up to date.</span></span></a>
+                        <h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Developer resources</h3>
+                        <a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/fvm/issues" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099264-7b99e4c4-466a-4354-bae1-12fa5cb4f994.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Development activity
+                                    <!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Follow the development activity on GitHub and stay up to date.</span></span></a>
+                        <a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099355-0f271757-9c8e-48f9-998e-7a780f7a691d.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Tutorials
+                                    <!-- -->&nbsp;<span class="Tag_tag__Sg7ta">Coming Soon</span></span><span class="App_listItemParagraph__62Q_w">Learn how to deploy to the FVM with some simple tutorials.</span></span></a>
+                        <h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Specifications</h3>
+                        <a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/fvm-project/blob/main/01-architecture.md" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099422-4a69343a-67f3-4ad9-b925-0ce75e8c6de6.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">FVM Architecture
+                                    <!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Learn how the FVM works, and the technologies involved.</span></span></a>
+                        <a class="App_listItem__VPA8B" href="https://github.com/filecoin-project/fvm-specs/blob/main/04-evm-mapping.md" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099475-802e54f5-42f0-41ba-922d-33e9cafacbf2.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">EVM Compatibility
+                                    <!-- -->&nbsp;</span><span class="App_listItemParagraph__62Q_w">Learn how the EVM emulation works within the FVM.</span></span></a>
+                    </div>
+                    <div class="App_rowCol__Qwo6E">
+                        <h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Reference SDK</h3>
+                        <a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099590-df594ef6-c554-4342-81a2-2ff5cf111776.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Rust SDK
+                                    <!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#ff0000;color:#fff">WIP</span></span><span class="App_listItemParagraph__62Q_w">Write Filecoin actors in Rust</span></span></a>
+                        <h3 class="App_h3custom__ZxxJn" style="margin-top:48px">Community SDKs</h3>
+                        <a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099648-ab0b3075-336f-448a-b499-679eee9038f3.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">AssemblyScript SDK
+                                    <!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Interested in writing Filecoin actors in AssemblyScript? Become an Early Builder and create the SDK yourself!</span></span></a>
+                        <a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099711-a066f214-9539-49ed-890f-53efe0802bc9.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Swift SDK
+                                    <!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Interested in writing Filecoin actors in Swift? Become an Early Builder and create the SDK yourself!</span></span></a>
+                        <a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099855-b86bbe91-4833-4304-9ae9-43635bd262fc.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Kotlin SDK
+                                    <!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Interested in writing Filecoin actors in Kotlin? Become an Early Builder and create the SDK yourself!</span></span></a>
+                        <a class="App_listItem__VPA8B" target="_blank"><img class="App_listItemLeft__8Yhlt" src="./frontpage_files/150099917-a339336e-1060-4359-968f-561100f2f00c.png" /><span class="App_listItemRight__HX6_c"><span class="App_listItemTitle__EIcW2" style="margin-top:0">Go SDK
+                                    <!-- -->&nbsp;<span class="Tag_tag__Sg7ta" style="background:#6c2fed;color:#fff">Grant available</span></span><span class="App_listItemParagraph__62Q_w">Write Filecoin actors in Go (TinyGo)? Become an Early Builder and create the SDK yourself!</span></span></a>
+                    </div>
+                </div>
+                <div class="Grid_grid__tdbxd" style="margin-top:128px">
+                    <div class="App_left__j7ytm">
+                        <div class="App_markdown__B3Yg5">
+                            <a id="dive-right-in-6" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#dive-right-in-6" level="2">Dive right in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="MarketingDiveSection_container__zHtzH" style="padding-bottom:128px">
+                    <a class="MarketingDiveSection_topic__myHDO" href="https://fvm.filecoin.io/foundry">
+                        <figure class="MarketingDiveSection_topicImage__nOeLg">
+                            <img src="./frontpage_files/150098321-f57a44b9-e4a6-4ca6-bbf5-6b6e518b69c5.png" class="MarketingDiveSection_artworkChoice__JH5S7" />
+                        </figure><span class="MarketingDiveSection_topicTitle__h9vz7">Apply for the FVM foundry
+                            <!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">A special program to onboard Early Builders, the pioneering members of the FVM Foundry</span></a>
+                    <a class="MarketingDiveSection_topic__myHDO" href="https://github.com/filecoin-project/fvm-specs">
+                        <figure class="MarketingDiveSection_topicImage__nOeLg">
+                            <img src="./frontpage_files/150098442-eedc60d2-11a2-452b-aea0-9572fe56d8c7.png" class="MarketingDiveSection_artworkChoice__JH5S7" />
+                        </figure><span class="MarketingDiveSection_topicTitle__h9vz7">Read the specs
+                            <!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">Learn all about the design of the FVM, how it executes EVM bytecode, and a lot more</span></a>
+                    <a class="MarketingDiveSection_topic__myHDO" href="https://github.com/filecoin-project/ref-fvm/">
+                        <figure class="MarketingDiveSection_topicImage__nOeLg">
+                            <img src="./frontpage_files/150098563-1a10900d-7f6c-4970-9653-b0b0a0ccbc53.png" class="MarketingDiveSection_artworkChoice__JH5S7" />
+                        </figure><span class="MarketingDiveSection_topicTitle__h9vz7">Check out the source
+                            <!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">Explore the codebase of the reference implementation, and contribute fixes, improvements, tools, and docs</span></a>
+                    <a class="MarketingDiveSection_topic__myHDO" href="https://filecoin.io/slack/">
+                        <figure class="MarketingDiveSection_topicImage__nOeLg">
+                            <img src="./frontpage_files/150098621-c5b41b36-ff7d-4a56-86e7-b7f130e845a0.png" class="MarketingDiveSection_artworkChoice__JH5S7" />
+                        </figure><span class="MarketingDiveSection_topicTitle__h9vz7">Join the discussion
+                            <!-- -->&nbsp;</span><span class="MarketingDiveSection_topicText__lJnNU">Stay up to date, discuss the technology, get feedback, report issues, and more</span></a>
+                </div>
+                <div class="Grid_grid__tdbxd" style="margin-top:128px;margin-bottom:88px">
+                    <div class="App_withCode__7O8vi">
+                        <div class="App_left__j7ytm">
+                            <div class="App_markdown__B3Yg5">
+                                <a id="fvm-bug-bounty-program-7" class="App_synthetich2__6_CLu" href="https://fvm.filecoin.io/#fvm-bug-bounty-program-7" level="2">FVM Bug Bounty Program</a> 
+                                <p>The Filecoin VM team invites hackers to help us find potential vulnerabilities in the FVM codebase. The FVM will be added to the live Filecoin network in several milestones.</p> 
+                                <p><em>Bug Bounties are now live for Milestone 1 until the end of May.</em></p> 
+                                <blockquote> 
+                                    <p>Rewards for FVM bug bounties are the same as in the <a href="https://security.filecoin.io/bug-bounty/#rewards">regular bug bounty program</a> for the Filecoin project. To submit a bug report please <a href="https://security.filecoin.io/#vulnerability-reporting">contact us here</a>.</p> 
+                                </blockquote> 
+                                <p>&nbsp;</p> 
+                                <p>What’s in scope:</p> 
+                                <ul> 
+                                    <li> <p><a href="https://github.com/filecoin-project/ref-fvm">Ref FVM</a> - reference implementation of the Filecoin VM (<a href="https://github.com/filecoin-project/fvm-project">specs</a>). Written in Rust and intended to be integrated via FFI into non-Rust Filecoin clients like Lotus.</p> </li> 
+                                    <li> <p><a href="https://github.com/filecoin-project/lotus/pull/8293">Lotus - Ref FVM integration</a> - integration of the Ref FVM into Lotus via FFI. Written in Go. (The PR listed is merely an entry point into the codebase, but the scope is not limited to it. Please review what's on master and other pending PRs.)</p> </li> 
+                                    <li> <p><a href="https://github.com/filecoin-project/filecoin-ffi/pull/217">Lotus - Filecoin FFI</a> - the FFI glue code. Written in Go and Rust. (As above, the PR linked is merely an entry point, but the scope is not limited to it.)</p> </li> 
+                                    <li> <p><a href="https://github.com/filecoin-project/canonical-actors">Builtin Actors</a> - written in Rust, WASM-compiled built-in actors (i.e., smart contracts) used by all Filecoin clients. An <a href="https://spec.filecoin.io/systems/filecoin_vm/actor/">actors spec</a> and <a href="https://github.com/filecoin-project/specs-actors/tree/master/test-vectors">test vectors</a> are available for reference. An executable spec in Go is available at <a href="https://github.com/filecoin-project/specs-actors">spec-actors</a> — these actors power the live network pre-FVM. (Note that auditing actors normally requires Filecoin domain expertise).</p> </li> 
+                                    <li> <p>Exclusions to Scope including Known Issues are <a href="https://github.com/filecoin-project/ref-fvm/issues/428">listed here on Github</a> and will be regularly updated.</p> <p>&nbsp;</p> </li> 
+                                </ul> 
+                                <p>Milestone 1 is scheduled for deployment to Filecoin mainnet in May 2022.</p> 
+                                <p>Milestone 2 will introduce EVM-compatibility and user-programmable actors. Milestone 2 will likely be available for bug bounties in July, before deployment to mainnet in September 2022 (estimated).</p>
+                            </div>
+                        </div>
+                        <div class="App_withImage___DqrC">
+                            <img style="width:50%" class="App_hideMobile__0tueu" src="./frontpage_files/150098621-c5b41b36-ff7d-4a56-86e7-b7f130e845a0.png" />
+                            <img style="width:70%;margin-top:-30%;float:right" class="App_hideMobile__0tueu" src="./frontpage_files/150098321-f57a44b9-e4a6-4ca6-bbf5-6b6e518b69c5.png" />
+                            <img style="width:90%;margin-top:-20%;float:left" class="App_hideMobile__0tueu" src="./frontpage_files/150098442-eedc60d2-11a2-452b-aea0-9572fe56d8c7.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer_container__zAbu1">
+                    <footer class="Footer_footer__BcpJO">
+                        <div class="Footer_col__paX_m">
+                            <svg fill="none" height="88px" viewbox="0 0 74 111">
+                                <clippath id="a">
+                                <path d="m.461121.525742h72.7021v110.155h-72.7021z"></path>
+                                </clippath>
+                                <g clip-path="url(#a)">
+                                <path d="m72.3068 83.6744-13.8199-8.0117c-.078-.0162-.1582-.0162-.2361 0l-11.3099-6.5715 10.8964-6.3314h.2657l13.7905-8.0119c.2728-.136.4996-.3511.6521-.6182.1524-.267.2235-.5741.2042-.8822v-15.8735c-.0041-.3037-.0851-.6013-.2351-.864-.1499-.2628-.3638-.4819-.6212-.6363l-6.9985-3.9909 6.9689-4.0509.3839-.2701c.3003-.3376.4683-.7752.4724-1.2302v-15.8737c-.0041-.3037-.085-.60114-.235-.86389-.15-.26276-.3639-.48201-.6213-.63644l-13.8199-7.92163c-.2593-.13927-.5483-.212087-.8416-.212087-.2934 0-.5822.072817-.8416.212087l-55.04335 31.62706c-.25568.1463-.467575.3603-.613161.6192-.145585.2589-.219507.5529-.213758.8511v15.9335c.000323.3005.080083.5954.2307.854.150618.2586.366699.4714.625779.6163l6.96896 4.021-6.99852 4.1109c-.25568.1463-.467575.3603-.613161.6192-.145585.2589-.219507.553-.213758.8511v15.9336c.000323.3005.080083.5954.2307.854.150618.2586.366699.4714.625779.6163l13.81989 7.9218.3839.2401h.2656l27.2856 15.8139c.078-.016.1582-.016.2361 0l13.4656 7.771c.2123.106.4433.167.6793.18h.2656c.2472-.024.4875-.095.7087-.21l13.7905-7.922c.2591-.144.4752-.357.6258-.616.1506-.258.2302-.553.2305-.854v-15.9334c-.0256-.2591-.1112-.5082-.2498-.7272-.1386-.2191-.3262-.4017-.5475-.533zm-15.6212-5.0411h.2363l11.0145 6.3914-10.3945 6.0014-12.9634-7.5017h-.2658l-11.2213-6.5114 10.3354-6.0013zm-52.53324-14.4032 10.04004 5.7312v12.0027l-10.04004-5.8213zm52.53324-31.7772h-.2363l-27.2854 15.7836h-.2656l-11.1919 6.4813v-12.0027l12.8749-7.4416 7.1168-4.1109 6.6146-3.8109.5019-.2699 13.1999-7.6517 10.8669-6.2715.3248-.2101v12.0027zm-39.8059-4.8611 40.4261-23.37516 10.3943 6.00136-1.3287.7802-9.6858 5.5211h-.1476l-12.6683 7.3217-1.0335.6001-6.1718 3.5709-7.3824 4.2909h-.1772l-12.9634 7.5317-10.3945-6.0013zm-12.99318 9.4522 10.45348 6.0014v12.0026l-10.45348-6.0013zm7.88438 20.4346 3.4255 1.9503c.1762.0851.3665.136.5611.15h.2657c.2359-.0134.467-.0746.6793-.18l13.4655-7.8017h.2657l27.2854-15.8136h.2658l3.396-1.9804 6.1716 3.5108-10.926 6.3313h-.2361l-7.855 4.5311-5.9059 3.3908-13.4656 7.8317h-.2656l-12.9636 7.5017-3.1597-1.8004-7.23483-4.1409zm32.7781 42.0094-26.8426-15.5735v-13.8931l12.6388-7.3217h.2361l27.2856-15.8136h.2656l11.2804-6.5414v12.0027l-12.7273 7.0515h-.2363l-27.433 15.9636c-.2557.1463-.4676.3603-.6131.6192-.1456.2589-.2196.553-.2138.8511-.0018.3014.0735.5983.2184.8613.145.263.3546.4831.6085.639h.2952l13.8199 7.9819h.2363l1.2698.7201 11.369 6.6016v12.0023l-11.1328-6.0911zm25.2774.63-10.4241 6.001v-12.0023l10.4241-6.0014z" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            <p class="Footer_p__bAF7I">The <b>Filecoin Virtual Machine</b> defines the rules for computing valid state on the Filecoin Network.</p>
+                        </div>
+                        <div class="Footer_col__paX_m">
+                            <div class="Footer_title__yUOnF">
+                                Reach out
+                            </div>
+                            <a href="https://filecoin.io/slack" target="_blank" class="Footer_link__kQ8hw">Slack</a>
+                            <a href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" class="Footer_link__kQ8hw">WeChat</a>
+                            <a href="https://twitter.com/Filecoin" target="_blank" class="Footer_link__kQ8hw">Twitter</a>
+                            <a href="https://github.com/filecoin-project/community#forums" target="_blank" class="Footer_link__kQ8hw">Forum</a>
+                            <a href="https://riot.im/app/#/group/+filecoin:matrix.org" target="_blank" class="Footer_link__kQ8hw">Matrix</a>
+                        </div>
+                        <div class="Footer_col__paX_m">
+                            <div class="Footer_title__yUOnF">
+                                Resources
+                            </div>
+                            <a href="https://research.filecoin.io/" class="Footer_link__kQ8hw">Research</a>
+                            <a href="https://filecoin.io/blog/" class="Footer_link__kQ8hw">Blog</a> 
+                            <a href="https://github.com/filecoin-project" class="Footer_link__kQ8hw">GitHub</a> 
+                            <a href="https://proto.school/course/filecoin" class="Footer_link__kQ8hw">ProtoSchool</a>
+                            <a href="https://security.filecoin.io/" class="Footer_link__kQ8hw">Security</a>
+                        </div>
+                        <div class="Footer_col__paX_m">
+                            <div class="Footer_title__yUOnF">
+                                Filecoin Virtual Machine
+                            </div>
+                            <a href="https://fvm.filecoin.io/foundry" class="Footer_link__kQ8hw">Early Builders program</a>
+                            <a href="https://github.com/filecoin-project/ref-fvm" class="Footer_link__kQ8hw">Source code</a> 
+                            <a href="https://github.com/filecoin-project/fvm-project/blob/main/01-architecture.md" class="Footer_link__kQ8hw">Architecture</a> 
+                            <a href="https://github.com/filecoin-project/fvm-specs" class="Footer_link__kQ8hw">Specifications</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{},"__N_SSP":true},"page":"/","query":{},"buildId":"E88GD1e8-w63VyDcs9sET","isFallback":false,"gssp":true,"scriptLoader":[]}</script>
+        <next-route-announcer>
+            <p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p>
+        </next-route-announcer>
+    </body>
+</html>
