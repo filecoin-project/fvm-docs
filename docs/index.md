@@ -12,15 +12,15 @@ The Filecoin Virtual Machine (FVM) is an interface that enables developers to de
 
 There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With FVM developers can access EVM's massive corpus of audited and battle-tested smart contracts written in Solidity.
 
-The FVM is flexible. Because it's not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as IPFS and IPLD.
+The FVM is flexible. Because it's not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
 
-The FVM will be easy for developers who know Interplanetary Linked Data (IPLD) to adapt to, because the FVM state tree and actor states are IPLD objects.
+The FVM is easy for developers who know IPLD to adapt to. The state tree and actor states that the FVM uses to guide storage deals from pre-commit through committed states are IPLD objects.
 
 ## Vision and goals
 
-To mitigate the well-known risks with Solidity, we are adopting a WASM and bytecode approach instead of working directly in Solidity.
+To mitigate the well-known risks with Solidity, we are not working directly in Solidity, but instead adopting a WASM (WebAssembly programming language) and bytecode approach.
 
-Building libraries and primitives to interact with IPLD data are a core priority, because the FVM essentially executes computation on IPLD inputs to produce outputs.
+Because the FVM essentially executes computation on IPLD inputs to produce outputs, building libraries and primitives to interact with IPLD data is a core priority.
 
 Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions, such as sharding (a kind of partitioning) and hierarchical consensus with parallel execution, both of which support speedier processing.
 
