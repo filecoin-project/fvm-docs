@@ -18,7 +18,7 @@ The FVM is easy for developers who know IPLD to adapt to. The state tree and act
 
 ## Vision and goals
 
-To mitigate the well-known risks with Solidity, we are not working directly in Solidity, but instead adopting a WASM (WebAssembly programming language) and bytecode approach.
+To mitigate the well-known risks of compiling Solidity to the WASM (WebAssembly) programming language, we are not working directly in Solidity. Instead, we are working directly in WASM (WebAssembly programming language) and bytecode.
 
 Because the FVM essentially executes computation on IPLD inputs to produce outputs, building libraries and primitives to interact with IPLD data is a core priority.
 
