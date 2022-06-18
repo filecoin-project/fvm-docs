@@ -1,38 +1,34 @@
 ---
-title: "Filecoin Virtual Machine"
-description: "The Filecoin Virtual Machine (FVM) allows users to write their own smart-contracts and run them against the Filecoin network. This website contains all the documetation for the FVM project, including examples and reference material to help developers build on the FVM."
-lead: "The Filecoin Virtual Machine (FVM) is an interface that developers can use to deploy smart-contracts on the Filecoin network. FVM contracts will introduce the ability to perfom on-chain computation, or the computation of a state. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for."
+title: "The Filecoin Virtual Machine"
+description: "The Filecoin Virtual Machine (FVM) allows users to write their own smart-contracts and run them against the Filecoin network. This website contains all the documentation for the FVM project, including examples and reference material to help developers build on the FVM."
+lead: "The Filecoin Virtual Machine (FVM) is a technology that developers can use to deploy smart-contracts on the Filecoin network. FVM contracts introduce the ability to run code on the Filecoin blockchain. It's the first pairing of blockchain storage and programmability being introduced for Web3."
 ---
-
-# The Filecoin Virtual Machine
-
-The Filecoin Virtual Machine (FVM) is an interface that enables developers to deploy smart contracts on the Filecoin blockchain. FVM support for smart contracts provides the ability to perform on-chain state computations that guide storage deals from pre-commit through committed states. This is the perfect pairing of blockchain storage and computation that Web3 has been waiting for.
 
 ## Why the FVM is useful
 
-There has been a huge demand from the developer community for compatibility with Ethereum and Solidity out of the box. With the FVM, developers can access the massive corpus of audited and battle-tested smart contracts written in Solidity for the Ethereum Virtual Machnine (EVM). The FVM also supports other foreign runtimes and virtual machines, such as JS/SES, LLVm, IR, and BPF.
+There has been a huge demand from the developer community for Filecoin compatibility with Ethereum and Solidity out of the box. With the FVM, developers can access the massive corpus of audited and battle-tested smart contracts written in Solidity for the Ethereum Virtual Machnine (EVM).
 
-The FVM is flexible. Because it's not tightly-coupled to Filecoin, developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
+The FVM also supports other foreign runtimes and virtual machines, anything that compiles to WebAssembly (WASM) can theoretically run in the FVM (subject to limits). That includes code written in Rust, Go, and languages for which a WASM compiler exists.
 
-The FVM is easy for developers who know IPLD to adapt to. The state tree and actor states that the FVM uses to guide storage deals from pre-commit through committed states are IPLD objects.
+The FVM is flexible. It's not tightly-coupled to Filecoin, so developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
 
 ## Vision and goals
 
-To mitigate the well-known risks of compiling Solidity used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, because it produces very succinct WASM code and keeps runtime costs down.
+To mitigate the well-known risks of compiling Solidity used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, because it produces very succinct WebAssembly (WASM) code and keeps runtime costs down. See (The Top Ten Common Solidity Issues)[https://101blockchains.com/solidity-issues/].
 
-Because the FVM essentially executes computation on IPLD inputs to produce outputs, building libraries and primitives to interact with IPLD data is a core priority.
+The state tree and actor states that the FVM uses to create storage deals are IPLD objects. To support computation on IPLD inputs, we're making the building of libraries and primitives to interact with IPLD data a core priority.
 
-Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions, such as sharding (a kind of partitioning) and hierarchical consensus with parallel execution, both of which support speedier processing.
+Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
+- Sharding (a kind of partitioning)
+- Hierarchical consensus with parallel execution
 
-## Use-cases
+## Use cases
 
 Here are some use cases that are possible with the FVM. With centralized data centers, a lot of these use cases were incredibly hard, if not impossible. With decentralization and Layer 1 programmability (computation for state changes), we're unleashing boundless opportunities.
 
 ### Decentralized, verifiable computation
 
-The FVM enables both computation and storage under a single roof. Imagine being able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct.
-
-Imagine being able to link all of that to the Dataverse (for sharing, preserving, citing, exploring, and analyzing data) and tokenization of datasets.
+The FVM enables both computation and storage under a single roof. Imagine being able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct. Imagine being able to link all of that to the Dataverse (for sharing, preserving, citing, exploring, and analyzing data) and tokenization of datasets.
 
 ### Dataverse and Data DAOs
 
@@ -50,7 +46,7 @@ If you chain these processes together, you can compound the value of the dataset
 
 We can write smart contracts for the FVM to automatically replicate data across providers in the Filecoin network without client involvement, all while obeying a user-defined policy with specifications like region, latency, price, or other characteristics.
 
-If clients today want to replicate a piece of data with N providers, they have to perform the data transfer of that data to each provider. With smart contracts on the FVM, incentivized replication actors would offload this data transfer to clients in a trustless way.
+If clients today want to replicate a piece of data with N providers, they have to perform the data transfer of that data to each provider. With smart contracts on the FVM, clients would offload this data transfer to incentivized replication actors in a trustless way.
 
 ### L2 commitments
 
