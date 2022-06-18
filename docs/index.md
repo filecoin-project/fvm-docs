@@ -76,6 +76,6 @@ The FVM enables storage deals with data that cannot be retrieved by anyone until
 
 ### Trustless reputation systems
 
-There are so many providers in the Filecoin network, clients need help picking the providers that they want to deal with based on quality of service, guarantees, performance, latency, or region.
+There are lots of storage providers on the Filecoin network. Clients need help picking the providers that they want to deal with based on quality of service, guarantees, performance, latency, or region.
 
 Imagine being able to build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
