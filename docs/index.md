@@ -58,11 +58,11 @@ In the Filecoin network:
 
 Currently, solutions like Textile's Filecoin bridges to NEAR, Polygon, and Ethereum are operating without a Layer 1 commitment on the Filecoin network.
 
-With smart contracts on the FVM, you can harvest Layer 2 systems to commit onto Layer 1 of the Filecoin blockchain. You can provide consensus-backed commitments to make solutions, like bridges, oracles, payment networks, rollups, and more, provable and traceable end-to-end.
+With smart contracts on the FVM, you can harvest Layer 2 systems to commit onto Layer 1 of the Filecoin blockchain. You can provide consensus-backed commitments to make solutions like bridges, oracles, payment networks, rollups, and more, provable and traceable end-to-end.
 
 ## Smart storage markets
 
-Smart contracts on the FVM can bring richer deal-making functionality by introducing more automation at the actor layer (Layer 1 for state change computations) and alleviating infrastructure overhead.
+Smart contracts on the FVM can bring richer deal-making functionality by introducing more automation at the actor layer and alleviating infrastructure overhead.
 
 Some possibilities are:
 
@@ -76,6 +76,6 @@ The FVM enables storage deals with data that cannot be retrieved by anyone until
 
 ### Trustless reputation systems
 
-There are so many providers in the Filecoin network, clients need help picking the providers that they want to deal with based on quality of service, guarantees, performance, latency, or region.
+There are lots of storage providers on the Filecoin network. Clients need help picking the providers that they want to deal with based on quality of service, guarantees, performance, latency, or region.
 
 Imagine being able to build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
