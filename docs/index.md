@@ -14,7 +14,7 @@ The FVM is flexible. It's not tightly-coupled to Filecoin, so developers can ada
 
 ## Vision and goals
 
-To mitigate the well-known risks of compiling Solidity used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, because it produces very succinct WebAssembly (WASM) code and keeps runtime costs down. See (The Top Ten Common Solidity Issues)[https://101blockchains.com/solidity-issues/].
+To mitigate the (well-known risks of compiling Solidity)[https://101blockchains.com/solidity-issues/] used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, because it produces very succinct WebAssembly (WASM) code and keeps runtime costs down.
 
 The state tree and actor states that the FVM uses to create storage deals are IPLD objects. To support computation on IPLD inputs, we're making the building of libraries and primitives to interact with IPLD data a core priority.
 
