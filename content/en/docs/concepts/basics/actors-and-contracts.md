@@ -5,7 +5,7 @@ lead: "What's the difference between an 'actor', a 'smart-contract', and just a 
 menu:
     concepts:
         parent: "concepts-basics"
-        identifier: "developers-networks-local-network"
+        identifier: "concepts-basics-actors-and-contracts"
 ---
 
 _Actors_ are what Filecoin calls the code that runs on it's virtual machine. There are some built-in actors that have existed in Filecoin for a long time. The FVM introduces _native actors_; code that developer can write to run on-top of the Filecoin network. Native actors are similar to Ethereum's smart-contract terminology.
