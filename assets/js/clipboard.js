@@ -9,7 +9,7 @@ for (var i = 0; i < pre.length; ++ i)
   var mermaid = element.getElementsByClassName('language-mermaid')[0];
   if (mermaid == null && (element.previousElementSibling.localName != "pre")) {
     element.insertAdjacentHTML('afterbegin', '<button class="btn btn-copy"></button>');
-
+    
     if (element.nextElementSibling) {
       if (element.nextElementSibling.localName == "pre") {
         element.style.marginBottom = 0;

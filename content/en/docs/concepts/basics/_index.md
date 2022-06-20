@@ -1,5 +1,5 @@
 ---
-title: "Basic concepts"
+title: "Basics"
 description: ""
 lead: ""
 menu:

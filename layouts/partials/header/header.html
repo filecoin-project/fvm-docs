@@ -9,38 +9,51 @@
 <div class="header-bar"></div>
 
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
-  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
-        <a href="/">
-            <div class="navbar-logo"></div>
-        </a>
+  <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
+      {{ .Site.Params.Title }}
     </a>
 
     <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
 
-    <div class="offcanvas offcanvas-start border-0 py-md-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
+    <div class="offcanvas offcanvas-end border-0 py-md-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
       <div class="header-bar d-md-none"></div>
       <div class="offcanvas-header d-md-none">
         <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relLangURL }}">{{ .Site.Params.Title }}</a></h2>
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
       <div class="offcanvas-body px-4">
+        <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
           {{- $current := . -}}
+          {{- $section := $current.Section -}}
           {{ range .Site.Menus.main -}}
             {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
             {{- $active = or $active (eq .Name $current.Title) -}}
-            {{- $active = or $active (and (eq .Name "Lotus") (eq $current.Section "lotus")) -}}
-            {{- $active = or $active (and (eq .Name "Storage Providers") (eq $current.Section "storage-providers")) -}}
-            {{- $active = or $active (and (eq .Name "Developers") (eq $current.Section "developers")) -}}
-            {{- $active = or $active (and (eq .Name "Knowledge Base") (eq $current.Section "kb")) -}}
-            {{- $active = or $active (and (eq .Name "Tutorials") (eq $current.Section "tutorials")) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
-            <li class="nav-item">
-              <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-            </li>
+            {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
+            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
+            {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ .Name }}
+                  <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink">
+                  {{ range .Children -}}
+                  {{- $active = eq .Name $current.Title -}}
+                    <li>
+                      <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                    </li>
+                  {{ end -}}
+                </ul>
+              </li>
+            {{ else }}
+              <li class="nav-item">
+                <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
           {{ end -}}
         </ul>
         <hr class="text-black-50 my-4 d-md-none">
@@ -84,7 +97,10 @@
           {{ end -}}
         {{ end -}}
       {{ end -}}
+        <!--
         <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/docs/contributing/how-to-contribute/">Help Translate</a></li>
+        -->
       </ul>
     </div>
     {{ end -}}
@@ -95,9 +111,9 @@
 </div>
 {{ end -}}
 
-{{ if not .IsHome -}}
+{{ if eq .Section "docs" -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
-  <div class="container-xxl d-flex align-items-md-center">
+  <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-md-center">
 
     {{ if .Site.Params.options.flexSearch -}}
     <form class="doks-search position-relative flex-grow-1 me-auto">
@@ -112,10 +128,10 @@
         <span class="d-none d-lg-inline">Doks</span> v{{ .Site.Params.docsVersion }}
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow rounded border-0" aria-labelledby="doks-versions">
-        <li><a class="dropdown-item current" aria-current="true" href="/docs/{{ .Site.Params.docsVersion }}/">Latest ({{ .Site.Params.docsVersion }}.x)</a></li>
+        <li><a class="dropdown-item current" aria-current="true" href="/docs/{{ .Site.Params.docsVersion }}/prologue/introduction/">Latest ({{ .Site.Params.docsVersion }}.x)</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="/docs/0.2/">v0.2.x</a></li>
-        <li><a class="dropdown-item" href="/docs/0.1/">v0.1.x</a></li>
+        <li><a class="dropdown-item" href="/docs/0.2/prologue/introduction/">v0.2.x</a></li>
+        <li><a class="dropdown-item" href="/docs/0.1/prologue/introduction/">v0.1.x</a></li>
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
       </ul>
@@ -128,29 +144,31 @@
     </button>
 
   </div>
-  <div class="progress-container">
-    <div class="progress-bar" id="progress_bar"></div>
+</nav>
+
+<div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/docs-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+
+{{ else if ne .CurrentSection .FirstSection -}}
+<nav class="doks-subnavbar py-2 sticky-lg-top d-lg-none" aria-label="Secondary navigation">
+  <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-md-center">
+    <span class="navbar-text ms-0">{{ .Section | humanize }}</span>
+    <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </button>
   </div>
 </nav>
 
-<div class="container-xxl">
+<div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}">
   <aside class="doks-sidebar">
     <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-        {{ if eq .Section "developers" -}}
-            {{ partial "sidebar/developers-menu.html" . }}
-        {{ end -}}
-        {{ if eq .Section "lotus" -}}
-            {{ partial "sidebar/lotus-menu.html" . }}
-        {{ end -}}
-        {{ if eq .Section "storage-providers" -}}
-            {{ partial "sidebar/storage-providers-menu.html" . }}
-        {{ end -}}
-        {{ if eq .Section "tutorials" -}}
-            {{ partial "sidebar/tutorials-menu.html" . }}
-        {{ end -}}
-        {{ if eq .Section "knowledge-base" -}}
-            {{ partial "sidebar/knowledge-base-menu.html" . }}
-        {{ end -}}
+      {{ partial "sidebar/docs-menu.html" . }}
     </nav>
   </aside>
 </div>

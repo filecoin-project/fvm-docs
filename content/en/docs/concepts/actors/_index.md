@@ -1,10 +1,9 @@
 ---
-title: "Actors concepts"
+title: "Actors"
 description: ""
 lead: ""
 ---
 
-<!-- 
 TODO:
 
 - Types
@@ -15,5 +14,3 @@ TODO:
 - Addresses
 - Deployment
 - Code updates
-
--->

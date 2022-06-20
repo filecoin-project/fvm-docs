@@ -4,7 +4,7 @@ description: ""
 lead: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: false
+draft: true
 images: []
 menu:
   docs:
@@ -12,5 +12,3 @@ menu:
 weight: 999
 toc: true
 ---
-
-{{< img src="{{ .Name | urlize }}.jpg" alt="{{ replace .Name "-" " " | title }}" caption="{{ replace .Name "-" " " | title }}" >}}

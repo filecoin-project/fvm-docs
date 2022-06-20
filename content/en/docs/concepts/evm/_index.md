@@ -1,4 +1,4 @@
 ---
-title: "EVM concepts"
+title: "EVM"
 description: "Lorem ipsum"
 ---

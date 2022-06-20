@@ -1,10 +1,11 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Filecoin Virtual Machine Docs"
+title = "FVM"
 titleSeparator = "-"
 titleAddition = "Home"
 description = "Documentation for the Filecoin Virtual Machine (FVM)."
+
 
 ## Open Graph
 images = ["lotus.png"]
@@ -12,9 +13,11 @@ ogLocale = "en_US"
 domainTLD = "fvm.filecoin.io"
 titleHome = "FVM Docs"
 
+
 ## Twitter Cards
 twitterSite = "@filecoin"
 twitterCreator = "@protocollabs"
+
 
 ## JSON-LD
 # schemaType = "Person"
@@ -36,11 +39,14 @@ schemaLinkedIn = ""
 schemaGitHub = "https://github.com/filecoin-project/fvm-docs"
 schemaSection = "blog"
 
+
 ## Sitelinks Search Box
 siteLinksSearchBox = false
 
+
 ## Chrome Browser
 themeColor = "#fff"
+
 
 # Images
 quality = 85
@@ -49,35 +55,46 @@ landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
+
 # Footer
 footer = "Built by Protocol Labs."
 footer_link = "https://protocol.ai"
 
+
 # Feed
 copyRight = ""
+
 
 # Alert
 alert = false
 alertDismissable = true
 alertText = ""
 
+
 # Edit Page
+repoHost = "GitHub"
 docsRepo = "https://github.com/filecoin-project/fvm-docs"
 docsRepoBranch = "main"
+docsRepoSubPath = ""
 editPage = true
-repoHost = "GitHub"
+lastMod = true
+
 
 [options]
-    lazySizes = true
-    clipBoard = true
-    instantPage = false
-    flexSearch = true
-    darkMode = true
-    bootStrapJs = true
-    breadCrumb = false 
-    highLight = true
-    kaTex = false
-    progressBar = true
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = true
+  breadCrumb = false
+  highLight = true
+  kaTex = false
+  multilingualMode = false
+  docsVersioning = false
+  fullWidth = false
+
+[menu]
+  [menu.section]
+    auto = true
     collapsibleSidebar = true
-    multilingualMode = true
-    docsVersioning = false # Not yet functional

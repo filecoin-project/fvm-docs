@@ -1,5 +1,5 @@
 node_modules
 public
 resources
-TODO
-.DS_Store
+.netlify
+.hugo_build.lock
