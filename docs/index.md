@@ -24,11 +24,13 @@ Smart contracts use virtual entities, called _Actors_, to perform transactions. 
 
 ## Use cases
 
-Here are some use cases that are possible with the FVM. With centralized data centers, a lot of these use cases were incredibly hard, if not impossible. With decentralization and programmability, they're limitless.
+Here are some use cases that are possible with the FVM. With centralized data centers, a lot of these use cases were incredibly hard, if not impossible. With decentralization and programmability, the potential is limitless.
 
 ### Layer 2: data layer commitments
 
-When transactions occur on the Filecoin blockchain, they result in a change of state. Content of a dataset at one instant in time is added or removed to result in a new state. For example, FIL is removed from one actor and added to another, or a a message is sent from one actor to another. The introduction of smart contracts enables access to off-chain data to fuel these state changes.
+When transactions occur on the Filecoin blockchain, they result in a change of state. Content of a dataset at one instant in time is added or removed to result in a new state. For example, FIL is removed from one actor and added to another, a message is sent from one actor to another, or a commitment between a provider and a client is confirmed.
+
+The introduction of smart contracts enables access to off-chain data to fuel these state changes.
 
 - Layer 0 is our storage and retrieval layer
 - Layer 1 is our on-chain, state layer
@@ -38,7 +40,7 @@ With smart contracts on the FVM, you can harvest Layer 2 systems to commit onto 
 
 - Cross-chain bridges: Enable an exchange of information from one blockchain network to another.
 - Oracles: Connect blockchains to external systems, enabling smart contracts to execute based on inputs and outputs from the real world.
-- Rollups: Rollup multiple transactions into a single piece of data before submitting them to the blockchain.
+- Rollups: Rollup multiple transactions into a single piece of data before submitting it to the blockchain.
 - Payment networks
 
 ### Dataverse and Data DAOs
