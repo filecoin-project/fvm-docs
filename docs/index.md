@@ -10,7 +10,7 @@ There has been a huge demand from the developer community for Filecoin compatibi
 
 The FVM also supports other foreign runtimes and virtual machines. Anything that compiles to (WebAssembly (WASM))[https://developer.mozilla.org/en-US/docs/WebAssembly] can theoretically run in the FVM (subject to limits). WASM, built for modern web browsers, "provides a way to run code written in multiple languages on the web [including Rust and Go] at near native speed, with client apps running on the web that previously couldn't have done so."
 
-The FVM is flexible. It's not tightly-coupled to Filecoin, so developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
+The FVM is flexible, because it's not tightly-coupled to Filecoin, so developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
 
 ## Vision and goals
 
@@ -24,7 +24,7 @@ Smart contracts use virtual entities, called _Actors_, to perform transactions. 
 
 ## Use cases
 
-Here are some use cases that are possible with the FVM. With centralized data centers, a lot of these use cases were incredibly hard, if not impossible. With decentralization and programmability, the potential is limitless.
+Here are some use cases that are possible with the FVM. With centralized data centers, a lot of these use cases are incredibly hard, if not impossible. Decentralization and programmability open up a lot of possibilities.
 
 ### Layer 2: data layer commitments
 
@@ -47,7 +47,7 @@ With smart contracts on the FVM, you can harvest Layer 2 systems to commit onto 
 
 You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy. You can then use it to incentivize further value creation through data processing.
 
-With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more.
+With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. You will be able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct.
 
 If you chain these processes together, you can compound the value of the datasets iteratively. You can deploy self-learning entities on-chain, like the [The Dataverse](https://dataverse.org/), to steward, maintain, and curate those datasets.
 
