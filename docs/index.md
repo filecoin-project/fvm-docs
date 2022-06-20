@@ -8,7 +8,7 @@ lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and depl
 
 There has been a huge demand from the developer community for Filecoin compatibility with (Ethereum)[https://ethereum.org/en/what-is-ethereum/] and (Solidity)[https://en.wikipedia.org/wiki/Solidity] out of the box. With the FVM, developers can access the massive corpus of audited and battle-tested smart contracts written in Solidity for the Ethereum Virtual Machnine (EVM).
 
-The FVM also supports other foreign runtimes and virtual machines, anything that compiles to (WebAssembly (WASM))[https://developer.mozilla.org/en-US/docs/WebAssembly] can theoretically run in the FVM (subject to limits). That includes code written in Rust, Go, and languages for which a WASM compiler exists.
+The FVM also supports other foreign runtimes and virtual machines. Anything that compiles to (WebAssembly (WASM))[https://developer.mozilla.org/en-US/docs/WebAssembly], built for modern web browsers, can theoretically run in the FVM (subject to limits). WASM "provides a way to run code written in multiple languages on the web [including Rust and Go] at near native speed, with client apps running on the web that previously couldn't have done so."
 
 The FVM is flexible. It's not tightly-coupled to Filecoin, so developers can adapt to it in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD).
 
