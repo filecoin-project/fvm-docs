@@ -6,6 +6,8 @@ menu:
     concepts:
         parent: "concepts-basics"
         identifier: "developers-networks-overview"
+aliases:
+    - /docs
 weight: 0
 ---
 

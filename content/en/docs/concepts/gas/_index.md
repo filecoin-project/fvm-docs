@@ -5,7 +5,6 @@ lead: ""
 menu:
     concepts:
         parent: "concepts-gas"
-        identifier: "concepts-gas"
 ---
 
 - Limits
