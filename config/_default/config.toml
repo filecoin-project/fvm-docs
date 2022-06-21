@@ -1,6 +1,6 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "/"
 canonifyURLs = false
-disableAliases = true
+disableAliases = false
 disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
