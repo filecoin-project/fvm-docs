@@ -1,7 +1,7 @@
 ---
 title: "The Filecoin Virtual Machine"
 description: "The Filecoin Virtual Machine (FVM) allows users to write their own smart-contracts and run them against the Filecoin network. This website contains all the documentation for the FVM project, including examples and reference material to help developers build on the FVM."
-lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and deploy smart contracts on the Filecoin blockchain. With smart contracts, programmers can create new features, opening up a wide range of storage and data possibilities, including proof of execution."
+lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and deploy smart contracts on the Filecoin blockchain. With smart contracts, programmers can create new features, opening up a wide range of storage and data possibilities, that are provable and traceable."
 ---
 
 ## Why the FVM is useful
@@ -29,15 +29,25 @@ Here are some use cases that are possible with the FVM. With centralized data ce
 
 ### Layer 2: data layer commitments
 
-When transactions occur on the Filecoin blockchain, they result in a change of state. Content of a dataset at one instant in time is added or removed to result in a new state. For example, FIL is removed from one actor and added to another, a message is sent from one actor to another, or a commitment between a provider and a client is confirmed.
+Layers or Layer Protocols specify the set of communication protocols used on the blockchain and other traditional computer networks. Protocols are the technology that facilitates information sharing. (See [What Are Application Layer Protocols?](https://coinmarketcap.com/alexandria/article/what-are-application-layer-protocols).)
 
-The introduction of smart contracts enables access to Layer 2 off-chain data to fuel these state changes.
+As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports smart contracts:
 
 - Layer 0 is our storage and retrieval layer
 - Layer 1 is our on-chain, state layer
 - Layer 2 is our off-chain, data layer
 
-With smart contracts on the FVM, you can harvest Layer 2 systems to commit onto Layer 1 of the Filecoin blockchain that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
+#### Layer 0: storage and retrieval layer
+
+This is the earliest version of Filecoin that could store and retrieve data.
+
+#### Layer 1: the state layer
+
+When transactions occur on the Filecoin blockchain, they result in changes of state. Content of a dataset at one instant in time is added or removed to result in a new state.
+
+#### Layer 2: the data layer
+
+The introduction of the FVM with smart contracts enables access to Layer 2 off-chain data to fuel state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
 
 - Cross-chain bridges: Enable an exchange of information from one blockchain network to another.
 - Oracles: Connect blockchains to external systems, enabling smart contracts to execute based on inputs and outputs from the real world.
