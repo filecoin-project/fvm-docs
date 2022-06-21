@@ -8,7 +8,7 @@ lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and depl
 
 There has been a huge demand from the developer community for Filecoin compatibility with (Ethereum)[https://ethereum.org/en/what-is-ethereum/] and (Solidity)[https://en.wikipedia.org/wiki/Solidity] out of the box. With the FVM, developers can access the massive corpus of audited and battle-tested smart contracts written in Solidity for the Ethereum Virtual Machnine (EVM).
 
-The FVM also supports other foreign runtimes and virtual machines, anything that compiles to (WebAssembly (WASM))[https://developer.mozilla.org/en-US/docs/WebAssembly] (subject to limits). WASM was built for modern web browsers and supports multiple languages, including Rust and Go, which provides the flexibility we need to meet multiple needs.
+The FVM also supports other foreign runtimes and virtual machines, anything that compiles to (WebAssembly (WASM))[https://developer.mozilla.org/en-US/docs/WebAssembly] (subject to limits). WASM was built for modern web browsers and supports multiple languages, including Rust and Go, which provides the flexibility we need to meet a variety of needs.
 
 Developers can adapt to the FVM in other contexts, such as the Interplanetary File System (IPFS) and Interplanetary Linked Data (IPLD), because it's not tightly-coupled to Filecoin.
 
@@ -30,7 +30,7 @@ Here are some use cases that are possible with the FVM. With centralized data ce
 
 When transactions occur on the Filecoin blockchain, they result in a change of state. Content of a dataset at one instant in time is added or removed to result in a new state. For example, FIL is removed from one actor and added to another, a message is sent from one actor to another, or a commitment between a provider and a client is confirmed.
 
-The introduction of smart contracts enables access to off-chain data to fuel these state changes.
+The introduction of smart contracts enables access to Layer 2 off-chain data to fuel these state changes.
 
 - Layer 0 is our storage and retrieval layer
 - Layer 1 is our on-chain, state layer
