@@ -4,13 +4,11 @@ description: ""
 lead: ""
 menu:
     concepts:
-        parent: "concepts-basics"
-        identifier: "concepts-basics-gas"
+        parent: "concepts-gas"
+        identifier: "concepts-gas"
 ---
 
-
-    Limits
-    Costs
-    Parameters
-    Payments
-
+- Limits
+- Costs
+- Parameters
+- Payments

@@ -1,21 +1,21 @@
 [[main]]
   name = "Concepts"
-  url = "docs/concepts/"
+  url = "/docs/concepts/basics/overview/"
   weight = 10
 
 [[main]]
   name = "How To"
-  url = "/docs/how-tos/"
+  url = "/docs/how-tos/setup-lotus/"
   weight = 20
 
 [[main]]
   name = "Examples"
-  url = "/docs/examples/"
+  url = "/docs/examples/basics/start-here/"
   weight = 30
 
 [[main]]
   name = "Reference"
-  url = "/docs/reference"
+  url = "/docs/reference/lotus-api/"
   weight = 40
 
 
@@ -24,19 +24,91 @@
   name = "Basics"
   weight = 10
   identifier = "concepts-basics"
-  url = "/docs/concepts/basics"
+  url = "/docs/concepts/basics/"
 
 [[concepts]]
-  name = "Native actors"
+  name = "Gas"
   weight = 20
-  identifier = "concepts-nativeactors"
-  url = "/docs/concepts/native-actors"
+  identifier = "concepts-gas"
+  url = "/docs/concepts/gas/"
+
+[[concepts]]
+  name = "Messages"
+  weight = 30
+  identifier = "concepts-messages"
+  url = "/docs/concepts/implementations/"
+
+[[concepts]]
+  name = "Actors"
+  weight = 40
+  identifier = "concepts-actors"
+  url = "/docs/concepts/actors/"
 
 [[concepts]]
   name = "EVM"
-  weight = 30
+  weight = 50
   identifier = "concepts-evm"
-  url = "/docs/concepts/evm"
+  url = "/docs/concepts/evm/"
+
+[[concepts]]
+  name = "Implementations"
+  weight = 60
+  identifier = "concepts-implementations"
+  url = "/docs/concepts/implementations/"
+
+
+
+[[howto]]
+  name = "Basics"
+  weight = 5 
+  identifier = "how-to-basics"
+  url = "/docs/how-to/actors/"
+
+[[howto]]
+  name = "Actors"
+  weight = 10
+  identifier = "how-to-actors"
+  url = "/docs/how-to/actors/"
+
+[[howto]]
+  name = "WASM"
+  weight = 20
+  identifier = "how-to-wasm"
+  url = "/docs/how-to/wasm/"
+
+[[howto]]
+  name = "Troubleshoot"
+  weight = 30
+  identifier = "how-to-troubleshoot"
+  url = "/docs/how-to/troubleshoot/"
+
+
+
+[[examples]]
+  name = "Basics"
+  weight = 10
+  identifier = "examples-basics"
+  url = "/docs/examples/basics/"
+
+[[examples]]
+  name = "Actors"
+  weight = 20
+  identifier = "examples-actors"
+  url = "/docs/examples/actors/"
+
+[[examples]]
+  name = "Ethereum"
+  weight = 30
+  identifier = "examples-ethereum"
+  url = "/docs/examples/ethereum/"
+
+
+
+[[reference]]
+  name = "Lotus"
+  weight = 10
+  identifier = "reference-lotus"
+  url = "/docs/reference/lotus/"
 
 
 

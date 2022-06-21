@@ -5,7 +5,8 @@ lead: ""
 menu:
     concepts:
         parent: "concepts-basics"
-        identifier: "developers-networks-index"
+        identifier: "developers-networks-overview"
+weight: 0
 ---
 
 In this section you'll find out:
