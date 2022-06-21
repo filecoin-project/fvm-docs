@@ -20,23 +20,12 @@
 
 
 
-[[concepts]]
+[[docs]]
   name = "Basics"
   weight = 10
   identifier = "concepts-basics"
-  url = "/docs/concepts/basics"
+  url = "/docs/concepts/basics/"
 
-[[concepts]]
-  name = "Native actors"
-  weight = 20
-  identifier = "concepts-nativeactors"
-  url = "/docs/concepts/native-actors"
-
-[[concepts]]
-  name = "EVM"
-  weight = 30
-  identifier = "concepts-evm"
-  url = "/docs/concepts/evm"
 
 
 
