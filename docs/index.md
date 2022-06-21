@@ -19,8 +19,9 @@ To mitigate the (well-known risks of compiling Solidity)[https://101blockchains.
 To support computation on IPLD inputs, we're making the building of libraries and primitives to interact with IPLD data a core priority.
 
 Smart contracts use virtual entities, called _Actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
-- Sharding (a kind of partitioning)
-- Hierarchical consensus with parallel execution
+
+- [Hierarchical consensus](https://research.protocol.ai/blog/2022/scaling-blockchains-with-hierarchical-consensus/#:~:text=Hierarchical%20consensus%20is%20a%20framework,other%20subnet%20in%20the%20hierarchy) with parallel execution (enabling more processes to be done at the same time)
+- Sharding (a kind of partitioning that separates large databases into smaller, faster, more easily managed parts)
 
 ## Use cases
 
