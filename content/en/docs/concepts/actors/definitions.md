@@ -1,10 +1,10 @@
 ---
-title: "Actors and contracts"
+title: "Definitions"
 description: "What's the difference between an 'actor', a 'smart-contract', and just a regular web app? This page covers the difference between all three."
 lead: "What's the difference between an 'actor', a 'smart-contract', and just a regular web app? This page covers the difference between all three."
 menu:
-  docs:
-    parent: "concepts-basics"
+    concepts:
+        parent: "concepts-actors"
 weight: 100
 ---
 
