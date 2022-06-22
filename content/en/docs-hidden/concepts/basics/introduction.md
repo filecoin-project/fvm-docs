@@ -16,3 +16,11 @@ rgsrgsrgs
 g
 
 srgsrgrs
+
+```javascript
+function codeBlock(arg)
+{
+  let myVar = 239846;
+  return(myVar);
+}
+```
