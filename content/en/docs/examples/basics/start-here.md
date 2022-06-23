@@ -7,4 +7,4 @@ menu:
         parent: "examples-basics"
 ---
 
-Lorem.
+1. Install Lotus. Follow through the instructions on the [Lotus Docs site](https://lotus.filecoin.io/lotus/install/prerequisites/) for your computer.

@@ -1,6 +1,6 @@
 [[main]]
   name = "Concepts"
-  url = "/docs/concepts/basics/overview/"
+  url = "/"
   weight = 10
 
 [[main]]
