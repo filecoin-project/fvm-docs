@@ -58,7 +58,7 @@ The introduction of the FVM with smart contracts enables access to Layer 2 off-c
 
 You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy. You can then use it to incentivize further value creation through data processing.
 
-With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. You will be able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct.
+With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. You will be able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the storage result and any processing output are verifiably correct.
 
 If you chain these processes together, you can compound the value of the datasets iteratively. You can deploy self-learning entities on-chain, like the [The Dataverse](https://dataverse.org/), to steward, maintain, and curate those datasets.
 
