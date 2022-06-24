@@ -20,9 +20,9 @@ Developers can adapt to the FVM in other contexts, such as the Interplanetary Fi
 
 ## Vision and goals
 
-To mitigate the [well-known risks of compiling Solidity](https://101blockchains.com/solidity-issues/) used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, because it produces very succinct WebAssembly (WASM) code and keeps runtime costs down.
+To mitigate the [well-known risks of compiling Solidity](https://101blockchains.com/solidity-issues/) used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, which produces very succinct WebAssembly (WASM) code that keeps runtime costs down.
 
-To support computation on IPLD inputs, we're making the building of libraries and primitives to interact with IPLD data a core priority.
+To support computation on IPLD inputs, we're making it a core priority to build libraries and primitives to interact with IPLD data.
 
 Smart contracts use virtual entities, called _Actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
 
@@ -45,7 +45,7 @@ As a technology gets built out, it adds layers of capabilities, including the ne
 
 #### Layer 0: storage and retrieval layer
 
-This is the earliest version of Filecoin that could store and retrieve data.
+This is the earliest version of Filecoin blockchain that could store and retrieve data.
 
 #### Layer 1: the state layer
 
@@ -55,20 +55,29 @@ When transactions occur on the Filecoin blockchain, they result in changes of st
 
 The introduction of the FVM with smart contracts enables access to Layer 2 off-chain data to fuel state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
 
-- Cross-chain bridges: Enable an exchange of information from one blockchain network to another.
-- Oracles: Connect blockchains to external systems, enabling smart contracts to execute based on inputs and outputs from the real world.
-- Rollups: Rollup multiple transactions into a single piece of data before submitting it to the blockchain.
+- Cross-chain bridges, enabling an exchange of information from one blockchain network to another.
+- Oracles, connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
+- Rollups, rolling up multiple transactions into a single piece of data before submitting it to the blockchain.
 - Payment networks
 
 ### Dataverse and Data DAOs
 
-You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy. You can then use it to incentivize further value creation through data processing.
+You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy. You can then use them to incentivize further value creation through data processing.
 
-With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers to request computation, validation, transformations, feature detection, extraction, machine learning, and more. You will be able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the result AND the output are verifiably correct.
+With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers for storage activities such as:
+
+- Computation requests: Such as requests for unsealing data before retrieval or other state changes.
+- Validation: Verifying that transactions are legal, not double-spends or malicious.
+- Transformations: What submitted data goes through before the storage provider stores them. See [Data Representation](https://spec.filecoin.io/#section-systems.filecoin_files.piece.data-representatio).
+- Feature detection: Whether a browser supports a certain block of code and runs different code depending on whether it does or doesn't.
+- Extraction: Of data from a source system for further use.
+- Machine learning: Using data to predict outcomes...and more.
+
+You will be able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the resulting storage state and the computation output are verifiably correct.
 
 If you chain these processes together, you can compound the value of the datasets iteratively. You can deploy self-learning entities on-chain, like the [The Dataverse](https://dataverse.org/), to steward, maintain, and curate those datasets.
 
-Using these datasets, you could automatically fund [Decentralized Autonomous Organizations (DAOs))[https://en.wikipedia.org/wiki/Decentralized_autonomous_organization], member-owned communities, constructed by rules encoded in a computer program.
+Using these datasets, you could automatically fund [Decentralized Autonomous Organizations (DAOs)](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), member-owned communities, constructed by rules encoded in a computer program.
 
 ## Smart storage markets
 
@@ -94,6 +103,6 @@ The FVM enables storage deals with data that cannot be retrieved by anyone until
 
 Trustless means that you don't need to trust an entity, because software programs are ensuring that they follow the rules set up by the community.
 
-However, many providers will go beyond the minimal requirements, so they may have better quality of service, guarantees, or performance. Others may just work better for a particular client, because of their proximity and reduced latency. A reputation system could help clients pick providers that work best for them.
+However, many providers will go beyond the minimal requirements, so they may have better quality of service, guarantees, or performance. Others may just work better for a particular client, because of their proximity and resulting reduced latency. A reputation system could help clients pick providers that work best for them.
 
 With the FVM, you can build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
