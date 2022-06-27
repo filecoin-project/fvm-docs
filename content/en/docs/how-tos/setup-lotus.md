@@ -13,6 +13,11 @@ To interact with the Filecoin Virtual Machine (FVM) you will need to have access
 
 The following script has been written for Debian and Ubuntu distributions. Windows users _may_ be able to install Lotus using this method combined with [WSL](https://docs.microsoft.com/en-us/windows/wsl/install).
 
+You must have the following software installed:
+
+- [Go](https://go.dev/dl/)
+- [Rust](https://rustup.rs/#)
+
 ## MacOS
 
 The following scripts have been written for MacOS users.
@@ -21,10 +26,67 @@ The following scripts have been written for MacOS users.
 
 This script is for Intel-based Macs only, and will not work for M1-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher.
 
+You must have the following software installed:
+
+- [Go](https://go.dev/dl/)
+- [Homebrew](https://brew.sh/)
+- [Rust](https://rustup.rs/#)
+- [XCode](https://developer.apple.com/xcode/)
+
+```shell
+brew install go bzr jq pkg-config hwloc coreutils
+git clone https://github.com/filecoin-project/lotus.git
+cd lotus/
+git checkout releases
+export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
+export CGO_CFLAGS="-D__BLST_PORTABLE__"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+make clean all
+sudo make install
+```
+
+Save the above script to you local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
+
+Once the script has finished, run `lotus --version` to see if it completed:
+
+```shell
+lotus --version
+```
+
+```plaintext
+lotus version 1.16.0+2k+git.01254ab32
+```
+
 ### M1-based macs
 
 This script is for M1-based Macs only and will not work for Intel-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher. This script has not been tested on M2 CPUs, however it may still work.
 
-```shell
+You must have the following software installed:
 
+- [XCode](https://developer.apple.com/xcode/)
+- [Homebrew](https://brew.sh/)
+- [Rust](https://rustup.rs/#)
+
+```shell
+brew install go bzr jq pkg-config hwloc coreutils
+git clone https://github.com/filecoin-project/lotus.git
+cd lotus/
+git checkout releases
+export LIBRARY_PATH=/opt/homebrew/lib
+export FFI_BUILD_FROM_SOURCE=1
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+make clean all
+sudo make install
+```
+
+Save the above script to you local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
+
+Once the script has finished, run `lotus --version` to see if it completed:
+
+```shell
+lotus --version
+```
+
+```plaintext
+lotus version 1.16.0+2k+git.01254ab32
 ```
