@@ -26,8 +26,8 @@ To support computation on IPLD inputs, we're making it a core priority to build 
 
 Smart contracts use virtual entities, called _Actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
 
-- [Hierarchical consensus](https://research.protocol.ai/blog/2022/scaling-blockchains-with-hierarchical-consensus/#:~:text=Hierarchical%20consensus%20is%20a%20framework,other%20subnet%20in%20the%20hierarchy) with parallel execution (enabling more processes to be done at the same time)
-- [Sharding](https://www.sofi.com/learn/content/what-is-sharding/#:~:text=Sharding%20involves%20splitting%20a%20blockchain,a%20larger%20volume%20of%20transactions.) (a kind of partitioning that separates data into smaller, faster, more easily managed chunks)
+- [Hierarchical consensus](https://research.protocol.ai/blog/2022/scaling-blockchains-with-hierarchical-consensus/#:~:text=Hierarchical%20consensus%20is%20a%20framework,other%20subnet%20in%20the%20hierarchy) with parallel execution: Enables more processes to be done at the same time.
+- [Sharding](https://www.sofi.com/learn/content/what-is-sharding/#:~:text=Sharding%20involves%20splitting%20a%20blockchain,a%20larger%20volume%20of%20transactions.): A kind of partitioning that separates data into smaller, faster, more easily managed chunks.
 
 ## Use cases
 
@@ -39,9 +39,9 @@ Layers or Layer Protocols specify the set of communication protocols used on the
 
 As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports smart contracts:
 
-- Layer 0 is our storage and retrieval layer
-- Layer 1 is our on-chain, state layer
-- Layer 2 is our off-chain, data layer
+- Layer 0: Our storage and retrieval layer
+- Layer 1: Our on-chain, state layer
+- Layer 2: Our off-chain, data layer
 
 #### Layer 0: storage and retrieval layer
 
@@ -55,9 +55,9 @@ When transactions occur on the Filecoin blockchain, they result in changes of st
 
 The introduction of the FVM with smart contracts enables access to Layer 2 off-chain data to fuel state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
 
-- Cross-chain bridges, enabling an exchange of information from one blockchain network to another.
-- Oracles, connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
-- Rollups, rolling up multiple transactions into a single piece of data before submitting it to the blockchain.
+- Cross-chain bridges: Enabling an exchange of information from one blockchain network to another.
+- Oracles: Connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
+- Rollups: Rolling up multiple transactions into a single piece of data before submitting it to the blockchain.
 - Payment networks
 
 ### Dataverse and Data DAOs
