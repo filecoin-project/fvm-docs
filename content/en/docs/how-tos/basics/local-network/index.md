@@ -62,6 +62,11 @@ export CGO_CFLAGS="-D__BLST_PORTABLE__"
 
 The following scripts have been written for MacOS users.
 
+You may get warning about `lotus` and `lotus-miner` accepting incoming connections. Click **Allow** on both of these prompts.
+
+| ![A warning message in MacOS about the lotus daemon.](lotus-incoming-network-warning.png) |  ![A warning message in MacOS about the lotus-miner daemon.](lotus-miner-incoming-network-warning.png) |
+| --- | --- |
+
 ### Intel-based macs
 
 This script is for Intel-based Macs only, and will not work for M1-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher.
@@ -100,7 +105,6 @@ git clone https://github.com/filecoin-project/lotus lotus-local-net
 cd lotus-local-net
 git checkout releases
 
-rm -rf ~/.genesis-sectors
 make 2k
 
 ./lotus fetch-params 2048
