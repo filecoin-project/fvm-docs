@@ -39,9 +39,9 @@ Layers or Layer Protocols specify the set of communication protocols used on the
 
 As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports smart contracts:
 
-- Layer 0: Our storage and retrieval layer
-- Layer 1: Our on-chain, state layer
-- Layer 2: Our off-chain, data layer
+- Layer 0: Storage and retrieval
+- Layer 1: On-chain, state changes
+- Layer 2: Off-chain, data access
 
 #### Layer 0: storage and retrieval layer
 
