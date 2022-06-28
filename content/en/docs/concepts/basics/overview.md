@@ -35,7 +35,7 @@ Here are some use cases that are possible with the FVM. With centralized data, a
 
 ### Layer 2: data layer commitments
 
-Layers or Layer Protocols specify the set of communication protocols used on the blockchain and other traditional computer networks. Protocols are the technology that facilitates information sharing. (See [What Are Application Layer Protocols?](https://coinmarketcap.com/alexandria/article/what-are-application-layer-protocols).)
+Layers or Layer Protocols specify the set of communication protocols used on the blockchain and other traditional computer networks. Protocols are the technology that facilitates information sharing. (See [What Are Application Layer Protocols?](https://coinmarketcap.com/alexandria/article/what-are-application-layer-protocols))
 
 As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports smart contracts:
 
