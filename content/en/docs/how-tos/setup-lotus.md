@@ -18,6 +18,29 @@ You must have the following software installed:
 - [Go](https://go.dev/dl/)
 - [Rust](https://rustup.rs/#)
 
+```shell
+#!/bin/bash
+sudo apt update -y
+sudo apt install mesa-opencl-icd ocl-icd-opencl-dev gcc git bzr jq pkg-config curl clang build-essential hwloc libhwloc-dev wget -y && sudo apt upgrade -y
+git clone https://github.com/filecoin-project/lotus.git
+cd lotus/
+git checkout releases
+make clean all
+sudo make install
+```
+
+Save the above script to you local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
+
+Once the script has finished, run `lotus --version` to see if it completed:
+
+```shell
+lotus --version
+```
+
+```plaintext
+lotus version 1.16.0+2k+git.01254ab32
+```
+
 ## MacOS
 
 The following scripts have been written for MacOS users.
@@ -34,6 +57,7 @@ You must have the following software installed:
 - [XCode](https://developer.apple.com/xcode/)
 
 ```shell
+#!/usr/bin/env bash
 brew install go bzr jq pkg-config hwloc coreutils
 git clone https://github.com/filecoin-project/lotus.git
 cd lotus/
@@ -68,6 +92,7 @@ You must have the following software installed:
 - [Rust](https://rustup.rs/#)
 
 ```shell
+#!/usr/bin/env bash
 brew install go bzr jq pkg-config hwloc coreutils
 git clone https://github.com/filecoin-project/lotus.git
 cd lotus/
