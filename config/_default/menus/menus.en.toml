@@ -5,7 +5,7 @@
 
 [[main]]
   name = "How To"
-  url = "/docs/how-tos/basics/lotus-quickstart/"
+  url = "/docs/how-tos/basics/install-lotus/"
   weight = 20
 
 [[main]]

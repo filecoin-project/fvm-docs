@@ -1,6 +1,6 @@
 ---
-title: "Lotus quickstart"
-description: "Quickly install Lotus on your local computer using these pre-built scripts."
+title: "Install Lotus"
+description: "Quickly install Lotus on your local computer using pre-built scripts."
 lead: "To interact with the Filecoin Virtual Machine (FVM) you will need to have access to a Lotus node. An easy way to gain access to a Lotus node is to set one up on your local computer and start a local developer network. This page summarizes how to install Lotus using premade installation scripts."
 menu:
     howto:
@@ -34,9 +34,9 @@ make clean all
 sudo make install
 ```
 
-Save the above script to you local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
+Save the above script to your local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
 
-Once the script has finished, run `lotus --version` to see if it completed:
+Once the script has finished, run `lotus --version` to see if it finished properly:
 
 ```shell
 lotus --version
@@ -52,7 +52,7 @@ The following scripts have been written for MacOS users.
 
 ### Intel-based macs
 
-This script is for Intel-based Macs only, and will not work for M1-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher.
+This script is for Intel-based Macs only and will not work for M1-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher.
 
 You must have the following software installed:
 
@@ -78,9 +78,9 @@ make clean all
 sudo make install
 ```
 
-Save the above script to you local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
+Save the above script to your local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
 
-Once the script has finished, run `lotus --version` to see if it completed:
+Once the script has finished, run `lotus --version` to see if it completed properly:
 
 ```shell
 lotus --version
@@ -92,7 +92,7 @@ lotus version 1.16.0+2k+git.01254ab32
 
 ### M1-based macs
 
-This script is for M1-based Macs only and will not work for Intel-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher. This script has not been tested on M2 CPUs, however it may still work.
+This script is for M1-based Macs only and will not work for Intel-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher. This script has not been tested on M2 CPUs; however it may still work.
 
 You must have the following software installed:
 
@@ -117,9 +117,9 @@ make clean all
 sudo make install
 ```
 
-Save the above script to you local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
+Save the above script to your local computer and run it. You may need to make it executable with `chmod +x lotus-install.sh`, replacing `lotus-install.sh` with the of your script.
 
-Once the script has finished, run `lotus --version` to see if it completed:
+Once the script has finished, run `lotus --version` to see if it completed properly:
 
 ```shell
 lotus --version

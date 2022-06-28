@@ -13,7 +13,7 @@ weight: 10
 
 The following script has been written for Debian and Ubuntu distributions. Windows users _may_ be able to use this method combined with [WSL](https://docs.microsoft.com/en-us/windows/wsl/install), with some tweaking.
 
-You must have Lotus installed. Checkout the [quick install guides]({{< relref "lotus-quickstart" >}}) if you don't have it installed yet.
+You must have Lotus installed. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
 
 There are two scripts to run here. Run the second script once the first script has finished. <!-- TODO: how does the user know that the script has finished? -->
 
@@ -71,7 +71,7 @@ You may get warning about `lotus` and `lotus-miner` accepting incoming connectio
 
 This script is for Intel-based Macs only, and will not work for M1-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher.
 
-You must have Lotus installed already. Checkout the [quick install guides]({{< relref "lotus-quickstart" >}}) if you don't have it installed yet.
+You must have Lotus installed already. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
 
 There are two scripts to run here. Run the second script once the first script has finished. <!-- TODO: how does the user know that the script has finished? -->
 
@@ -84,7 +84,7 @@ There are two scripts to run here. Run the second script once the first script h
 
 This script is for M1-based Macs only and will not work for Intel-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher. This script has not been tested on M2 CPUs, however it may still work.
 
-You must have Lotus installed already. Checkout the [quick install guides]({{< relref "lotus-quickstart" >}}) if you don't have it installed yet.
+You must have Lotus installed already. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
 
 There are two scripts to run here. Run the second script once the first script has finished. <!-- TODO: how does the user know that the script has finished? -->
 
