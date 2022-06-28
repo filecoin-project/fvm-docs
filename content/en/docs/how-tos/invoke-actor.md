@@ -1,3 +1,0 @@
----
-title: "Invoke an actor"
----

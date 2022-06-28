@@ -4,7 +4,7 @@ description: "Quickly install Lotus on your local computer using these pre-built
 menu:
     howto:
         parent: "how-to-basics"
-draft: true
+draft: false
 ---
 
 To interact with the Filecoin Virtual Machine (FVM) you will need to have access to a Lotus node. An easy way to gain access to a Lotus node is to set one up on your local computer and start a local developer network. This page summarizes how to install Lotus using premade installation scripts. For more details on how to install Lotus, including steps for operating systems not listed here, [check out the official Lotus docs](https://lotus.filecoin.io/lotus/install/prerequisites/)
@@ -20,11 +20,14 @@ You must have the following software installed:
 
 ```shell
 #!/bin/bash
+
 sudo apt update -y
 sudo apt install mesa-opencl-icd ocl-icd-opencl-dev gcc git bzr jq pkg-config curl clang build-essential hwloc libhwloc-dev wget -y && sudo apt upgrade -y
+
 git clone https://github.com/filecoin-project/lotus.git
 cd lotus/
 git checkout releases
+
 make clean all
 sudo make install
 ```
@@ -58,13 +61,17 @@ You must have the following software installed:
 
 ```shell
 #!/usr/bin/env bash
+
 brew install go bzr jq pkg-config hwloc coreutils
+
 git clone https://github.com/filecoin-project/lotus.git
 cd lotus/
 git checkout releases
+
 export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
 export CGO_CFLAGS="-D__BLST_PORTABLE__"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+
 make clean all
 sudo make install
 ```
@@ -93,13 +100,17 @@ You must have the following software installed:
 
 ```shell
 #!/usr/bin/env bash
+
 brew install go bzr jq pkg-config hwloc coreutils
+
 git clone https://github.com/filecoin-project/lotus.git
 cd lotus/
 git checkout releases
+
 export LIBRARY_PATH=/opt/homebrew/lib
 export FFI_BUILD_FROM_SOURCE=1
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+
 make clean all
 sudo make install
 ```

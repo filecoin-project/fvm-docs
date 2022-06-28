@@ -1,3 +1,0 @@
----
-title: "Install an actor"
----

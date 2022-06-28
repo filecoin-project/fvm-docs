@@ -5,7 +5,7 @@
 
 [[main]]
   name = "How To"
-  url = "/docs/how-tos/setup-lotus/"
+  url = "/docs/how-tos/basics/setup-lotus/"
   weight = 20
 
 [[main]]
@@ -75,12 +75,6 @@
   weight = 20
   identifier = "how-to-wasm"
   url = "/docs/how-to/wasm/"
-
-[[howto]]
-  name = "Troubleshoot"
-  weight = 30
-  identifier = "how-to-troubleshoot"
-  url = "/docs/how-to/troubleshoot/"
 
 
 

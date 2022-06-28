@@ -1,3 +1,0 @@
----
-title: "Compile to WASM"
----
