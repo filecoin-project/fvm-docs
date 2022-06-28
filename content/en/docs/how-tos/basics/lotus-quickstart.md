@@ -1,13 +1,15 @@
 ---
-title: "Setup Lotus"
+title: "Lotus quickstart"
 description: "Quickly install Lotus on your local computer using these pre-built scripts."
+lead: "To interact with the Filecoin Virtual Machine (FVM) you will need to have access to a Lotus node. An easy way to gain access to a Lotus node is to set one up on your local computer and start a local developer network. This page summarizes how to install Lotus using premade installation scripts."
 menu:
     howto:
         parent: "how-to-basics"
 draft: false
+weight: 1
 ---
 
-To interact with the Filecoin Virtual Machine (FVM) you will need to have access to a Lotus node. An easy way to gain access to a Lotus node is to set one up on your local computer and start a local developer network. This page summarizes how to install Lotus using premade installation scripts. For more details on how to install Lotus, including steps for operating systems not listed here, [check out the official Lotus docs](https://lotus.filecoin.io/lotus/install/prerequisites/)
+For more details on how to install Lotus, including steps for operating systems not listed here, [check out the official Lotus docs](https://lotus.filecoin.io/lotus/install/prerequisites/).
 
 ## Debian and Ubuntu
 
