@@ -57,7 +57,7 @@ The introduction of the FVM with smart contracts enables access to Layer 2 off-c
 
 - Cross-chain bridges: Enabling an exchange of information from one blockchain network to another.
 - Oracles: Connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
-- Rollups: Rolling up multiple transactions into a single piece of data before submitting it to the blockchain.
+- Rollups: Combining multiple transactions into a single piece of data before submitting it to the blockchain.
 - Payment networks
 
 ### Dataverse and Data DAOs
