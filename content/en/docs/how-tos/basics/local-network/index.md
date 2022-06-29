@@ -104,10 +104,10 @@ You must have Lotus installed already. Checkout the [quick install guides]({{< r
     rm -rf ~/.lotus-local-net
     rm -rf ~/.lotus-miner-local-net
 
-    # Clone the Lotus repo and checkout to the releases branch.
+    # Clone the Lotus repo and checkout to the fvm-m2 branch.
     git clone https://github.com/filecoin-project/lotus lotus-local-net
     cd lotus-local-net
-    git checkout releases
+    git checkout experimental/fvm-m2
 
     # Build the 2K-Lotus binary
     make 2k
