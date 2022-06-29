@@ -13,124 +13,149 @@ weight: 10
 
 The following script has been written for Debian and Ubuntu distributions. Windows users _may_ be able to use this method combined with [WSL](https://docs.microsoft.com/en-us/windows/wsl/install), with some tweaking.
 
-You must have Lotus installed. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
+{{< alert icon="👉" context="info" >}}
+You must have Lotus installed already. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
+{{< /alert >}}
 
-There are two scripts to run here. Run the second script once the first script has finished. <!-- TODO: how does the user know that the script has finished? -->
+1. Save and run this script to set up the `lotus` daemon:
 
-```shell
-#!/bin/bash
+    ```shell
+    #!/bin/bash
 
-export LOTUS_PATH=~/.lotus-local-net
-export LOTUS_MINER_PATH=~/.lotus-miner-local-net
-export LOTUS_SKIP_GENESIS_CHECK=_yes_
-export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
-export CGO_CFLAGS="-D__BLST_PORTABLE__"
-export RUSTFLAGS="--cfg unsound_local_offset"
+    # Set system variables for this terminal session.
+    export LOTUS_PATH=~/.lotus-local-net
+    export LOTUS_MINER_PATH=~/.lotus-miner-local-net
+    export LOTUS_SKIP_GENESIS_CHECK=_yes_
+    export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
+    export CGO_CFLAGS="-D__BLST_PORTABLE__"
+    export RUSTFLAGS="--cfg unsound_local_offset"
 
-git clone https://github.com/filecoin-project/lotus lotus-local-net
-cd lotus-local-net
-git checkout experimental/fvm-m2
+    # Clone the Lotus repo and checkout to the experimental/fvm-m2 branch.
+    git clone https://github.com/filecoin-project/lotus lotus-local-net
+    cd lotus-local-net
+    git checkout experimental/fvm-m2
 
-rm -rf ~/.genesis-sectors
-make 2k
+    # Remove any pre-existing local-network setups.
+    rm -rf ~/.genesis-sectors
+    rm -rf ~/.lotus-local-net
+    rm -rf ~/.lotus-miner-local-net
 
-./lotus fetch-params 2048
-./lotus-seed pre-seal --sector-size 2KiB --num-sectors 2
-./lotus-seed genesis new localnet.json
-./lotus-seed genesis add-miner localnet.json ~/.genesis-sectors/pre-seal-t01000.json
+    # Make the 2K-Lotus binary.
+    make 2k
 
-./lotus daemon --lotus-make-genesis=devgen.car --genesis-template=localnet.json --bootstrap=false
-```
+    # Setup the local network and start the lotus daemon.
+    ./lotus fetch-params 2048
+    ./lotus-seed pre-seal --sector-size 2KiB --num-sectors 2
+    ./lotus-seed genesis new localnet.json
+    ./lotus-seed genesis add-miner localnet.json ~/.genesis-sectors/pre-seal-t01000.json
+    ./lotus daemon --lotus-make-genesis=devgen.car --genesis-template=localnet.json --bootstrap=false
+    ```
 
-Once that script has finished, open a new terminal window on the same machine and run this script:
+1. Once that script has finished, open a new terminal window on the same machine.
+1. Save and run this script to set up the `lotus-miner`:
 
-```shell
-#!/bin/bash
+    ```shell
+    #!/bin/bash
 
-export LOTUS_PATH=~/.lotus-local-net
-export LOTUS_MINER_PATH=~/.lotus-miner-local-net
-export LOTUS_SKIP_GENESIS_CHECK=_yes_
-export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
-export CGO_CFLAGS="-D__BLST_PORTABLE__"
+    # Set system variables for this terminal session.
+    export LOTUS_PATH=~/.lotus-local-net
+    export LOTUS_MINER_PATH=~/.lotus-miner-local-net
+    export LOTUS_SKIP_GENESIS_CHECK=_yes_
+    export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
+    export CGO_CFLAGS="-D__BLST_PORTABLE__"
 
-./lotus wallet import --as-default ~/.genesis-sectors/pre-seal-t01000.key
-./lotus-miner init --genesis-miner --actor=t01000 --sector-size=2KiB --pre-sealed-sectors=~/.genesis-sectors --pre-sealed-metadata=~/.genesis-sectors/pre-seal-t01000.json --nosync
-./lotus-miner run --nosync
-```
+    # Setup the SP and start the lotus-daemon.
+    ./lotus wallet import --as-default ~/.genesis-sectors/pre-seal-t01000.key
+    ./lotus-miner init --genesis-miner --actor=t01000 --sector-size=2KiB --pre-sealed-sectors=~/.genesis-sectors --pre-sealed-metadata=~/.genesis-sectors/pre-seal-t01000.json --nosync
+    ./lotus-miner run --nosync
+    ```
+
+1. <!-- TODO: Show the user how they can test that their local-network is working. -->
 
 ## MacOS
 
-The following scripts have been written for MacOS users.
+The following scripts have been written for MacOS users. 
 
-You may get warning about `lotus` and `lotus-miner` accepting incoming connections. Click **Allow** on both of these prompts.
-
-| ![A warning message in MacOS about the lotus daemon.](lotus-incoming-network-warning.png) |  ![A warning message in MacOS about the lotus-miner daemon.](lotus-miner-incoming-network-warning.png) |
-| --- | --- |
-
-### Intel-based macs
-
-This script is for Intel-based Macs only, and will not work for M1-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher.
-
+{{< alert icon="👉" context="info" >}}
 You must have Lotus installed already. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
+{{< /alert >}}
 
-There are two scripts to run here. Run the second script once the first script has finished. <!-- TODO: how does the user know that the script has finished? -->
+1. Save and run this script to set up the `lotus` daemon:
 
-```shell
-#!/usr/bin/env bash
+    ```shell
+    #!/usr/bin/env bash
 
-```
+    # Check is system is Apple Silicon or Intel.
+    if [[ $(uname -m) == 'arm64' ]] 
+    then
+        # Apple Silicon
+        export LOTUS_PATH=~/.lotus-local-net
+        export LOTUS_MINER_PATH=~/.lotus-miner-local-net
+        export LOTUS_SKIP_GENESIS_CHECK=_yes_
+        export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
+        export CGO_CFLAGS="-D__BLST_PORTABLE__"
+        export LIBRARY_PATH=/opt/homebrew/lib
+    else
+        # Intel
+    fi
 
-### M1-based macs
+    # Remove previous local-net setup, if one exists.
+    rm -rf ~/.genesis-sectors
+    rm -rf ~/.lotus-local-net
+    rm -rf ~/.lotus-miner-local-net
 
-This script is for M1-based Macs only and will not work for Intel-based Macs. You must be using MacOS 11.0 _Big Sur_ or higher. This script has not been tested on M2 CPUs, however it may still work.
+    # Clone the Lotus repo and checkout to the releases branch.
+    git clone https://github.com/filecoin-project/lotus lotus-local-net
+    cd lotus-local-net
+    git checkout releases
 
-You must have Lotus installed already. Checkout the [quick install guides]({{< relref "install-lotus" >}}) if you don't have it installed yet.
+    # Build the 2K-Lotus binary
+    make 2k
 
-There are two scripts to run here. Run the second script once the first script has finished. <!-- TODO: how does the user know that the script has finished? -->
+    # Setup the local network and start the lotus daemon.
+    ./lotus fetch-params 2048
+    ./lotus-seed pre-seal --sector-size 2KiB --num-sectors 2
+    ./lotus-seed genesis new localnet.json
+    ./lotus-seed genesis add-miner localnet.json ~/.genesis-sectors/pre-seal-t01000.json
+    ./lotus daemon --lotus-make-genesis=devgen.car --genesis-template=localnet.json --bootstrap=false
+    ```
 
-```shell
-#!/usr/bin/env bash
+1. You may get warning about `lotus` accepting incoming connections. Click **Allow** on this prompt.
 
-rm -rf ~/.genesis-sectors
-rm -rf ~/.lotus-local-net
+    ![A warning message in MacOS about the lotus daemon.](lotus-incoming-network-warning.png) 
 
-export LOTUS_PATH=~/.lotus-local-net
-export LOTUS_MINER_PATH=~/.lotus-miner-local-net
-export LOTUS_SKIP_GENESIS_CHECK=_yes_
-export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
-export CGO_CFLAGS="-D__BLST_PORTABLE__"
-export LIBRARY_PATH=/opt/homebrew/lib
+1. Once that script has finished, open a new terminal window on the same machine.
+1. Save and run this script to set up the `lotus-miner`:
 
-git clone https://github.com/filecoin-project/lotus lotus-local-net
-cd lotus-local-net
-git checkout releases
+    ```shell
+    #!/usr/bin/env bash
 
-make 2k
+    # Check is system is Apple Silicon or Intel.
+    if [[ $(uname -m) == 'arm64' ]] 
+    then
+        # Apple Silicon
+        export LOTUS_PATH=~/.lotus-local-net
+        export LOTUS_MINER_PATH=~/.lotus-miner-local-net
+        export LOTUS_SKIP_GENESIS_CHECK=_yes_
+        export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
+        export CGO_CFLAGS="-D__BLST_PORTABLE__"
+        export LIBRARY_PATH=/opt/homebrew/lib
+    else
+        # Intel
+    fi
 
-./lotus fetch-params 2048
-./lotus-seed pre-seal --sector-size 2KiB --num-sectors 2
-./lotus-seed genesis new localnet.json
-./lotus-seed genesis add-miner localnet.json ~/.genesis-sectors/pre-seal-t01000.json
-./lotus daemon --lotus-make-genesis=devgen.car --genesis-template=localnet.json --bootstrap=false
-```
+    # Move into the lotus-local-net folder made in the last script.
+    cd ./lotus-local-net
 
-Once that script has finished, open a new terminal window on the same machine and run this script:
 
-```shell
-#!/usr/bin/env bash
+    # Setup the SP and start the lotus-daemon.
+    ./lotus wallet import --as-default ~/.genesis-sectors/pre-seal-t01000.key
+    ./lotus-miner init --genesis-miner --actor=t01000 --sector-size=2KiB --pre-sealed-sectors=~/.genesis-sectors --pre-sealed-metadata=~/.genesis-sectors/pre-seal-t01000.json --nosync
+    ./lotus-miner run --nosync
+    ```
 
-rm -rf ~/.lotus-miner-local-net
+1. You may get warning about `lotus-miner` accepting incoming connections. Click **Allow** on this prompt.
 
-export LOTUS_PATH=~/.lotus-local-net
-export LOTUS_MINER_PATH=~/.lotus-miner-local-net
-export LOTUS_SKIP_GENESIS_CHECK=_yes_
-export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
-export CGO_CFLAGS="-D__BLST_PORTABLE__"
-export LIBRARY_PATH=/opt/homebrew/lib
+    ![A warning message in MacOS about the lotus-miner.](lotus-miner-incoming-network-warning.png) 
 
-cd ./lotus-local-net
-
-./lotus wallet import --as-default ~/.genesis-sectors/pre-seal-t01000.key
-./lotus-miner init --genesis-miner --actor=t01000 --sector-size=2KiB --pre-sealed-sectors=~/.genesis-sectors --pre-sealed-metadata=~/.genesis-sectors/pre-seal-t01000.json --nosync
-./lotus-miner run --nosync
-```
+1. <!-- TODO: Show the user how they can test that their local-network is working. -->
