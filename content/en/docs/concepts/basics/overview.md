@@ -16,7 +16,7 @@ There has been a huge demand from the developer community for Filecoin compatibi
 
 The FVM also supports other foreign runtimes and virtual machines, anything that compiles to [WebAssembly (WASM)](https://developer.mozilla.org/en-US/docs/WebAssembly). WASM provides the flexibility we need to meet various needs because it was built for modern web browsers and supports multiple languages, including Rust and Go.
 
-Developers can adapt to the FVM in other contexts, such as the [Interplanetary File System (IPFS)](https://docs.ipfs.io/) and [Interplanetary Linked Data (IPLD)](https://ipld.io/docs/), because it's not tightly-coupled to Filecoin.
+Developers can adapt to the FVM in other contexts, such as the [Interplanetary File System (IPFS)](https://docs.ipfs.io/) and [Interplanetary Linked Data (IPLD)](https://ipld.io/docs/), because the FVM is not tightly-coupled to Filecoin.
 
 ## Vision and goals
 
