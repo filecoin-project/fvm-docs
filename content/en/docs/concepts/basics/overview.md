@@ -45,7 +45,7 @@ As a technology gets built out, it adds layers of capabilities, including the ne
 
 #### Layer 0: storage and retrieval layer
 
-This is the earliest version of Filecoin blockchain that could store and retrieve data.
+This is the earliest version of Filecoin blockchain, which could store and retrieve data.
 
 #### Layer 1: the state layer
 
