@@ -19,7 +19,7 @@ You must have Lotus installed already. Checkout the [quick install guides]({{< r
 
 1. Save and run this script to set up the `lotus` daemon:
 
-    ```shell
+    ```sh
     #!/bin/bash
 
     # Set system variables for this terminal session.
@@ -54,7 +54,7 @@ You must have Lotus installed already. Checkout the [quick install guides]({{< r
 1. Once that script has finished, open a new terminal window on the same machine.
 1. Save and run this script to set up the `lotus-miner`:
 
-    ```shell
+    ```sh
     #!/bin/bash
 
     # Set system variables for this terminal session.
@@ -82,7 +82,7 @@ You must have Lotus installed already. Checkout the [quick install guides]({{< r
 
 1. Save and run this script to set up the `lotus` daemon:
 
-    ```shell
+    ```sh
     #!/usr/bin/env bash
 
     # Check is system is Apple Silicon or Intel.
@@ -127,7 +127,7 @@ You must have Lotus installed already. Checkout the [quick install guides]({{< r
 1. Once that script has finished, open a new terminal window on the same machine.
 1. Save and run this script to set up the `lotus-miner`:
 
-    ```shell
+    ```sh
     #!/usr/bin/env bash
 
     # Check is system is Apple Silicon or Intel.
