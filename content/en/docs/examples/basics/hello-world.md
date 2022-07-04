@@ -7,24 +7,8 @@ menu:
         parent: "examples-basics"
 ---
 
-## Set up
-
-Before we can create an actor, we need to install Lotus and spin-up a local Filecoin network. We'll be using the `install-lotus` and `start-local-network` scripts. More information on how to [install Lotus]({{< relref "install-lotus" >}}) or [spin up a local Filecoin network]({{< relref "local-network" >}}) can be found on their respective pages.
-
-1. Install Lotus using the command for your operating system:
-
-    ```sh
-    # Debian/Ubuntu
-    bash <(curl -s https://fvm.filecoin.io/docs/scripts/install-lotus-debian-ubuntu.sh)
-    ```
-
-    ---
-
-    ```sh
-    # MacOS
-    bash <(curl -s https://fvm.filecoin.io/docs/scripts/install-lotus-macos.sh)
-    ```
-
+1. [Install Lotus]({{< relref "install-lotus" >}}).
+1. Spin up a [local Filecoin network]({{< relref "local-network" >}}).
 1. Clone the [FVM Actor Examples](https://github.com/filecoin-project/fvm-actor-examples) repo:
 
     ```shell
@@ -41,12 +25,6 @@ Before we can create an actor, we need to install Lotus and spin-up a local File
 
     ```shell
     cargo build
-    ```
-
-1. Set up a Lotus devnet:
-
-    ```shell
-    bash <(curl -s https://fvm.filecoin.io/docs/scripts/start-local-filecoin-network.sh)
     ```
 
 1. Install the actor:
@@ -72,3 +50,5 @@ Before we can create an actor, we need to install Lotus and spin-up a local File
     ```shell
     echo "<output>" | base64 -d
     ```
+
+1. Done!
