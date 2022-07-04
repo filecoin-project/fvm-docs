@@ -61,11 +61,10 @@ The following script has been written for Debian and Ubuntu distributions. Windo
 1. Download and run the following script. You may need to enter your login password towards the end of the script:
 
     ```sh
-    #!/usr/bin/env bash
+    #!/bin/bash
 
     # Check is system is Apple Silicon or Intel.
-    if [[ $(uname -m) == 'arm64' ]] 
-    then
+    if [[ $(uname -m) == 'arm64' ]]; then
         # Apple Silicon
         export LIBRARY_PATH=/opt/homebrew/lib
         export FFI_BUILD_FROM_SOURCE=1

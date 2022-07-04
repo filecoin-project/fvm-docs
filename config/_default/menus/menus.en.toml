@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Examples"
-  url = "/docs/examples/basics/start-here/"
+  url = "/docs/examples/basics/hello-world/"
   weight = 30
 
 [[main]]
