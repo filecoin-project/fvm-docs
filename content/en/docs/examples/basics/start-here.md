@@ -1,13 +1,26 @@
 ---
 title: "Start here"
 description: "Lorem ipsum."
-lead: "Lorem ipsum."
+lead: "Use this guide to install Lotus, set up a local Filecoin network, compile a simple hello-world actor to WASM, and install that actor onto your local Filecoin network."
 menu:
     examples:
         parent: "examples-basics"
 ---
 
-<!-- TODO: create this repo -->
+1. Install Lotus:
+
+    **Debian/Ubuntu**:
+
+    ```sh
+    bash <(curl -s https://fvm.filecoin.io/docs/scripts/install-lotus-debian-ubuntu.sh)
+    ```
+
+    **MacOS**:
+
+    ```sh
+    bash <(curl -s https://fvm.filecoin.io/docs/scripts/install-lotus-macos.sh)
+    ```
+
 1. Clone the [FVM Actor Examples](https://github.com/filecoin-project/fvm-actor-examples) repo:
 
     ```shell
@@ -29,7 +42,7 @@ menu:
 1. Set up a Lotus devnet:
 
     ```shell
-    dev-net one-liner
+    bash <(curl -s https://fvm.filecoin.io/docs/scripts/start-local-filecoin-network.sh)
     ```
 
 1. Install the actor:
