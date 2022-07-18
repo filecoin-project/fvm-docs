@@ -24,3 +24,18 @@ docs
 ## License
 
 Dual-licensed: [MIT](./LICENSE-MIT), [Apache Software License v2](./LICENSE-APACHE), by way of the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
+
+## Contribution Instructions
+
+[This page may help writer: https://docs.google.com/document/d/1TuuDtYbmUM4-TbwNS-Cn-WU10oCDkmAjuF-sTm19w4g/edit?usp=sharing]
+
+### How to add new pages
+
+Fork.... See existing contribution instructions.
+
+Create a new md file.
+Stay out of all folders except content, so things don't break.
+
+Add header.
+
+Save, Add, Commit, Push.
