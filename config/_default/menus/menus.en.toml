@@ -21,40 +21,28 @@
 
 
 [[concepts]]
-  name = "Basics"
-  weight = 10
-  identifier = "concepts-basics"
-  url = "/docs/concepts/basics/"
-
-[[concepts]]
-  name = "Gas"
-  weight = 20
-  identifier = "concepts-gas"
-  url = "/docs/concepts/gas/"
-
-[[concepts]]
-  name = "Messages"
-  weight = 30
-  identifier = "concepts-messages"
-  url = "/docs/concepts/implementations/"
-
-[[concepts]]
   name = "Actors"
-  weight = 40
+  weight = 30
   identifier = "concepts-actors"
   url = "/docs/concepts/actors/"
 
 [[concepts]]
   name = "EVM"
-  weight = 50
+  weight = 40
   identifier = "concepts-evm"
   url = "/docs/concepts/evm/"
 
 [[concepts]]
   name = "Implementations"
-  weight = 60
+  weight = 50
   identifier = "concepts-implementations"
   url = "/docs/concepts/implementations/"
+
+[[concepts]]
+  name = "Use cases"
+  weight = 60
+  identifier = "concepts-use-cases"
+  url = "/docs/concepts/use-cases/"
 
 
 
