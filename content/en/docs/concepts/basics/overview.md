@@ -164,7 +164,7 @@ We're eager to hear community feedback and learn how you want to get involved.
 
 - Check out our [FIP discussions](https://github.com/filecoin-project/FIPs) on Github and our FVM project repo.
 
-- Join our #FVM Slack channel.
+- Join our [#FVM](https://filecoinproject.slack.com/archives/C029MT4PQB1) Slack channel.
 
 - Apply for an open grant in the [Early Builders program](https://fvm.filecoin.io/foundry).
 
