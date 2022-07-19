@@ -103,7 +103,7 @@ For an example of DataDAO that won First Prize before they even had the elegance
 
 If clients today want to replicate a piece of data with N number of providers, they have to perform the data transfer to each node, n number of times.
 
-With the FVM, you can write Actors (Filecoin's version of smart contracts) that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement. 
+With the FVM, you can write Actors (Filecoin's version of smart contracts) that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement.
 
 The smart contracts would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
 
@@ -127,30 +127,26 @@ When transactions occur on the Filecoin blockchain, they result in changes of st
 
 #### Layer 2: the data layer
 
-The introduction of the FVM with smart contracts enables access to Layer 2 off-chain data to fuel state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
+The introduction of the FVM with smart contracts enables access to Layer 2 off-chain data to fuel on-chain state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
 
 - Cross-chain bridges: Enabling an exchange of information from one blockchain network to another.
 - Oracles: Connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
 - Rollups: Combining multiple transactions into a single piece of data before submitting it to the blockchain.
 - Payment networks
 
-### Decentralized verifiable computation
-
-Redundant: Decide here or with DAOs: With the FVM, you have both storage and computation under the same roof, a big differentiator for the Filecoin network. You'll be able to define computation to be applied to the data, while incentivising execution with the dataverse and Data DAOs. You'll be able to certify that the resulting storage state and computation output are correct.
-
 ### Smart storage markets
 
-Smart contracts on the FVM can bring richer deal-making functionality by introducing more automation.
+Smart contracts on the FVM can bring richer deal-making functionality and introduce more automation at the actor layer and alleviate infrastructure overhead.
 
 Some possibilities are:
 
 - Auto-renewing deals: Without repeating data transfers when deals expire or get slashed.
 - Self-repairing deals: If a provider has failed sectors and wants to recover the data, instead of having clients resend the data, replication workers can resend it automatically.
-- Retrying deals: Where a client dispatches their deal data to a depot and, for a small fee, has the deal data transmitted and satisfactorily delivered to the provider.
+- Retrying deals: A client can dispatch their deal data to a depot and, for a small fee, has the deal data transmitted and satisfactorily delivered to the provider.
 
 ### Time-locked retrieval
 
-The FVM enables storage deals with data that cannot be retrieved by anyone until a specific window of time elapses.
+The FVM enables storage deals with data that cannot be retrieved by anyone until a specific window of time elapses, or, potentially, a specific event has been triggered on-chain.
 
 ### Trustless reputation systems
 
