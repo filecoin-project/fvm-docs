@@ -20,21 +20,15 @@ Filecoin provides verifiable data storage. But what's the point of storing data,
 
 There has been a huge demand from the developer community for Filecoin compatibility with [Ethereum](https://ethereum.org/en/what-is-ethereum/) and [Solidity](https://en.wikipedia.org/wiki/Solidity) out of the box. With the FVM, developers can access the massive corpus of audited and battle-tested smart contracts written in Solidity for the Ethereum Virtual Machine (EVM) to create new features that use data.
 
-But we're not limited to Ethereum. We meet a variety of other needs as well by supporting foreign runtimes and virtual machines that compile to [WebAssembly (WASM)](https://developer.mozilla.org/en-US/docs/WebAssembly), a low-level programming language built for modern web browsers. WASM supports multiple languages, including Rust and Go, which are very popular among blockchain developers.
+But we're not limited to Ethereum. We meet a variety of other needs as well by supporting foreign runtimes and virtual machines that compile to [WebAssembly (WASM)](https://developer.mozilla.org/en-US/docs/WebAssembly), a low-level programming language built for modern web browsers. Low-level programming languages like WASM can support multiple languages, including Rust and Go, which are very popular among blockchain developers.
 
-Because the FVM is not tightly-coupled to Filecoin, developers with experience on the [Interplanetary File System (IPFS)](https://docs.ipfs.io/) and [Interplanetary Linked Data (IPLD)](https://ipld.io/docs/) can easily adapt to the FVM on Filecoin and vice versa. As you'll see when we get to explaining use cases, IPLD plays a very important role in the opportunities that the FVM creates for data.
+Because the FVM is not tightly-coupled to Filecoin, developers with experience on the [Interplanetary File System (IPFS)](https://docs.ipfs.io/) and [Interplanetary Linked Data (IPLD)](https://ipld.io/docs/) can easily adapt to the FVM on Filecoin and Filecoin developers can easily branch out to IPLD. As you'll see when we get to explaining use cases, IPLD plays a very important role in the opportunities that the FVM creates for data.
 
 ## Vision and goals
 
 ### Proximity to data for computation
 
-Our primary goal with the FVM is to expand the possibilities for working with data. Blockchain experts have noticed that the ability to explore large datasets on a blockchain is an unsolved pain-point. As recently as March 15, 2022, Vibhuthi Viswanathan, content curator at SpringPeople, says
-
-> Relatively small volumes of data can be stored in blocks > which might prove hindersome as large volumes of data
-> are collected per second for big data & data analysis
-> tasks.
-
-All of that changes with the Filecoin Virtual Machine.
+Our primary goal with the FVM is to expand the possibilities for working with data. We've made an important first step by enabling programming under the same roof as file storage.
 
 ### Building on our strengths
 
@@ -55,39 +49,27 @@ Here are some use cases that are possible with the FVM. With centralized data, a
 
 ### Dataverse and DATA DAOs
 
-The Dataverse and DAOs are each, in their own right, an amazing use case. However, together they present even more incredible opportunities. Together they represent the value of datasets and incentivize value creation through data processing.
+The Dataverse and DAOs are each, in their own right, an amazing use case. However, together they present even more opportunities. Together they represent the value of datasets in a dataverse, and then they incentivize more value creation by enabling developers to process that data as Data DAOs.
 
 Let's explain each first.
 
 #### Dataverse
 
-A dataverse is a self-learning on-chain entity, that enables you to share, preserve, cite, explore and analyze research data. Researchers, data authors, publishers, data distributors, and affiliated institutions all receive appropriate credit via a data citation with a persistent identifier. (from [Wikipedia](https://en.wikipedia.org/wiki/Dataverse))
+A dataverse is a self-learning on-chain entity, that enables you to share, preserve, cite, explore and analyze research data. Researchers, data authors, publishers, data distributors, and affiliated institutions all get a persistent identifier to receive appropriate credit. (from [Wikipedia](https://en.wikipedia.org/wiki/Dataverse))
 
-A Dataverse repository can host multiple dataverses. Each dataverse contains dataset(s) or other dataverses, and each dataset contains descriptive metadata and data files (including documentation and code that accompany the data).
+A dataverse repository can host multiple dataverses. Each dataverse contains dataset(s) or other dataverses, and each dataset contains descriptive metadata and data files (including documentation and code that accompany the data).
 
-You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy.
-
-With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers for storage activities such as:
-
-- Computation requests: Such as requests for unsealing data before retrieval or other state changes.
-- Validation: Verifying that transactions are legal, not double-spends or malicious.
-- Transformations: The process that data goes through before the storage provider stores them. See [Data Representation](https://spec.filecoin.io/#section-systems.filecoin_files.piece.data-representation).
-- Extraction: Of data from a source system for further use.
-- Machine learning: Using data to predict outcomes...and more.
-
-You'll be able to apply a computation on data, incentivizing its execution all the way to the end, and certifying that the resulting storage state and the computation output are verifiably correct.
-
-If you chain these processes together, you can compound the value of the datasets iteratively and deploy self-learning entities on-chain to steward, maintain, and curate those datasets.
+You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy. Then those tokens could be harvested and exchanged between peers.
 
 #### Decentralized Autonomous Organizations (DAOs)
 
 With smart contracts possible on the FVM, you can create [Decentralized Autonomous Organizations (DAOs)](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), which are member-owned communities, constructed by rules encoded in a smart contract.
 
-You can use the FVM to program a DAO with the terms agreed upon by the people who started the DAO. Having the terms built into a smart contract makes the entire organization self-sustainable, in other words, _autonomous_. For example, a program can hire people, onboard them, order equipment, pay employees, many of the things that people would normally do to keep a company running. The agreement could include creating a token and even paying employees in that token.
+You can use the FVM to program a DAO with the terms agreed upon by the people who started the DAO. Having the terms built into a smart contract makes the entire organization self-sustainable, in other words, _autonomous_. For example, a program can hire people, onboard them, order equipment, pay employees, many of the things that people would normally do to keep a company running.
 
-DAOs can also change and grow with the vote of tokenholders in the ecosystem. The more tokens a member has, the more votes they get. When agreements are made, you can encode the changes into a smart contract and implement them immediately. You won't need to enforce them through a traditional top-down hierarchy, like a CEO or a board of directors.
+When agreements and changes are made, you can encode them into a smart contract and implement them immediately. You won't need to enforce them through a traditional top-down hierarchy, like a CEO or a board of directors.
 
-Some links of interest for DAO builders:
+Some links of interest for DAO builders include:
 
 - [MakerDAO](https://makerdao.com/en/whitepaper#abstract)
 - [Aragon](https://aragon.org/)
@@ -97,19 +79,33 @@ Some links of interest for DAO builders:
 
 #### Combining datasets and DAOs to make a DataDAO
 
-If you have datasets through a Dataverse, you can build on their value by fueling the DAO's need for data. You can then use dataverses to incentivize further value creation through data processing.
+Building a DataDAO is now possible with the FVM. If you have datasets through a Dataverse, you can build on their value by fueling the DAO's need for data. You can then use a dataverse to incentivize further value creation through data processing.
 
-See [Data DAO: enable a collective-owned dataset economy: Merging decentralised governance and incentive mechanism into a permissionless data marketplace!](https://devpost.com/software/data-dao), First Prize winner of the Ocean Protocol Data Economy Challenge - Datatokens:
+With the FVM, you can write smart contracts to request computation services such as:
 
-"DataDAO utility is similar to the narrative of an AMM (automated market making, like uniswap, bancor, balancer etc…) for liquidity pooling - the value of each isolated individual liquidity is not valuable in it’s own, but the ability of them to pool together unlock a tremendous amount of value in the form of large token exchange liquidity pools. Same applies for DataDAO, instead of Capital → Data. - the pooling of fragmented data together can create a valuable dataset."
+- Validation: Verifying that transactions are legal, not double-spends or malicious.
+- Transformations: Processing data goes before the storage provider stores them. See [Data Representation](https://spec.filecoin.io/#section-systems.filecoin_files.piece.data-representation).
+- Extraction: Getting the data from a source system for further use.
+- Joining different datasets
+- Machine learning: Using data to predict outcomes
 
-Building a DataDAO is now more elegantly possible with the FVM.
+...and more.
+
+When you chain these processes together, you augment the value of the datasets iteratively and bring business intelligence and value to them.
+
+You'll be able to incentivize the execution all the way to the end and certify that the resulting storage state and the computation output are verifiably correct.
+
+For an example of DataDAO that won First Prize before they even had the elegance of the FVM, see [Data DAO: enable a collective-owned dataset economy: Merging decentralised governance and incentive mechanism into a permissionless data marketplace!](https://devpost.com/software/data-dao), First Prize winner of the Ocean Protocol Data Economy Challenge - Datatokens.
+
+"...the ability ... to pool together and unlock a tremendous amount of value in the form of large token exchange liquidity pools. Same applies for DataDAO, instead of Capital → Data. - the pooling of fragmented data together can create a valuable dataset."
 
 ### Replication workers
 
-If clients today want to replicate a piece of data with N providers, they have to perform the data transfer to each provider.
+If clients today want to replicate a piece of data with N number of providers, they have to perform the data transfer to each node, n number of times.
 
-With smart contracts on the FVM, you can automatically replicate data across providers in the Filecoin network to incentivized replication actors without client involvement. The smart contracts would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
+With the FVM, you can write Actors (Filecoin's version of smart contracts) that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement. 
+
+The smart contracts would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
 
 ### Layer 2: data layer commitments
 
