@@ -55,15 +55,17 @@ Here are some use cases that are possible with the FVM. With centralized data, a
 
 ### Dataverse and DATA DAOs
 
-The Dataverse and DAOs are each, in their own right, an amazing use case. However, together they present even more incredible opportunities. Let's explain each first.
+The Dataverse and DAOs are each, in their own right, an amazing use case. However, together they present even more incredible opportunities. Together they represent the value of datasets and incentivize value creation through data processing.
+
+Let's explain each first.
 
 #### Dataverse
 
-A dataverse is a self-learning on-chain entity, that enables you to share, preserve, cite, explore and analyze research data. Researchers, data authors, publishers, data distributors, and affiliated institutions all receive appropriate credit via a data citation with a persistent identifier (e.g., DOI, or handle). (from [Wikipedia](https://en.wikipedia.org/wiki/Dataverse))
+A dataverse is a self-learning on-chain entity, that enables you to share, preserve, cite, explore and analyze research data. Researchers, data authors, publishers, data distributors, and affiliated institutions all receive appropriate credit via a data citation with a persistent identifier. (from [Wikipedia](https://en.wikipedia.org/wiki/Dataverse))
 
 A Dataverse repository can host multiple dataverses. Each dataverse contains dataset(s) or other dataverses, and each dataset contains descriptive metadata and data files (including documentation and code that accompany the data).
 
-You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy. You can then use them to incentivize further value creation through data processing.
+You can use the FVM to tokenize datasets to represent their value to humanity and kickstart the dataset economy.
 
 With the FVM, it will be possible to write smart contracts to harvest and exchange tokens between peers for storage activities such as:
 
@@ -95,7 +97,7 @@ Some links of interest for DAO builders:
 
 #### Combining datasets and DAOs to make a DataDAO
 
-If you have datasets through a Dataverse, you can build on their value by fueling the DAO's need for data.
+If you have datasets through a Dataverse, you can build on their value by fueling the DAO's need for data. You can then use dataverses to incentivize further value creation through data processing.
 
 See [Data DAO: enable a collective-owned dataset economy: Merging decentralised governance and incentive mechanism into a permissionless data marketplace!](https://devpost.com/software/data-dao), First Prize winner of the Ocean Protocol Data Economy Challenge - Datatokens:
 
