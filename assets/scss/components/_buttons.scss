@@ -65,7 +65,11 @@ pre {
 
 .btn-copy {
   transition: opacity 0.3s ease-in-out;
+<<<<<<< HEAD
   visibility: hidden !important;
+=======
+  opacity: 0;
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   position: absolute;
   right: 0.25rem;
   top: 0.25rem;
@@ -105,7 +109,11 @@ pre {
 
 @include media-breakpoint-up(md) {
   pre:hover .btn-copy {
+<<<<<<< HEAD
     visibility: visible !important;
+=======
+    opacity: 1;
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   }
 }
 
@@ -218,6 +226,7 @@ pre {
   margin-left: -0.1875rem;
   margin-right: -0.3125rem;
 }
+<<<<<<< HEAD
 
 .dropdown-menu.dropdown-menu-main {
   width: 100%;
@@ -251,3 +260,5 @@ pre {
 .dropdown-menu-main .dropdown-item.active:hover {
   background-color: transparent;
 }
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

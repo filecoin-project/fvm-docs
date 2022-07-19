@@ -1,7 +1,10 @@
 import Clipboard from 'clipboard';
 
+<<<<<<< HEAD
 var pre = document.getElementsByTagName('pre');
 
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 for (var i = 0; i < pre.length; ++ i)
 {
   var element = pre[i];

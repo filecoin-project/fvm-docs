@@ -14,7 +14,11 @@
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}">
     {{ partial "header/header.html" . }}
+<<<<<<< HEAD
     <div class="wrap container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}" role="document">
+=======
+    <div class="wrap container-xxl" role="document">
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
       <div class="content">
         {{ block "main" . }}{{ end }}
       </div>

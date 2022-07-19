@@ -1,10 +1,14 @@
 {
   "name": "@hyas/doks",
   "description": "Doks theme",
+<<<<<<< HEAD
   "version": "0.4.3",
   "engines": {
 		"node": ">=16.15.0"
 	},
+=======
+  "version": "0.3.4",
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   "browserslist": [
     "defaults"
   ],
@@ -26,8 +30,12 @@
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js config functions",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
+<<<<<<< HEAD
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
+=======
+    "lint:markdown": "markdownlint \"*.md\" \"content/**/*.md\"",
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
@@ -38,6 +46,7 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@babel/cli": "^7.17",
     "@babel/core": "^7.17",
     "@babel/preset-env": "^7.17",
@@ -66,5 +75,36 @@
   },
   "otherDependencies": {
     "hugo": "0.99.0"
+=======
+    "@babel/cli": "^7.15",
+    "@babel/core": "^7.15",
+    "@babel/preset-env": "^7.15",
+    "@fullhuman/postcss-purgecss": "^4.0",
+    "auto-changelog": "^2.3.0",
+    "autoprefixer": "^10.3",
+    "bootstrap": "^5.1",
+    "clipboard": "^2.0",
+    "eslint": "^7.32",
+    "exec-bin": "^1.0.0",
+    "flexsearch": "^0.7.21",
+    "highlight.js": "^11.2",
+    "hugo-installer": "^3.1",
+    "instant.page": "^5.1",
+    "katex": "^0.13",
+    "lazysizes": "^5.3",
+    "markdown-it": ">=12.3.2",
+    "markdownlint-cli": "^0.31.1",
+    "mermaid": ">=9.0.0",
+    "node-fetch": "^3.0",
+    "postcss": "^8.3",
+    "postcss-cli": "^8.3",
+    "purgecss-whitelister": "^2.4",
+    "shx": "^0.3.3",
+    "stylelint": "^13.13",
+    "stylelint-config-standard": "^22.0"
+  },
+  "otherDependencies": {
+    "hugo": "0.88.1"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   }
 }

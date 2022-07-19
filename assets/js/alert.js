@@ -2,6 +2,7 @@ var announcement = document.getElementById('announcement');
 
 if (announcement !== null) {
 
+<<<<<<< HEAD
   var id = announcement.dataset.id;
 
   Object.keys(localStorage).forEach(function(key) {
@@ -18,3 +19,18 @@ if (announcement !== null) {
   });
 
 }
+=======
+  if (localStorage.getItem('announcement') === null ) {
+
+    announcement.classList.remove('d-none');
+
+  }
+
+  announcement.addEventListener('closed.bs.alert', () => {
+
+    localStorage.setItem('announcement', 'closed');
+
+  });
+
+}
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

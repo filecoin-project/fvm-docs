@@ -1,5 +1,14 @@
 table {
   @extend .table;
+<<<<<<< HEAD
 
   margin: 3rem 0;
 }
+=======
+  margin: 3rem 0;
+}
+table td, table thead tr th {
+  font-size: 85%;
+  padding: 0.6rem;
+}
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

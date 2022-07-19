@@ -10,6 +10,7 @@
   z-index: $zindex-dropdown;
 }
 
+<<<<<<< HEAD
 #suggestions a,
 .suggestion__no-results {
   padding: 0.75rem;
@@ -19,6 +20,13 @@
 #suggestions a {
   display: block;
   text-decoration: none;
+=======
+#suggestions a {
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin: 0 0.5rem;
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 }
 
 #suggestions a:focus {
@@ -47,13 +55,21 @@
   font-size: $font-size-base;
 }
 
+<<<<<<< HEAD
 .suggestion__title {
+=======
+#suggestions span:first-child {
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   font-weight: $headings-font-weight;
   color: $black;
 }
 
+<<<<<<< HEAD
 .suggestion__description,
 .suggestion__no-results {
+=======
+#suggestions span:nth-child(2) {
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   color: $gray-700;
 }
 
@@ -66,7 +82,11 @@
     display: flex;
   }
 
+<<<<<<< HEAD
   .suggestion__title {
+=======
+  #suggestions span:first-child {
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
     width: 9rem;
     padding-right: 1rem;
     border-right: 1px solid $gray-200;
@@ -74,7 +94,11 @@
     text-align: right;
   }
 
+<<<<<<< HEAD
   .suggestion__description {
+=======
+  #suggestions span:nth-child(2) {
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
     width: 19rem;
     padding-left: 1rem;
   }

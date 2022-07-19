@@ -26,6 +26,15 @@ document.addEventListener('click', function(event) {
 
 });
 
+<<<<<<< HEAD
+=======
+// initialize bootstrap tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 /*
 Source:
   - https://dev.to/shubhamprakash/trap-focus-using-javascript-6a3
@@ -33,6 +42,7 @@ Source:
 
 document.addEventListener('keydown',suggestionFocus);
 
+<<<<<<< HEAD
 function suggestionFocus(e) {
   const suggestionsHidden = suggestions.classList.contains('d-none');
   if (suggestionsHidden) return;
@@ -50,6 +60,26 @@ function suggestionFocus(e) {
   else if (e.key === "ArrowDown") {
     e.preventDefault();
     const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+=======
+function suggestionFocus(e){
+
+  const focusableSuggestions= suggestions.querySelectorAll('a');
+  const focusable= [...focusableSuggestions];
+  const index = focusable.indexOf(document.activeElement);
+
+  const keyDefault = suggestions.classList.contains('d-none');
+
+  let nextIndex = 0;
+
+  if ((e.keyCode === 38) && (!keyDefault)) {
+    e.preventDefault();
+    nextIndex= index > 0 ? index-1 : 0;
+    focusableSuggestions[nextIndex].focus();
+  }
+  else if ((e.keyCode === 40) && (!keyDefault)) {
+    e.preventDefault();
+    nextIndex= index+1 < focusable.length ? index+1 : index;
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
     focusableSuggestions[nextIndex].focus();
   }
 
@@ -94,6 +124,7 @@ Source:
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
+<<<<<<< HEAD
   {{ $list := (where .Site.Pages "Section" "docs") -}}
   {{ $len := (len $list) -}}
 
@@ -163,4 +194,70 @@ Source:
         if(suggestions.childElementCount == maxResult) break;
     }
   }
+=======
+  {{ $list := (.Site.Pages) -}}
+  {{ $len := (len $list) -}}
+
+  index.add(
+    {{ range $index, $element := $list -}}
+      {
+        id: {{ $index }},
+        href: "{{ .Permalink }}",
+        title: {{ .Title | jsonify }},
+        description: {{ .Params.description | jsonify }},
+        content: {{ .Content | jsonify }}
+      })
+      {{ if ne (add $index 1) $len -}}
+        .add(
+      {{ end -}}
+    {{ end -}}
+  ;
+
+  search.addEventListener('input', show_results, true);
+  suggestions.addEventListener('click', accept_suggestion, true);
+
+  function show_results(){
+    const maxResult = 5;
+
+    var value = this.value;
+    var results = index.search(value, {limit: maxResult, enrich: true});
+
+    suggestions.classList.remove('d-none');
+    suggestions.innerHTML = "";
+
+    //flatSearch now returns results for each index field. create a single list
+    const flatResults = {}; //keyed by href to dedupe results
+    results.forEach(result=>{
+        result.result.forEach(r=>{
+          flatResults[r.doc.href] = r.doc;
+        });
+    });
+
+    //construct a list of suggestions list
+    for(const href in flatResults) {
+        const doc = flatResults[href];
+
+        const entry = document.createElement('div');
+        entry.innerHTML = '<a href><span></span><span></span></a>';
+
+        entry.querySelector('a').href = href;
+        entry.querySelector('span:first-child').textContent = doc.title;
+        entry.querySelector('span:nth-child(2)').textContent = doc.description;
+
+        suggestions.appendChild(entry);
+        if(suggestions.childElementCount == maxResult) break;
+    }
+  }
+
+  function accept_suggestion(){
+
+      while(suggestions.lastChild){
+
+          suggestions.removeChild(suggestions.lastChild);
+      }
+
+      return false;
+  }
+
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 }());

@@ -1,4 +1,5 @@
 {{- range $p := .Site.Pages -}}
+<<<<<<< HEAD
 {{- range .Aliases }}
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
@@ -11,3 +12,9 @@
 #
 # /docs/0.1/*           https://v0-1-0--doks-versioning-poc.netlify.app/docs/0.1/:splat  200
 # /docs/0.2/*           https://v0-2-0--doks-versioning-poc.netlify.app/docs/0.2/:splat  200
+=======
+    {{- range .Aliases }}
+        {{ . }} {{ $p.RelPermalink -}}
+    {{- end }}
+{{- end -}}
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

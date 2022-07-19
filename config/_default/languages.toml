@@ -5,6 +5,7 @@
   [en.params]
     languageISO = "EN"
 
+<<<<<<< HEAD
 [de]
   languageName = "German"
   contentDir = "content/de"
@@ -23,3 +24,15 @@
     titleHome = "Doks thema"
     footer = "Mogelijk gemaakt door <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, en <a href=\"https://getdoks.org/\">Doks</a>"
     alertText = "Introductie van het Doks-kinderthema, verschillende DX + UX-updates en meer! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Bekijk Doks v0.2</a>"
+=======
+# [zh]
+#   languageName = "Mandarin"
+#   contentDir = "content/zh"
+#   weight = 20
+#   [zh.params]
+#     languageISO = "ZH"
+#     titleAddition = "莲花文档"
+#     description = "Lotus 文档 - Filecoin 网络的参考节点实现。"
+#     titleHome= "莲花文档"
+#     footer = "由协议实验室构建"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

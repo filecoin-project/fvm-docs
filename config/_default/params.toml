@@ -1,24 +1,37 @@
 # Meta Data for SEO
 
 ## Homepage
+<<<<<<< HEAD
 title = "FVM"
+=======
+title = "Filecoin Virtual Machine Docs"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 titleSeparator = "-"
 titleAddition = "Home"
 description = "Documentation for the Filecoin Virtual Machine (FVM)."
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 ## Open Graph
 images = ["lotus.png"]
 ogLocale = "en_US"
 domainTLD = "fvm.filecoin.io"
 titleHome = "FVM Docs"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 ## Twitter Cards
 twitterSite = "@filecoin"
 twitterCreator = "@protocollabs"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
@@ -39,6 +52,7 @@ schemaLinkedIn = ""
 schemaGitHub = "https://github.com/filecoin-project/fvm-docs"
 schemaSection = "blog"
 
+<<<<<<< HEAD
 
 ## Sitelinks Search Box
 siteLinksSearchBox = false
@@ -48,6 +62,14 @@ siteLinksSearchBox = false
 themeColor = "#fff"
 
 
+=======
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"
+
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 # Images
 quality = 85
 bgColor = "#fff"
@@ -55,21 +77,31 @@ landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 # Footer
 footer = "Built by Protocol Labs."
 footer_link = "https://protocol.ai"
 
+<<<<<<< HEAD
 
 # Feed
 copyRight = ""
 
 
+=======
+# Feed
+copyRight = ""
+
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 # Alert
 alert = false
 alertDismissable = true
 alertText = ""
 
+<<<<<<< HEAD
 
 # Edit Page
 repoHost = "GitHub"
@@ -98,3 +130,25 @@ lastMod = true
   [menu.section]
     auto = true
     collapsibleSidebar = true
+=======
+# Edit Page
+docsRepo = "https://github.com/filecoin-project/fvm-docs"
+docsRepoBranch = "main"
+editPage = true
+repoHost = "GitHub"
+
+[options]
+    lazySizes = true
+    clipBoard = true
+    instantPage = false
+    flexSearch = true
+    darkMode = true
+    bootStrapJs = true
+    breadCrumb = false 
+    highLight = true
+    kaTex = false
+    progressBar = true
+    collapsibleSidebar = true
+    multilingualMode = true
+    docsVersioning = false # Not yet functional
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

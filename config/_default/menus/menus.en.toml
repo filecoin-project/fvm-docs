@@ -1,26 +1,43 @@
 [[main]]
   name = "Concepts"
+<<<<<<< HEAD
   url = "/"
+=======
+  url = "docs/concepts/"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   weight = 10
 
 [[main]]
   name = "How To"
+<<<<<<< HEAD
   url = "/docs/how-tos/basics/install-lotus/"
+=======
+  url = "/docs/how-tos/"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   weight = 20
 
 [[main]]
   name = "Examples"
+<<<<<<< HEAD
   url = "/docs/examples/basics/hello-world/"
+=======
+  url = "/docs/examples/"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   weight = 30
 
 [[main]]
   name = "Reference"
+<<<<<<< HEAD
   url = "/docs/reference/lotus-api/"
+=======
+  url = "/docs/reference"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   weight = 40
 
 
 
 [[concepts]]
+<<<<<<< HEAD
   name = "Actors"
   weight = 30
   identifier = "concepts-actors"
@@ -91,6 +108,24 @@
   weight = 10
   identifier = "reference-lotus"
   url = "/docs/reference/lotus/"
+=======
+  name = "Basics"
+  weight = 10
+  identifier = "concepts-basics"
+  url = "/docs/concepts/basics"
+
+[[concepts]]
+  name = "Native actors"
+  weight = 20
+  identifier = "concepts-nativeactors"
+  url = "/docs/concepts/native-actors"
+
+[[concepts]]
+  name = "EVM"
+  weight = 30
+  identifier = "concepts-evm"
+  url = "/docs/concepts/evm"
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 
 
 
@@ -113,4 +148,7 @@
 #   name = "Privacy"
 #   url = "/privacy-policy/"
 #   weight = 10
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

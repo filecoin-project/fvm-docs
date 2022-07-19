@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 /* jost-regular - latin */
 @font-face {
   font-family: Jost;
+=======
+/* Stem */
+@font-face {
+  font-family: "Stem";
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
+<<<<<<< HEAD
     // Google Fonts Jost
     local("Jost Regular Regular"),   // Full Name
     local("Jost-Regular"),           // PostScript name
@@ -99,3 +106,22 @@
     url("fonts/vendor/jost/jost-v4-latin-700italic.woff2") format("woff2"),
     url("fonts/vendor/jost/jost-v4-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+=======
+    local("Stem"),
+    url("/fonts/alt-fonts/stem") format("woff2"),
+    url("/fonts/alt-fonts/stem") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* IBM Plex Mono */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("IMB Plex Mono Regular"),
+    url("/fonts/alt-fonts/ibm-plex-mono") format("woff2"),
+    url("/fonts/alt-fonts/ibm-plex-mono") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)

@@ -9,6 +9,10 @@
 
 .anchor {
   visibility: hidden;
+<<<<<<< HEAD
+=======
+  padding-left: 0.5rem;
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
 }
 
 h1:hover a,
@@ -23,6 +27,7 @@ h4:hover a {
   margin-top: 2.25rem;
 }
 
+<<<<<<< HEAD
 .page-footer-meta {
   margin-top: 3rem;
 }
@@ -46,6 +51,15 @@ h4:hover a {
 .edit-page svg,
 .last-modified svg {
   margin-right: 0.25rem;
+=======
+.edit-page {
+  margin-top: 3rem;
+  font-size: $font-size-base;
+}
+
+.edit-page svg {
+  margin-right: 0.5rem;
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
   margin-bottom: 0.25rem;
 }
 

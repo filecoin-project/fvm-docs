@@ -1,4 +1,10 @@
 <details{{ with .Get 1 }} {{ . | safeHTML }}{{ end -}}>
+<<<<<<< HEAD
   <summary>{{ with .Get 0 -}}{{ . | safeHTML }}{{ else -}}{{ errorf "No summary provided"}}{{ end -}}</summary>
   {{ with .Inner -}}{{ . | markdownify}}{{ else -}}{{ errorf "No details provided"}}{{ end -}}
 </details>
+=======
+    <summary>{{ with .Get 0 -}}{{ . | safeHTML }}{{ else -}}{{ errorf "No summary provided"}}{{ end -}}</summary>
+    {{ with .Inner -}}{{ . | markdownify}}{{ else -}}{{ errorf "No details provided"}}{{ end -}}
+</details>
+>>>>>>> parent of ed7d284 (Deletes most things, ready for staging merge.)
