@@ -1,7 +1,7 @@
 ---
 title: "Basics"
 description: "The Filecoin Virtual Machine (FVM) allows users to write their own actors and run them against the Filecoin network. This website contains all the documentation for the FVM project, including examples and reference material to help developers build on the FVM."
-lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and deploy smart contracts on the Filecoin blockchain. Smart contracts are known as "Actors" in the Filecoin network. With Actors, programmers can create new features, opening up a wide range of provable and traceable storage and data possibilities."
+lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and deploy smart contracts on the Filecoin blockchain. Smart contracts are known as "actors" in the Filecoin network. With actors, programmers can create new features, opening up a wide range of provable and traceable storage and data possibilities."
 menu:
     concepts:
         parent: "concepts-basics"
@@ -38,7 +38,7 @@ To support computation on IPLD inputs, we're making it a core priority to build 
 
 To mitigate the [well-known risks of compiling Solidity](https://101blockchains.com/solidity-issues/) used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, which produces very succinct WebAssembly (WASM) code that keeps runtime costs down.
 
-Filecoin smart contracts use virtual entities, called _Actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
+Filecoin smart contracts use virtual entities, called _actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
 
 - [Hierarchical consensus](https://research.protocol.ai/blog/2022/scaling-blockchains-with-hierarchical-consensus/#:~:text=Hierarchical%20consensus%20is%20a%20framework,other%20subnet%20in%20the%20hierarchy) with parallel execution: Enabling more processes to be done at the same time.
 - [Sharding](https://www.sofi.com/learn/content/what-is-sharding/#:~:text=Sharding%20involves%20splitting%20a%20blockchain,a%20larger%20volume%20of%20transactions.): A kind of partitioning that separates data into smaller, faster, more easily managed chunks.
@@ -101,15 +101,15 @@ For an example of a DataDAO that won First Prize before they even had the elegan
 
 If clients today want to replicate a piece of data with N number of providers, they have to perform the data transfer to each node, n number of times.
 
-With the FVM, you can write Actors that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement.
+With the FVM, you can write actors that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement.
 
-The Actors would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
+The actors would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
 
 ### Layer 2: data layer commitments
 
 Layers or Layer Protocols specify the set of communication protocols used on the blockchain and other traditional computer networks. Protocols are the technology that facilitates information sharing.
 
-As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports Actors:
+As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports actors:
 
 - Layer 0: Storage and retrieval
 - Layer 1: On-chain, state changes
@@ -125,7 +125,7 @@ When transactions occur on the Filecoin blockchain, they result in changes of st
 
 #### Layer 2: the data layer
 
-The introduction of the FVM with Actors enables access to Layer 2 off-chain data to fuel on-chain state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
+The introduction of the FVM with actors enables access to Layer 2 off-chain data to fuel on-chain state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
 
 - Cross-chain bridges: Enabling an exchange of information from one blockchain network to another.
 - Oracles: Connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
@@ -158,12 +158,17 @@ With the FVM, you can build an overlay network that patrols the network, observe
 
 We're eager to hear community feedback and learn how you want to get involved.
 
-- See what our Roadmap has in store for us.
+- See what our [Roadmap](https://fvm.filecoin.io/#roadmap-4) has in store for our ecosystem.
 
-- Check out our FIT discussions on Github and our FVM project repo.
+- Read the [Filecoin VM spec](https://github.com/filecoin-project/fvm-specs).
 
-- Join our Slack FVM channel.
+- Check out our [FIP discussions](https://github.com/filecoin-project/FIPs) on Github and our FVM project repo.
 
-- We have open grants available of the early builders program.
+- Join our #FVM Slack channel.
 
-- Play around with the current FVM actors with Jim Pick's Actor Playground (video coming soon).
+- Apply for an open grant in the [Early Builders program](https://fvm.filecoin.io/foundry).
+
+- Play around with the current FVM actors with Jim Pick's FVM actor Code Playground (video coming soon). See:
+
+  - "[Hello World](https://observablehq.com/@jimpick/fvm-actor-code-playground-hello-world)"
+  - "[Simple Faucet](https://observablehq.com/@jimpick/fvm-actor-code-playground-simple-faucet)"
