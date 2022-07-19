@@ -1,7 +1,7 @@
 ---
 title: "Basics"
-description: "The Filecoin Virtual Machine (FVM) allows users to write their own smart-contracts and run them against the Filecoin network. This website contains all the documentation for the FVM project, including examples and reference material to help developers build on the FVM."
-lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and deploy smart contracts on the Filecoin blockchain. With smart contracts, programmers can create new features, opening up a wide range of provable and traceable storage and data possibilities."
+description: "The Filecoin Virtual Machine (FVM) allows users to write their own actors and run them against the Filecoin network. This website contains all the documentation for the FVM project, including examples and reference material to help developers build on the FVM."
+lead: "The Filecoin Virtual Machine (FVM) enables programmers to create and deploy smart contracts on the Filecoin blockchain. Smart contracts are known as "Actors" in the Filecoin network. With Actors, programmers can create new features, opening up a wide range of provable and traceable storage and data possibilities."
 menu:
     concepts:
         parent: "concepts-basics"
@@ -38,7 +38,7 @@ To support computation on IPLD inputs, we're making it a core priority to build 
 
 To mitigate the [well-known risks of compiling Solidity](https://101blockchains.com/solidity-issues/) used by the EVM, we're not working directly in Solidity. Instead, we're building the reference SDK in Rust, which produces very succinct WebAssembly (WASM) code that keeps runtime costs down.
 
-Smart contracts use virtual entities, called _Actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
+Filecoin smart contracts use virtual entities, called _Actors_, to perform transactions. Actors are assigned various capabilities, carry a FIL currency balance, and can interact with other actors. Because user-defined actors will exponentially increase demand for space on the blockchain, we're looking into solutions that support speedier processing, such as:
 
 - [Hierarchical consensus](https://research.protocol.ai/blog/2022/scaling-blockchains-with-hierarchical-consensus/#:~:text=Hierarchical%20consensus%20is%20a%20framework,other%20subnet%20in%20the%20hierarchy) with parallel execution: Enabling more processes to be done at the same time.
 - [Sharding](https://www.sofi.com/learn/content/what-is-sharding/#:~:text=Sharding%20involves%20splitting%20a%20blockchain,a%20larger%20volume%20of%20transactions.): A kind of partitioning that separates data into smaller, faster, more easily managed chunks.
@@ -63,11 +63,11 @@ You can use the FVM to tokenize datasets to represent their value to humanity an
 
 #### Decentralized Autonomous Organizations (DAOs)
 
-With smart contracts possible on the FVM, you can create [Decentralized Autonomous Organizations (DAOs)](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), which are member-owned communities, constructed by rules encoded in a smart contract.
+With actors possible on the FVM, you can create [Decentralized Autonomous Organizations (DAOs)](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), which are member-owned communities, constructed by rules encoded in an actor.
 
-You can use the FVM to program a DAO with the terms agreed upon by the people who started the DAO. Having the terms built into a smart contract makes the entire organization self-sustainable, in other words, _autonomous_. For example, a program can hire people, onboard them, order equipment, pay employees, many of the things that people would normally do to keep a company running.
+You can use the FVM to program a DAO with the terms agreed upon by the people who started the DAO. Having the terms built into an actor makes the entire organization self-sustainable, in other words, _autonomous_. For example, a program can hire people, onboard them, order equipment, pay employees, many of the things that people would normally do to keep a company running.
 
-When agreements and changes are made, you can encode them into a smart contract and implement them immediately. You won't need to enforce them through a traditional top-down hierarchy, like a CEO or a board of directors.
+When agreements and changes are made, you can encode them into an actor and implement them immediately. You won't need to enforce them through a traditional top-down hierarchy, like a CEO or a board of directors.
 
 Some links of interest for DAO builders include:
 
@@ -79,39 +79,37 @@ Some links of interest for DAO builders include:
 
 #### Combining datasets and DAOs to make a DataDAO
 
-Building a DataDAO is now possible with the FVM. If you have datasets through a Dataverse, you can build on their value by fueling the DAO's need for data. You can then use a dataverse to incentivize further value creation through data processing.
+Building a DataDAO is now possible with the FVM. If you have datasets through a dataverse, you can build on their value by fueling the DAO's need for data. You can then use a dataverse to incentivize further value creation through data processing.
 
-With the FVM, you can write smart contracts to request computation services such as:
+With the FVM, you can write actors to request computation services such as:
 
 - Validation: Verifying that transactions are legal, not double-spends or malicious.
-- Transformations: Processing data goes before the storage provider stores them. See [Data Representation](https://spec.filecoin.io/#section-systems.filecoin_files.piece.data-representation).
+- Transformations: Processing data before the storage provider stores them. See [Data Representation](https://spec.filecoin.io/#section-systems.filecoin_files.piece.data-representation).
 - Extraction: Getting the data from a source system for further use.
-- Joining different datasets
-- Machine learning: Using data to predict outcomes
+- Joins: Performing `join`s on different datasets.
+- Machine learning: Using data to predict outcomes.
 
 ...and more.
 
 When you chain these processes together, you augment the value of the datasets iteratively and bring business intelligence and value to them.
 
-You'll be able to incentivize the execution all the way to the end and certify that the resulting storage state and the computation output are verifiably correct.
+You'll be able to incentivize the execution all the way to the end and certify that the resulting storage state and computation output are verifiably correct.
 
-For an example of DataDAO that won First Prize before they even had the elegance of the FVM, see [Data DAO: enable a collective-owned dataset economy: Merging decentralised governance and incentive mechanism into a permissionless data marketplace!](https://devpost.com/software/data-dao), First Prize winner of the Ocean Protocol Data Economy Challenge - Datatokens.
-
-"...the ability ... to pool together and unlock a tremendous amount of value in the form of large token exchange liquidity pools. Same applies for DataDAO, instead of Capital → Data. - the pooling of fragmented data together can create a valuable dataset."
+For an example of a DataDAO that won First Prize before they even had the elegance of the FVM, see [Data DAO: enable a collective-owned dataset economy: Merging decentralised governance and incentive mechanism into a permissionless data marketplace!](https://devpost.com/software/data-dao), First Prize winner of the Ocean Protocol Data Economy Challenge - Datatokens.
 
 ### Replication workers
 
 If clients today want to replicate a piece of data with N number of providers, they have to perform the data transfer to each node, n number of times.
 
-With the FVM, you can write Actors (Filecoin's version of smart contracts) that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement.
+With the FVM, you can write Actors that ensure replication of data across the network to N number of providers. You can automatically replicate data across providers without client involvement.
 
-The smart contracts would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
+The Actors would obey a user-defined policy with specifications like region, latency, price, or other characteristics.
 
 ### Layer 2: data layer commitments
 
-Layers or Layer Protocols specify the set of communication protocols used on the blockchain and other traditional computer networks. Protocols are the technology that facilitates information sharing. The article titled [What Are Application Layer Protocols?](https://coinmarketcap.com/alexandria/article/what-are-application-layer-protocols)) on Coinmarketcap.com is a great resource.
+Layers or Layer Protocols specify the set of communication protocols used on the blockchain and other traditional computer networks. Protocols are the technology that facilitates information sharing.
 
-As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports smart contracts:
+As a technology gets built out, it adds layers of capabilities, including the new Filecoin layer that supports Actors:
 
 - Layer 0: Storage and retrieval
 - Layer 1: On-chain, state changes
@@ -127,7 +125,7 @@ When transactions occur on the Filecoin blockchain, they result in changes of st
 
 #### Layer 2: the data layer
 
-The introduction of the FVM with smart contracts enables access to Layer 2 off-chain data to fuel on-chain state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
+The introduction of the FVM with Actors enables access to Layer 2 off-chain data to fuel on-chain state changes that are provable and traceable end-to-end. You can provide consensus-backed commitments to make solutions such as:
 
 - Cross-chain bridges: Enabling an exchange of information from one blockchain network to another.
 - Oracles: Connecting blockchains to off-chain systems so they can execute based on inputs and outputs from the real world.
@@ -136,13 +134,13 @@ The introduction of the FVM with smart contracts enables access to Layer 2 off-c
 
 ### Smart storage markets
 
-Smart contracts on the FVM can bring richer deal-making functionality and introduce more automation at the actor layer and alleviate infrastructure overhead.
+Actors on the FVM can bring richer deal-making functionality, introduce more automation, and alleviate infrastructure overhead.
 
 Some possibilities are:
 
-- Auto-renewing deals: Without repeating data transfers when deals expire or get slashed.
-- Self-repairing deals: If a provider has failed sectors and wants to recover the data, instead of having clients resend the data, replication workers can resend it automatically.
-- Retrying deals: A client can dispatch their deal data to a depot and, for a small fee, has the deal data transmitted and satisfactorily delivered to the provider.
+- Auto-renewing deals: Without repeating data transfers when deals expire or get slashed, deals can automatically renew.
+- Self-repairing deals: Instead of clients resending the data when a provider fails sectors, replication workers can resend the data automatically.
+- Retrying deals: Instead of repeatedly trying deals, a client can dispatch their deal data to a depot and, for a small fee, have the deal data automatically transmitted and delivered to the provider.
 
 ### Time-locked retrieval
 
@@ -150,8 +148,22 @@ The FVM enables storage deals with data that cannot be retrieved by anyone until
 
 ### Trustless reputation systems
 
-Trustless means that you don't need to trust an entity, because software programs are ensuring that they follow the rules set up by the community.
+Trustless means that you don't need to trust an entity, because you can rely on software programs to ensure that they follow the rules set up by the community.
 
-However, many providers will go beyond the minimal requirements, so they may have better quality of service, guarantees, or performance. Others may just work better for a particular client, because of their proximity and resulting reduced latency. A reputation system could help clients pick providers that work best for them.
+With so many providers on the Filecoin network, it's hard for users to know which one to pick. A trustless reputation system will help them find providers who go beyond the minimal requirements, and have better quality of service, guarantees, or performance. Other providers may work better for a particular client, because of their proximity and resulting reduced latency. A reputation system could help clients pick providers that work best for them.
 
-With the FVM, you can build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable and disputable if there is any disagreement.
+With the FVM, you can build an overlay network that patrols the network, observes how service providers are doing, and records the observations on the blockchain so that reputation scores can be calculated in a trustless manner. They can also be traceable all the way back to the deals that originated them and disputable if there is any disagreement.
+
+## How can you get involved
+
+We're eager to hear community feedback and learn how you want to get involved.
+
+- See what our Roadmap has in store for us.
+
+- Check out our FIT discussions on Github and our FVM project repo.
+
+- Join our Slack FVM channel.
+
+- We have open grants available of the early builders program.
+
+- Play around with the current FVM actors with Jim Pick's Actor Playground (video coming soon).
