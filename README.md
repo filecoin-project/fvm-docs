@@ -1,4 +1,5 @@
 <!-- HEADER -->
+
 <center>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -7,6 +8,7 @@
 [![MIT License][license-shield]][license-url]
 
 </center>
+
 <br>
 
 <center>
@@ -28,6 +30,7 @@
 ## Table of contents
 
 - [About the project](#about-the-project)
+    - [Files and folders](#files-and-folders)
 - [Getting started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
