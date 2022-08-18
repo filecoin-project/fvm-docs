@@ -24,7 +24,7 @@ This section lists the various files and folders and defines the purpose for eac
 | `images/` | Images that aren't displayed on the website but are present in the repo for things like the `README.md` or `CONTRIBUTIONS.md` guides. |
 | `layouts/` | This is where web developers will spend most of their time. This folder contains the shortcodes and partials that Hugo uses to scaffold and build the site. |
 | `/node_modules/` | Where NPM throws it's packages. If you see this in GitHub, something's gone wrong. It should only show up on your computer after you run `npm install`. |
-| `package-lock.json | One of the NPM configuration files. Specifies which version of packages to download. |
+| `package-lock.json` | One of the NPM configuration files. Specifies which version of packages to download. |
 | `package.json` | Another one of the NPM configuration files. Specifies which packages to download but doesn't specify which _version_ of the package to grab.
 | `resources/` | A cache where Hugo throws generated files like CSS and JSON after `npm run build` has been called. Unless `npm run clean` is called, Hugo will re-use these files when calling `npm run build`. |
 | `static/` | Images, css, fonts, and other misc files available at `fvm.filecoin.io/` when the site is built. For example `fvm.filecoin.io/site.webmanifest`.
