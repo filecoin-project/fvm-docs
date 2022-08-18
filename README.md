@@ -6,7 +6,7 @@
 
 ## Local install
 
-Follow these steps to run a copy of this site on your local computer.
+Follow these steps to run a copy of this site on your local computer. To run these commands you must have [NPM installed](https://www.npmjs.com/).
 
 1. Clone this repo:
 
@@ -30,7 +30,11 @@ Follow these steps to run a copy of this site on your local computer.
 1. Visit [localhost:1313](http://localhost:1313) to view the site.
 1. Press `CTRL` + `c` in the terminal to stop the local server.
 
-## Repo guide
+## Issues
+
+Found a problem with the FVM docs site? [Please raise an issue](https://github.com/filecoin-project/fvm-docs/issues/new). Be as specific and descriptive as possible; screenshots help.
+
+## Files and folders
 
 This section lists the various files and folders and defines the purpose for each of them.
 
