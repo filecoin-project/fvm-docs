@@ -30,6 +30,10 @@ Follow these steps to run a copy of this site on your local computer. To run the
 1. Visit [localhost:1313](http://localhost:1313) to view the site.
 1. Press `CTRL` + `c` in the terminal to stop the local server.
 
+## Contributions
+
+Want to help out? Pull requests (PRs) are always welcome! Check out `CONTRIBUTIONS.md` for more details on how you can help out. If you want to help out but aren't sure where to start, check out the [issues board](https://github.com/filecoin-project/fvm-docs/issues).
+
 ## Issues
 
 Found a problem with the FVM docs site? [Please raise an issue](https://github.com/filecoin-project/fvm-docs/issues/new). Be as specific and descriptive as possible; screenshots help.
