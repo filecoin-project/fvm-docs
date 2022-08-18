@@ -7,17 +7,15 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-</center>
-
 <br>
 
-<center>
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/9611008/185500541-565c4d4d-660b-43e8-bc4e-00e9e8fb48b2.png">
     <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/9611008/185500539-e0a0e852-c3b6-452b-bc7c-fe2fd165fc15.png">
     <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
     </picture>
 </center>
+
 <br>
 
 <p align="center"> This repository manages the documentation for the <a href="https://github.com/filecoin-project/fvm">Filecoin Virtual Machine (FVM) project</a>. This repo also contains the build scripts and tools to create the FVM docs website and the API documentation. <a href="https://fvm.filecoin.io/docs">Explore the docs →</a></p>
