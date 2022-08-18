@@ -4,6 +4,32 @@
 >
 > \- [_The Docs Team_](https://github.com/protocol/docs)
 
+## Local install
+
+Follow these steps to run a copy of this site on your local computer.
+
+1. Clone this repo:
+
+    ```shell
+    git clone https://github.com/filecoin-project/fvm-docs
+    ```
+
+1. Move into the new folder and download the dependencies:
+
+    ```shell
+    cd fvm-docs
+    npm install
+    ```
+
+1. Build the project and serve it locally using Hugo's built-in server:
+
+    ```shell
+    npm run build
+    ```
+
+1. Visit [localhost:1313](http://localhost:1313) to view the site.
+1. Press `CTRL` + `c` in the terminal to stop the local server.
+
 ## Repo guide
 
 This section lists the various files and folders and defines the purpose for each of them.
