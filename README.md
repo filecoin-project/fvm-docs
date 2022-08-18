@@ -1,8 +1,12 @@
 <!-- HEADER -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-<center>
+<br>
 
-<picture>
+<picture align=center>
     <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/9611008/185500541-565c4d4d-660b-43e8-bc4e-00e9e8fb48b2.png">
     <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/9611008/185500539-e0a0e852-c3b6-452b-bc7c-fe2fd165fc15.png">
     <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
@@ -10,14 +14,6 @@
 
 <br>
 <br>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-</center>
-
 
 <p align="center"> This repository manages the documentation for the <a href="https://github.com/filecoin-project/fvm">Filecoin Virtual Machine (FVM) project</a>. This repo also contains the build scripts and tools to create the FVM docs website and the API documentation. <a href="https://fvm.filecoin.io/docs">Explore the docs →</a></p>
 
@@ -33,11 +29,9 @@
 - [Getting started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [Issues](#issues)
 - [License](#license)
-- [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 <!-- /TABLE OF CONTENTS -->
 
@@ -76,9 +70,6 @@ This section lists the various files and folders and defines the purpose for eac
 | `static/` | Images, css, fonts, and other misc files available at `fvm.filecoin.io/` when the site is built. For example, `fvm.filecoin.io/site.webmanifest`.
 | `theme.toml` | A Hugo configuration file that specifies which theme to use. This file should not change that often. |
 <!-- /ABOUT THE PROJECT -->
-
-
-
 
 
 
@@ -131,18 +122,6 @@ Follow these steps to run a copy of this site on your local computer.
 <!-- /INSTALLATION -->
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/filecoin-project/fvm-docs/issues) for a full list of proposed features (and known issues).
-<!-- /ROADMAP -->
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -164,15 +143,14 @@ Found a problem with the FVM docs site? [Please raise an issue](https://github.c
 ## License
 
 Dual-licensed: [MIT](./LICENSE-MIT), [Apache Software License v2](./LICENSE-APACHE), by way of the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
+<!-- /LICENSE -->
 
-
-
-## Contact
 
 <!-- TODO
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
--->
+## Contact
+
 Project Link: [https://github.com/filecoin-project/fvm-docs](https://github.com/filecoin-project/fvm-docs)
+-->
 
 
 
@@ -182,6 +160,7 @@ Project Link: [https://github.com/filecoin-project/fvm-docs](https://github.com/
 - [Fleek](https://fleek.co) web hosting
 - [Hugo](https://gohugo.io) static site generator 
 - [Doks](https://getdoks.org) starter theme 
+<!-- /ACKNOWLEDGMENTS -->
 
 
 
@@ -197,5 +176,6 @@ Project Link: [https://github.com/filecoin-project/fvm-docs](https://github.com/
 [license-shield]: https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge
 [license-url]: https://github.com/filecoin-project/fvm-docs/blob/master/LICENSE.txt
 [product-screenshot]: ./images/fvm-homepage.png
+<!-- /MARKDOWN LINKS & IMAGES -->
 
 <!-- markdownlint-disable-file -->
