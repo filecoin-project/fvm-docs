@@ -175,7 +175,7 @@ Project Link: [https://github.com/filecoin-project/fvm-docs](https://github.com/
 [issues-url]: https://github.com/filecoin-project/fvm-docs/issues
 [license-shield]: https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge
 [license-url]: https://github.com/filecoin-project/fvm-docs/blob/master/LICENSE.txt
-[product-screenshot]: ./images/fvm-homepage.png
+[product-screenshot]: ./images/fvm-docs-homepage.png
 <!-- /MARKDOWN LINKS & IMAGES -->
 
 <!-- markdownlint-disable-file -->
