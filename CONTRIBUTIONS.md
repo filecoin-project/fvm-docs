@@ -32,7 +32,7 @@ Lorem.
 
 ### Test locally
 
-Lorem.
+Check out the [Getting started section](./README.md#getting-started) of the `README.md` file to find out how to spin up a local copy of this site.
 
 ## Web development
 
