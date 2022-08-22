@@ -1,7 +1,7 @@
 ---
 title: "Replication workers"
-description: ""
-lead: ""
+description: "Clients want their data to be replicated across the network to maximize the chances it will survive in the event of storage provider failures. To achieve that today, clients have to execute N deals with storage providers, transferring the data N times. This is a cumbersome and resource-intensive task for a client to perform in order to obtain redundancy."
+lead: "Clients want their data to be replicated across the network to maximize the chances it will survive in the event of storage provider failures. To achieve that today, clients have to execute N deals with storage providers, transferring the data N times. This is a cumbersome and resource-intensive task for a client to perform in order to obtain redundancy."
 date: 2022-01-25T14:41:39+01:00
 lastmod: 2022-01-25T14:41:39+01:00
 draft: false
@@ -10,9 +10,8 @@ type: docs
 menu:
   concepts:
     parent: "use-cases"
-    identifier: "concepts-use-cases"
-weight: 30
+    identifier: "concepts-use-cases-replication-workers"
 toc: true
 ---
 
-Letterpress 8-bit sustainable chillwave listicle roof party chia mumblecore PBR&B health goth chambray disrupt +1 kombucha DIY. Subway tile actually meggings kinfolk. Readymade godard coloring book austin cold-pressed direct trade ramps blog cronut prism retro church-key biodiesel. Tumblr mustache semiotics vibecession, pabst cronut freegan succulents drinking vinegar banh mi shabby chic ugh four loko. Bodega boys vice irony, cray ugh paleo raclette vinyl iPhone literally cloud bread big mood kogi. Jianbing snackwave poutine schlitz kale chips kitsch umami street art XOXO, lo-fi mumblecore. Whatever portland vaporware meh waistcoat freegan man bun pinterest small batch kitsch palo santo pitchfork kickstarter.
+Replication workers solve this problem by charging a small fee to act as a mediator, by saving the client the time and overhead of negotiating multiple deals. Instead, the replication worker can automaticaly copy the Filecoin deal N times across the network in accordance with the user-defined policy based on number of replicas, region selection, latency, price, etc. (potentially using L2 reputation systems to decide where to place the data!)

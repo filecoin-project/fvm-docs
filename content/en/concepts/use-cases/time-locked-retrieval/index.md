@@ -11,7 +11,6 @@ menu:
   concepts:
     parent: "use-cases"
     identifier: "concepts-use-cases-time-locked-retrieval"
-weight: 100
 toc: true
 ---
 

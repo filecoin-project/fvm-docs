@@ -11,7 +11,6 @@ menu:
   concepts:
     parent: "use-cases"
     identifier: "concepts-use-cases-trustless-reputation-systems"
-weight: 100
 toc: true
 ---
 

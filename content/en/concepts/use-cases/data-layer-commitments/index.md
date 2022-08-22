@@ -1,7 +1,7 @@
 ---
-title: "Data-layer commitments"
-description: ""
-lead: ""
+title: "Enabling L2 networks"
+description: "L2s are independent networks —with dedicated incentive constructions— that conduct specialized tasks on top of the Filecoin network. Layer 2 solutions commit their state onto the Filecoin network (Layer 1), thus inheriting its security properties."
+lead: "L2s are independent networks —with dedicated incentive constructions— that conduct specialized tasks on top of the Filecoin network. Layer 2 solutions commit their state onto the Filecoin network (Layer 1), thus inheriting its security properties."
 date: 2022-01-25T14:41:39+01:00
 lastmod: 2022-01-25T14:41:39+01:00
 draft: false
@@ -11,8 +11,13 @@ menu:
   concepts:
     parent: "use-cases"
     identifier: "concepts-use-cases-data-layer-commitments"
-weight: 10
 toc: true
 ---
 
-I'm baby bespoke vinyl fingerstache cred listicle readymade, raclette portland fit selfies truffaut ramps live-edge mumblecore. Artisan occupy gochujang subway tile chambray meggings jianbing. Man braid drinking vinegar bicycle rights listicle gatekeep artisan sriracha kinfolk. Lumbersexual umami tofu kombucha try-hard, austin echo park irony chicharrones. Air plant cardigan palo santo everyday carry.
+Examples include:
+
+- Trustless reputation systems: measure and report the Quality of Service of storage providers, as perceived from different geographical locations around the globe.
+- Data availability sampling networks: challenge storage providers by retrieving random data, verifying correct delivery within a specific time window, and awarding incentives depending on outcome.
+- Content Delivery Networks that cache data stored in Filecoin deals by replicating it across a number of geographies, and making it accessible through a number of transports, to ensure quick and seamless retrieval around the globe. Participants get rewarded for caching and delivering content.
+
+By deployin commitment or docking actors on the FVM, the Layer 2 solutions can (a) commit their state on chain through verifiable proofs, (b) dispense participant rewards, (c) verify fraud proofs, amongst other tasks.g
