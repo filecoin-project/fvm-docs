@@ -1,7 +1,7 @@
 ---
 title: "EVM basics"
-description: "What's the difference between an actor, a smart-contract, and just a regular web app? This page covers the difference between all three."
-lead: "What's the difference between an actor, a smart-contract, and just a regular web app? This page covers the difference between all three."
+description: "Lorem ipsum."
+lead: "Lorem ipsum."
 date: 2022-01-25T14:41:39+01:00
 lastmod: 2022-01-25T14:41:39+01:00
 draft: false
