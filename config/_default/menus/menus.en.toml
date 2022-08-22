@@ -1,96 +1,22 @@
 [[main]]
   name = "Concepts"
-  url = "/"
+  url = "/concepts/basics/overview"
   weight = 10
 
 [[main]]
-  name = "How To"
-  url = "/docs/how-tos/basics/install-lotus/"
+  name = "How Tos"
+  url = "/how-tos/basics/install-lotus"
   weight = 20
 
 [[main]]
   name = "Examples"
-  url = "/docs/examples/basics/hello-world/"
+  url = "/examples"
   weight = 30
 
 [[main]]
   name = "Reference"
-  url = "/docs/reference/lotus-api/"
+  url = "/reference"
   weight = 40
-
-
-
-[[concepts]]
-  name = "Actors"
-  weight = 30
-  identifier = "concepts-actors"
-  url = "/docs/concepts/actors/"
-
-[[concepts]]
-  name = "EVM"
-  weight = 40
-  identifier = "concepts-evm"
-  url = "/docs/concepts/evm/"
-
-[[concepts]]
-  name = "Implementations"
-  weight = 50
-  identifier = "concepts-implementations"
-  url = "/docs/concepts/implementations/"
-
-[[concepts]]
-  name = "Use cases"
-  weight = 60
-  identifier = "concepts-use-cases"
-  url = "/docs/concepts/use-cases/"
-
-
-
-[[howto]]
-  name = "Basics"
-  weight = 5 
-  identifier = "how-to-basics"
-  url = "/docs/how-to/actors/"
-
-[[howto]]
-  name = "Actors"
-  weight = 10
-  identifier = "how-to-actors"
-  url = "/docs/how-to/actors/"
-
-[[howto]]
-  name = "WASM"
-  weight = 20
-  identifier = "how-to-wasm"
-  url = "/docs/how-to/wasm/"
-
-
-
-[[examples]]
-  name = "Basics"
-  weight = 10
-  identifier = "examples-basics"
-  url = "/docs/examples/basics/"
-
-[[examples]]
-  name = "Actors"
-  weight = 20
-  identifier = "examples-actors"
-  url = "/docs/examples/actors/"
-
-[[examples]]
-  name = "Ethereum"
-  weight = 30
-  identifier = "examples-ethereum"
-  url = "/docs/examples/ethereum/"
-
-
-
-[[reference]]
-  name = "Lotus"
-  weight = 10
-  identifier = "reference-lotus"
-  url = "/docs/reference/lotus/"
 
 
 
@@ -113,4 +39,3 @@
 #   name = "Privacy"
 #   url = "/privacy-policy/"
 #   weight = 10
-

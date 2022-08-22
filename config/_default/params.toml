@@ -7,6 +7,12 @@ titleAddition = "Home"
 description = "Documentation for the Filecoin Virtual Machine (FVM)."
 
 
+
+## Documentation
+# docsVersion = "0.3"
+
+
+
 ## Open Graph
 images = ["lotus.png"]
 ogLocale = "en_US"
@@ -14,9 +20,11 @@ domainTLD = "fvm.filecoin.io"
 titleHome = "FVM Docs"
 
 
+
 ## Twitter Cards
 twitterSite = "@filecoin"
 twitterCreator = "@protocollabs"
+
 
 
 ## JSON-LD
@@ -40,12 +48,15 @@ schemaGitHub = "https://github.com/filecoin-project/fvm-docs"
 schemaSection = "blog"
 
 
+
 ## Sitelinks Search Box
 siteLinksSearchBox = false
 
 
+
 ## Chrome Browser
 themeColor = "#fff"
+
 
 
 # Images
@@ -54,21 +65,36 @@ bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
+smallLimit = "300"
+imageResponsive = true
+imageConvertTo = "webp"
+imageImageSizes = ["480","720","1080","1280","1600","2048"]
+singleSize = false
+imageAddClass = "img-fluid lazyload blur-up"
+
+
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
+
 
 
 # Footer
-footer = "Built by Protocol Labs."
-footer_link = "https://protocol.ai"
+footer = "Built by <a href='https://protocol.ai'>Protocol Labs</a>"
+
 
 
 # Feed
 copyRight = ""
 
 
+
 # Alert
 alert = false
 alertDismissable = true
 alertText = ""
+
 
 
 # Edit Page
@@ -80,11 +106,17 @@ editPage = true
 lastMod = true
 
 
+
+[sections]
+  sectionNav = ["concepts", "how-tos", "examples", "reference"]
+
 [options]
   lazySizes = true
   clipBoard = true
   instantPage = true
   flexSearch = true
+  searchSectionsShow = []
+  searchSectionsIndex = []
   darkMode = true
   bootStrapJs = true
   breadCrumb = false
@@ -93,8 +125,11 @@ lastMod = true
   multilingualMode = false
   docsVersioning = false
   fullWidth = false
+  navbarSticky = true
+  toTopButton = true
+  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]
     auto = true
-    collapsibleSidebar = true
+    collapsibleSidebar = false
