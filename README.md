@@ -40,7 +40,7 @@
 <!-- GETTING STARTED-->
 ## Getting Started
 
-To get a local version of the site up and running, follow these simple example steps.
+To get a local version of the site up and running, install the prerequisites and follow the installation steps.
 <!-- /GETTING STARTED-->
 
 
