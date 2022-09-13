@@ -12,7 +12,7 @@ Before you can start playing around with content, you need to understand the var
 
 ![A screenshot of the FVM docs highlighting different sections.](./images/section-hierarch.png)
 
-The same hierarchy can been seen in a page's URL:
+The same hierarchy can be seen in a page's URL:
 
 ```plaintext
                         TOPBAR SECTION   SIDEBAR ITEM/PAGE
@@ -24,7 +24,7 @@ http://fvm.filecoin.io/docs/concepts/basics/overview/
                   CONTENT ROOT    SIDEBAR SECTION
 ```
 
-Topbar sections just act as holders for sub-content. There is no information listed in topbar section folders other than a placeholder `_index.md` file which tells Hugo which folders are topbar sections.
+Topbar sections just act as holders for sub-content. There is no information listed in topbar section folders other than a placeholder `_index.md` file, which tells Hugo which folders are topbar sections.
 
 ```plaintext
 concepts  <------------ TOPBAR SECTION
@@ -58,7 +58,7 @@ Each of the following steps assumes that you have cloned this repository and mov
 
 ### Topbar section
 
-Take care when creating or editing topbar sections. These sections are incredibly important as the entire site is based of what these sections are called.
+Take care when creating or editing topbar sections. These sections are incredibly important as the entire site is based on what these sections are called.
 
 1. Decide what you are going to call this new topbar section.
 1. Use `npm run create` to make a new topbar section:
@@ -86,14 +86,14 @@ Take care when creating or editing topbar sections. These sections are incredibl
 
 ### Sidebar section
 
-1. Decide what you are going to call this sidebar section, and which topbar section it's going to fall under.
-1. Use `npm run create` to make a new sidebar section, slotting in the topbar section you want to use, and the name of the sidebar section:
+1. Decide what you are going to call this sidebar section and which topbar section it's going to fall under.
+1. Use `npm run create` to make a new sidebar section, slotting in the topbar section you want to use and the name of the sidebar section:
 
     ```shell
     npm run create -- --kind sidebar-section $TOPBAR-SECTION/$SIDEBAR-SECTION
     ```
 
-    Replace `$TOPBAR-SECTION` and `$SIDEBAR-SECTION` with the relevant information in lower-case. For example:
+    Replace `$TOPBAR-SECTION` and `$SIDEBAR-SECTION` with the relevant information in lower case. For example:
 
     ```shell
     npm run create -- --kind sidebar section concepts/basics
@@ -103,7 +103,7 @@ Take care when creating or editing topbar sections. These sections are incredibl
 
 ### Sidebar item
 
-When adding a new page you must decide the name of the page, and which topbar section and sidebar section the page goes into.
+When adding a new page, you must decide the name of the page and which topbar section and sidebar section the page goes into.
 
 1. Use `npm run create` to make a new sidebar item, slotting in the relevant topbar and sidebar sections, along with the name of the sidebar item:
 
@@ -111,7 +111,7 @@ When adding a new page you must decide the name of the page, and which topbar se
     npm run create -- --kind sidebar-item $TOPBAR-SECTION/$SIDEBAR-SECTION/$SIDEBAR-ITEM
     ```
 
-    Replace `$TOPBAR-SECTION`, `$SIDEBAR-SECTION`, and `$SIDEBAR-ITEM` with the relevant information in lower-case. For example:
+    Replace `$TOPBAR-SECTION`, `$SIDEBAR-SECTION`, and `$SIDEBAR-ITEM` with the relevant information in lower case. For example:
 
     ```shell
     npm run create -- --kind sidebar section concepts/basics/overview
@@ -121,7 +121,7 @@ When adding a new page you must decide the name of the page, and which topbar se
 
 ### Images
 
-To add images to a page, move the images into that page's folder and reference them using standard markdown syntax. For example, if you want to add an image called `dog.png` to the `/concepts/basics/overview` page you must move the image into `/concepts/en/concepts/basics/overview`:
+To add images to a page, move the images into that page's folder and reference them using standard markdown syntax. For example, if you want to add an image called `dog.png` to the `/concepts/basics/overview` page, you must move the image into `/concepts/en/concepts/basics/overview`:
 
 ```plaintext
 concepts
@@ -139,10 +139,9 @@ Then, reference the `dog.png` file within the `index.md` file:
 
 ## Basics
 
-In this basics section you'll learn the fundamentals of how to Filecoin Virtual Machine works, and how you can interact with it.
+In this basics section, you'll learn the fundamentals of how to Filecoin Virtual Machine works and how you can interact with it.
 
 ![](./dog.png)
-
 
 ...
 ```
@@ -163,4 +162,5 @@ Check out the [Getting started section](./README.md#getting-started) of the `REA
 
 ## Web development
 
-So you want to help build the docs site? Great! Read through this section to get an idea on how the site it currently built and designed.
+So you want to help build the docs site? Great! Read through this section to get an idea of how the site is built and designed.
+
