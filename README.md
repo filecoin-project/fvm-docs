@@ -1,3 +1,5 @@
+# THIS REPO IS ARCHIVED. SEE [DOCS.FILECOIN.IO](https://docs.filecoin.io) FOR FVM DOCS.
+
 <!-- HEADER -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
